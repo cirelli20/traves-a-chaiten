@@ -45,9 +45,17 @@ figure{margin:0}
 .obra .eyebrow{color:#e8ad9b}
 .obra h2 em{color:#dd9279}
 .personas{background:var(--crema)}
-.pie{background:var(--crema);border-top:1px solid #cec5b5;padding-block:58px 22px}
-.pie-inferior{display:flex;justify-content:space-between;align-items:center;gap:15px;border-top:1px solid #d2c8b9;padding-top:19px;font-size:.66rem;font-weight:600;letter-spacing:.07em;color:var(--tinta-suave)}
-.pie-inferior a{text-decoration:none}
+/* Pie común: identidad de la travesía y perfiles de los talleres. */
+.pie{background:var(--crema);border-top:1px solid #cec5b5;padding-block:40px 28px}
+.pie-inferior{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,auto);align-items:center;gap:32px;border-top:1px solid #d2c8b9;padding-top:20px;color:var(--tinta-suave)}
+.pie-informacion{display:flex;flex-direction:column;align-items:flex-start;gap:12px;text-align:left;min-width:0}
+.pie-logo{width:150px;height:auto;justify-self:end}
+.pie-identidad{font-size:.72rem;font-weight:600;letter-spacing:.07em;line-height:1.65}
+.pie-talleres{display:flex;flex-direction:column;align-items:flex-start;gap:5px;text-align:left}
+.pie-talleres a{font-size:.84rem;font-weight:500;line-height:1.45;text-decoration:underline;text-decoration-color:#a69c8e;text-underline-offset:.24em;transition:color .2s}
+.pie-talleres a:hover,.pie-talleres a:focus-visible{color:var(--carmin);text-decoration-color:currentColor}
+/* Reserva para los controles fijos del cuaderno, sin tapar sus enlaces. */
+.pagina-antes .pie{padding-bottom:calc(96px + env(safe-area-inset-bottom, 0px))}
 @keyframes entrar-dia{from{opacity:.4;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}
 @media (max-width:1150px){
 .contenedor{width:min(var(--ancho),calc(100% - 64px))}
@@ -74,7 +82,12 @@ figure{margin:0}
 .portada h1{font-size:clamp(3rem,12.6vw,5.2rem)}
 .portada .eyebrow{margin-bottom:29px}
 .obra h2{font-size:clamp(2.1rem,8vw,3.7rem)}
-.pie-inferior{font-size:.58rem}
+.pie{padding-block:30px 26px}
+.pie-inferior{grid-template-columns:1fr;gap:24px;padding-top:16px}
+.pie-logo{width:125px;justify-self:end}
+.pie-identidad{font-size:.68rem}
+.pie-talleres{align-items:flex-start;text-align:left;gap:10px}
+.pie-talleres a{font-size:.86rem}
 }
 @media (max-width:390px){
 .marca>span{font-size:.5rem}
