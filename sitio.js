@@ -5,6 +5,7 @@ window.DATOS_TRAVESIA = {
       "numero": "01",
       "etiqueta": "Día 01",
       "titulo": "Día 01",
+      "fecha": "12 de noviembre de 2026",
       "subtitulo": "Relato, fecha, imagen y nombre de la jornada por completar.",
       "pregunta": "¿Qué sucedió durante esta jornada?",
       "imagen": "assets/dias/D1foto1.3.webp",
@@ -84,6 +85,7 @@ window.DATOS_TRAVESIA = {
       "numero": "02",
       "etiqueta": "Día 02",
       "titulo": "Día 02",
+      "fecha": "13 de noviembre de 2026",
       "subtitulo": "Relato, fecha, imagen y nombre de la jornada por completar.",
       "pregunta": "¿Cómo se organizó el trabajo?",
       "imagen": "assets/dias/D2FOTO.1.webp",
@@ -165,6 +167,7 @@ window.DATOS_TRAVESIA = {
       "numero": "03",
       "etiqueta": "Día 03",
       "titulo": "Día 03",
+      "fecha": "14 de noviembre de 2026",
       "subtitulo": "Relato, fecha, imagen y nombre de la jornada por completar.",
       "pregunta": "¿Qué se observó del lugar?",
       "imagen": "assets/dias/D3FOTO1.webp",
@@ -261,6 +264,7 @@ window.DATOS_TRAVESIA = {
       "numero": "04",
       "etiqueta": "Día 04",
       "titulo": "Día 04",
+      "fecha": "15 de noviembre de 2026",
       "subtitulo": "Relato, fecha, imagen y nombre de la jornada por completar.",
       "pregunta": "¿Cómo avanzaron las faenas?",
       "imagen": "assets/dias/D4FOTO1.webp",
@@ -345,27 +349,33 @@ window.DATOS_TRAVESIA = {
       "numero": "05",
       "etiqueta": "Día 05",
       "titulo": "Día 05",
+      "fecha": "16 de noviembre de 2026",
       "subtitulo": "Relato, fecha, imagen y nombre de la jornada por completar.",
       "pregunta": "¿Qué conversaciones fueron importantes?",
-      "imagen": "assets/dias/dia-05.svg",
+      "imagen": "assets/dias/D5FOTO1.webp",
       "imagenes": [
         {
-          "src": "assets/dias/dia-05.svg",
+          "src": "assets/dias/D5FOTO1.webp",
           "alt": "Ilustración provisional de la jornada 05; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/dia-05.svg",
+          "src": "assets/dias/D5FOTO2.webp",
           "alt": "Ilustración provisional de la jornada 05; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/dia-05.svg",
+          "src": "assets/dias/D5FOTO3.webp",
           "alt": "Ilustración provisional de la jornada 05; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/dia-05.svg",
+          "src": "assets/dias/D5FOTO4.webp",
+          "alt": "Ilustración provisional de la jornada 05; sustituir por una fotografía real.",
+          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+        },
+        {
+          "src": "assets/dias/D5FOTO5.webp",
           "alt": "Ilustración provisional de la jornada 05; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         }
@@ -430,6 +440,7 @@ window.DATOS_TRAVESIA = {
       "numero": "06",
       "etiqueta": "Día 06",
       "titulo": "Día 06",
+      "fecha": "17 de noviembre de 2026",
       "subtitulo": "Relato, fecha, imagen y nombre de la jornada por completar.",
       "pregunta": "¿Qué cambió respecto del día anterior?",
       "imagen": "assets/dias/dia-06.svg",
@@ -521,6 +532,7 @@ window.DATOS_TRAVESIA = {
       "numero": "07",
       "etiqueta": "Día 07",
       "titulo": "Día 07",
+      "fecha": "18 de noviembre de 2026",
       "subtitulo": "Relato, fecha, imagen y nombre de la jornada por completar.",
       "pregunta": "¿Qué tareas se repartieron?",
       "imagen": "assets/dias/dia-07.svg",
@@ -600,6 +612,7 @@ window.DATOS_TRAVESIA = {
       "numero": "08",
       "etiqueta": "Día 08",
       "titulo": "Día 08",
+      "fecha": "19 de noviembre de 2026",
       "subtitulo": "Relato, fecha, imagen y nombre de la jornada por completar.",
       "pregunta": "¿Qué se descubrió al observar?",
       "imagen": "assets/dias/dia-08.svg",
@@ -685,6 +698,7 @@ window.DATOS_TRAVESIA = {
       "numero": "09",
       "etiqueta": "Día 09",
       "titulo": "Día 09",
+      "fecha": "20 de noviembre de 2026",
       "subtitulo": "Relato, fecha, imagen y nombre de la jornada por completar.",
       "pregunta": "¿Qué acontecimiento se quiere recordar?",
       "imagen": "assets/dias/dia-09.svg",
@@ -776,6 +790,7 @@ window.DATOS_TRAVESIA = {
       "numero": "10",
       "etiqueta": "Día 10",
       "titulo": "Día 10",
+      "fecha": "21 de noviembre de 2026",
       "subtitulo": "Relato, fecha, imagen y nombre de la jornada por completar.",
       "pregunta": "¿Cómo se transformó el trabajo?",
       "imagen": "assets/dias/dia-10.svg",
@@ -855,6 +870,7 @@ window.DATOS_TRAVESIA = {
       "numero": "11",
       "etiqueta": "Día 11",
       "titulo": "Día 11",
+      "fecha": "22 de noviembre de 2026",
       "subtitulo": "Relato, fecha, imagen y nombre de la jornada por completar.",
       "pregunta": "¿Qué momentos compartieron los talleres?",
       "imagen": "assets/dias/dia-11.svg",
@@ -940,6 +956,7 @@ window.DATOS_TRAVESIA = {
       "numero": "12",
       "etiqueta": "Día 12",
       "titulo": "Día 12",
+      "fecha": "23 de noviembre de 2026",
       "subtitulo": "Relato, fecha, imagen y nombre de la jornada por completar.",
       "pregunta": "¿Qué dejó esta jornada?",
       "imagen": "assets/dias/dia-12.svg",
@@ -1299,7 +1316,6 @@ window.DATOS_TRAVESIA = {
       if(index===i)btn.setAttribute('aria-current','step');else btn.removeAttribute('aria-current');
     });
     $('#contador-dias').textContent=`${dia.numero} / ${String(datos.dias.length).padStart(2,'0')}`;
-    $('#jornada-etiqueta').textContent=`BITÁCORA / JORNADA ${dia.numero}`;
     $('#jornada-titulo').textContent=dia.titulo||dia.etiqueta;
     $('#jornada-resumen').textContent=dia.subtitulo||'Relato por completar.';
     $('#fecha-dia').textContent=dia.fecha||'FECHA POR COMPLETAR';
