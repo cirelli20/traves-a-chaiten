@@ -102,12 +102,8 @@ window.DATOS_TRAVESIA = {
           "src": "assets/dias/D2FOTO.3.webp",
           "alt": "Ilustración provisional de la jornada 02; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
-        },
-        {
-          "src": "assets/dias/dia-02.svg",
-          "alt": "Ilustración provisional de la jornada 02; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         }
+       
       ],
       "comentarios": [
         {
@@ -192,6 +188,11 @@ window.DATOS_TRAVESIA = {
           "src": "assets/dias/D3FOTO4.webp",
           "alt": "Ilustración provisional de la jornada 03; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+        },
+        {
+          "src": "assets/dias/D3FOTO5.webp",
+          "alt": "Ilustración provisional de la jornada 03; sustituir por una fotografía real.",
+          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         }
       ],
       "comentarios": [
@@ -262,25 +263,30 @@ window.DATOS_TRAVESIA = {
       "titulo": "Día 04",
       "subtitulo": "Relato, fecha, imagen y nombre de la jornada por completar.",
       "pregunta": "¿Cómo avanzaron las faenas?",
-      "imagen": "assets/dias/dia-04.svg",
+      "imagen": "assets/dias/D4FOTO1.webp",
       "imagenes": [
         {
-          "src": "assets/dias/dia-04.svg",
+          "src": "assets/dias/D4FOTO1.webp",
           "alt": "Ilustración provisional de la jornada 04; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/dia-04.svg",
+          "src": "assets/dias/D4FOTO2.webp",
           "alt": "Ilustración provisional de la jornada 04; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/dia-04.svg",
+          "src": "assets/dias/D4FOTO3.webp",
           "alt": "Ilustración provisional de la jornada 04; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/dia-04.svg",
+          "src": "assets/dias/D4FOTO4.webp",
+          "alt": "Ilustración provisional de la jornada 04; sustituir por una fotografía real.",
+          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+        },
+        {
+          "src": "assets/dias/D4FOTO5.webp",
           "alt": "Ilustración provisional de la jornada 04; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         }
