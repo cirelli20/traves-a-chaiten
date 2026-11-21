@@ -86,20 +86,20 @@ window.DATOS_TRAVESIA = {
       "titulo": "Día 02",
       "subtitulo": "Relato, fecha, imagen y nombre de la jornada por completar.",
       "pregunta": "¿Cómo se organizó el trabajo?",
-      "imagen": "assets/dias/D1foto2.1.jpg",
+      "imagen": "assets/dias/D2FOTO.1.webp",
       "imagenes": [
         {
-          "src": "assets/dias/D1foto2.1.jpg",
+          "src": "assets/dias/D2FOTO.1.webp",
           "alt": "Ilustración provisional de la jornada 02; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/dia-02.svg",
+          "src": "assets/dias/D2FOTO.2.webp",
           "alt": "Ilustración provisional de la jornada 02; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/dia-02.svg",
+          "src": "assets/dias/D2FOTO.3.webp",
           "alt": "Ilustración provisional de la jornada 02; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
@@ -171,25 +171,25 @@ window.DATOS_TRAVESIA = {
       "titulo": "Día 03",
       "subtitulo": "Relato, fecha, imagen y nombre de la jornada por completar.",
       "pregunta": "¿Qué se observó del lugar?",
-      "imagen": "assets/dias/dia-03.svg",
+      "imagen": "assets/dias/DIA3FOTO.1.webp",
       "imagenes": [
         {
-          "src": "assets/dias/dia-03.svg",
+          "src": "assets/dias/DIA3FOTO.1.webp",
           "alt": "Ilustración provisional de la jornada 03; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/dia-03.svg",
+          "src": "assets/dias/DIA3FOTO.2.webp",
           "alt": "Ilustración provisional de la jornada 03; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/dia-03.svg",
+          "src": "assets/dias/DIA3FOTO.3.webp",
           "alt": "Ilustración provisional de la jornada 03; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/dia-03.svg",
+          "src": "assets/dias/DIA3FOTO.4.webp",
           "alt": "Ilustración provisional de la jornada 03; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         }
