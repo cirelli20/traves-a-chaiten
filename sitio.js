@@ -171,25 +171,25 @@ window.DATOS_TRAVESIA = {
       "titulo": "Día 03",
       "subtitulo": "Relato, fecha, imagen y nombre de la jornada por completar.",
       "pregunta": "¿Qué se observó del lugar?",
-      "imagen": "assets/dias/DIA3FOTO.1.webp",
+      "imagen": "assets/dias/D3FOTO1.webp",
       "imagenes": [
         {
-          "src": "assets/dias/DIA3FOTO.1.webp",
+          "src": "assets/dias/D3FOTO1.webp",
           "alt": "Ilustración provisional de la jornada 03; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/DIA3FOTO.2.webp",
+          "src": "assets/dias/D3FOTO2.webp",
           "alt": "Ilustración provisional de la jornada 03; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/DIA3FOTO.3.webp",
+          "src": "assets/dias/D3FOTO3.webp",
           "alt": "Ilustración provisional de la jornada 03; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/DIA3FOTO.4.webp",
+          "src": "assets/dias/D3FOTO4.webp",
           "alt": "Ilustración provisional de la jornada 03; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         }
