@@ -1,17 +1,3 @@
-/* BITÁCORA CHAITÉN · JAVASCRIPT ÚNICO */
-/* Los datos editables de los 12 días están al principio. */
-
-/* ===== DATOS-BITACORA ===== */
-/* DATOS EDITABLES · BITÁCORA TRAVESÍA CHAITÉN 2026
- * Los comentarios de la maqueta son PREGUNTAS PARA COMPLETAR, no testimonios reales.
- * En cada día: imagenes = secuencia de fondos; comentarios = notas de participantes.
- * En un comentario: texto (resumen), autor, categoria, y opcionalmente:
- *   detalle: "Texto completo o contenido ampliado" (activa el botón Leer más)
- *   escena: 2 (asocia la nota a la segunda imagen de ese día)
- *   imagenDetalle: "assets/fotos/dia-01/dibujo.jpg" (recurso opcional)
- *   altDetalle: "Descripción accesible", pieDetalle: "Crédito o pie de foto"
- * Para quitar el desplegable, elimina el campo detalle.
- */
 window.DATOS_TRAVESIA = {
   "dias": [
     {
@@ -21,12 +7,12 @@ window.DATOS_TRAVESIA = {
       "titulo": "Día 01",
       "subtitulo": "Relato, fecha, imagen y nombre de la jornada por completar.",
       "pregunta": "¿Qué sucedió durante esta jornada?",
-      "imagen": "assets/dias/dia-01.svg",
+      "imagen": "assets/dias/D1foto1.3.webp",
       "imagenes": [
         {
-          "src": "assets/dias/dia-01.svg",
-          "alt": "Ilustración provisional de la jornada 01; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "src": "assets/dias/D1foto1.3.webp",
+          "alt": "fotográfía al primer acto",
+          "pie": "Interveción a las bitacoras"
         },
         {
           "src": "assets/dias/dia-01.svg",
@@ -100,10 +86,10 @@ window.DATOS_TRAVESIA = {
       "titulo": "Día 02",
       "subtitulo": "Relato, fecha, imagen y nombre de la jornada por completar.",
       "pregunta": "¿Cómo se organizó el trabajo?",
-      "imagen": "assets/dias/dia-02.svg",
+      "imagen": "assets/dias/D1foto2.1.jpg",
       "imagenes": [
         {
-          "src": "assets/dias/dia-02.svg",
+          "src": "assets/dias/D1foto2.1.jpg",
           "alt": "Ilustración provisional de la jornada 02; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
@@ -1208,6 +1194,51 @@ window.DATOS_TRAVESIA = {
   let observer;
   const reducido=matchMedia('(prefers-reduced-motion: reduce)');
 
+  // Recorrido fotográfico: la foto mantiene su proporción, sin zoom ni corte lateral.
+  // El scroll atraviesa toda su altura; si sobra espacio, la foto se desplaza suavemente.
+  const barraDias=$('#navegacion-dias');
+  let escenas=[],cuadroPendiente=0,medirPendiente=false;
+  function actualizarFotos(){
+    cuadroPendiente=0;
+    if(medirPendiente){
+      medirPendiente=false;
+      document.body.style.setProperty('--diario-barra',`${Math.ceil(barraDias.getBoundingClientRect().height)}px`);
+      escenas.forEach(({escena,fondo,img})=>{
+        const alto=img.naturalWidth?fondo.clientWidth*img.naturalHeight/img.naturalWidth:0;
+        // Las imágenes altas reciben suficiente espacio de lectura para recorrerlas.
+        escena.style.setProperty('--recorrido-foto',`${Math.ceil(alto+window.innerHeight*.65)}px`);
+      });
+    }
+    escenas.forEach(({escena,fondo,img})=>{
+      if(!img.naturalWidth)return;
+      const alto=fondo.clientWidth*img.naturalHeight/img.naturalWidth;
+      const ventana=fondo.clientHeight;
+      const superior=parseFloat(getComputedStyle(fondo).top)||0;
+      const rect=escena.getBoundingClientRect();
+      const avance=Math.max(0,Math.min(1,(superior-rect.top)/Math.max(1,rect.height-ventana)));
+      const diferencia=alto-ventana;
+      // En fotos altas se revela desde el borde superior hasta el inferior.
+      // En fotos apaisadas que ya caben, se mantiene completo el encuadre mientras se mueve.
+      const y=diferencia>0?-diferencia*avance:(-diferencia)*(.65-.30*avance);
+      img.style.setProperty('--foto-y',`${y.toFixed(2)}px`);
+    });
+  }
+  function programarFotos(medir=false){
+    medirPendiente=medirPendiente||medir;
+    if(!cuadroPendiente)cuadroPendiente=requestAnimationFrame(actualizarFotos);
+  }
+  window.addEventListener('scroll',()=>programarFotos(),{passive:true});
+  window.addEventListener('resize',()=>programarFotos(true),{passive:true});
+  relato.addEventListener('load',e=>{if(e.target.tagName==='IMG')programarFotos(true)},true);
+  const obsFotos='ResizeObserver' in window?new ResizeObserver(()=>programarFotos(true)):null;
+  function prepararFotos(){
+    obsFotos?.disconnect();
+    escenas=[...relato.querySelectorAll('.escena-diario')].map(escena=>({escena,fondo:escena.querySelector('.escena-fondo'),img:escena.querySelector('.escena-fondo img')}));
+    obsFotos?.observe(barraDias);
+    escenas.forEach(({escena})=>obsFotos?.observe(escena));
+    programarFotos(true);
+  }
+
   datos.dias.forEach((dia,i)=>{
     const btn=document.createElement('button');
     btn.type='button';btn.innerHTML=`<span>DÍA</span><strong>${esc(dia.numero)}</strong>`;
@@ -1270,10 +1301,11 @@ window.DATOS_TRAVESIA = {
     const fotos=imagenesDia(dia);
     const notas=Array.isArray(dia.comentarios)?dia.comentarios:[];
     const distribucion=repartirNotas(notas,fotos.length);
-    relato.innerHTML=fotos.map((foto,j)=>`<section class="escena-diario" data-variante="${j%4}" aria-label="Imagen ${j+1} de la jornada ${esc(dia.numero)}">
+    relato.innerHTML=fotos.map((foto,j)=>`<section class="escena-diario" aria-label="Imagen ${j+1} de la jornada ${esc(dia.numero)}">
       <div class="escena-fondo"><img src="${esc(foto.src)}" alt="${esc(foto.alt)}" loading="${j===0?'eager':'lazy'}"><div class="escena-rotulo"><span>CHAITÉN · DÍA ${esc(dia.numero)}</span><span>${esc(foto.pie)}</span></div><div class="escena-contadores"><span>BITÁCORA VISUAL</span><span>${String(j+1).padStart(2,'0')} / ${String(fotos.length).padStart(2,'0')}</span></div></div>
       <div class="contenedor escena-contenido">${contenidoEscena(distribucion[j],j,dia.numero)}</div>
     </section>`).join('');
+    prepararFotos();
     observer?.disconnect();
     if('IntersectionObserver'in window&&!reducido.matches){
       observer=new IntersectionObserver(entries=>{
