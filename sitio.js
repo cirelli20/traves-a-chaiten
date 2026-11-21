@@ -16,20 +16,25 @@ window.DATOS_TRAVESIA = {
           "pie": "Interveción a las bitacoras"
         },
         {
-          "src": "assets/dias/dia-01.svg",
+          "src": "assets/dias/D1foto2.1.jpg",
           "alt": "Ilustración provisional de la jornada 01; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/dia-01.svg",
+          "src": "assets/dias/D1FOTO3.webp",
           "alt": "Ilustración provisional de la jornada 01; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/dia-01.svg",
+          "src": "assets/dias/D1FOTO4.webp",
           "alt": "Ilustración provisional de la jornada 01; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
-        }
+        },
+         {
+          "src": "assets/dias/D1FOTO5.webp",
+          "alt": "Ilustración provisional de la jornada 01; sustituir por una fotografía real.",
+          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+        },
       ],
       "comentarios": [
         {
@@ -443,25 +448,25 @@ window.DATOS_TRAVESIA = {
       "fecha": "17 de noviembre de 2026",
       "subtitulo": "Relato, fecha, imagen y nombre de la jornada por completar.",
       "pregunta": "¿Qué cambió respecto del día anterior?",
-      "imagen": "assets/dias/dia-06.svg",
+      "imagen": "assets/dias/D6FOTO1.webp",
       "imagenes": [
         {
-          "src": "assets/dias/dia-06.svg",
+          "src": "assets/dias/D6FOTO1.webp",
           "alt": "Ilustración provisional de la jornada 06; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/dia-06.svg",
+          "src": "assets/dias/D6FOTO2.webp",
           "alt": "Ilustración provisional de la jornada 06; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/dia-06.svg",
+          "src": "assets/dias/D6FOTO3.webp",
           "alt": "Ilustración provisional de la jornada 06; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/dia-06.svg",
+          "src": "assets/dias/D6FOTO4.webp",
           "alt": "Ilustración provisional de la jornada 06; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         }
