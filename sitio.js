@@ -456,7 +456,7 @@ window.DATOS_TRAVESIA = {
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/D6FOTO2.webp",
+          "src": "assets/dias/D6FOTO2.png",
           "alt": "Ilustración provisional de la jornada 06; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
