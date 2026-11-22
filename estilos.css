@@ -647,6 +647,6 @@ body{font-family:var(--sans);font-size:1.0625rem;line-height:1.61}
 .marca-logo-integrado{width:130px;max-width:min(34vw,130px);
     height:auto;object-fit:contain;flex:0 0 auto;display:block}
 .marca-titulo{display:none}
-@media (max-width: 900px){.marca-logo-integrado{width:145px;max-width:38vw}}
-@media (max-width: 640px){.marca-logo-integrado{width:125px;max-width:42vw}}
-@media (max-width: 420px){.marca-logo-integrado{width:115px;max-width:44vw}}
+@media (max-width: 900px){.marca-logo-integrado{width:140px;max-width:33vw}}
+@media (max-width: 640px){.marca-logo-integrado{width:120px;max-width:37vw}}
+@media (max-width: 420px){.marca-logo-integrado{width:110px;max-width:39vw}}
