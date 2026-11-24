@@ -4,9 +4,9 @@ window.DATOS_TRAVESIA = {
       "id": "dia-01",
       "numero": "01",
       "etiqueta": "Día 01",
-      "titulo": "Día 01",
+      "titulo": "El inicio del viaje",
       "fecha": "12 de noviembre de 2026",
-      "subtitulo": "Antes de partir, se realizaron distintas faenas de preparación y organización para disponer lo necesario para la travesía. El viaje comenzó en Viña del Mar, atravesando la zona central para continuar hacia el sur. Alrededor de las 17:30 PM se realizó una primera parada en Talca, antes de seguir rumbo a Puerto Montt. Cerca de las 22:00 PM comenzó la navegación hacia Chaitén",
+      "subtitulo": "La travesía a Chaitén comenzó en Viña del Mar con los preparativos para la partida. Antes de salir, el taller se reunió en torno a las bitácoras, cada participante pintó su portada y se leyó un fragmento de Amereida. Luego, el grupo emprendió el viaje hacia el sur. El recorrido pasó por Casablanca, San Antonio y las cercanías del lago Rapel, y continuó por San Fernando hasta la primera parada en Talca. Desde allí, el grupo siguió por tierra hasta Puerto Montt, donde se embarcó cerca de las diez de la noche para continuar por mar hacia Chaitén",
       "pregunta": "¿Cómo comenzó la travesía?",
       "imagen": "assets/dias/D1FOTO1.webp",
       "imagenes": [
@@ -69,7 +69,7 @@ window.DATOS_TRAVESIA = {
       "etiqueta": "Día 02",
       "titulo": "La llegada a Chaitén",
       "fecha": "13 de noviembre de 2026",
-      "subtitulo": "Llegada a Chaitén, organización del campamento y primera observación libre del lugar.",
+      "subtitulo": "La jornada estuvo dedicada al traslado y a la llegada a Chaitén. Tras una parada en Ayacara cerca de las 6 de la mañana, el grupo continuó hasta su destino, adonde llegó a las 10. Se armaron las carpas, se comió la fajita y, durante la tarde, los participantes salieron a observar el lugar por donde quisieran.",
       "pregunta": "¿Cómo comenzó el reconocimiento de Chaitén?",
       "imagen": "assets/dias/D2FOTO1.webp",
       "imagenes": [
