@@ -6,7 +6,7 @@ window.DATOS_TRAVESIA = {
       "etiqueta": "Día 01",
       "titulo": "Día 01",
       "fecha": "12 de noviembre de 2026",
-      "subtitulo": "Preparación del viaje, salida desde Viña del Mar y navegación nocturna hacia Chaitén.",
+      "subtitulo": "Antes de partir, se realizaron distintas faenas de preparación y organización para disponer lo necesario para la travesía. El viaje comenzó en Viña del Mar, atravesando la zona central para continuar hacia el sur. Alrededor de las 17:30 PM se realizó una primera parada en Talca, antes de seguir rumbo a Puerto Montt. Cerca de las 22:00 PM comenzó la navegación hacia Chaitén",
       "pregunta": "¿Cómo comenzó la travesía?",
       "imagen": "assets/dias/D1FOTO1.webp",
       "imagenes": [
@@ -67,10 +67,10 @@ window.DATOS_TRAVESIA = {
       "id": "dia-02",
       "numero": "02",
       "etiqueta": "Día 02",
-      "titulo": "Día 02",
+      "titulo": "La llegada a Chaitén",
       "fecha": "13 de noviembre de 2026",
-      "subtitulo": "Pausa en Ayacara, llegada a Chaitén, instalación del campamento y primera observación libre del territorio.",
-      "pregunta": "¿Cómo se inició la llegada al territorio?",
+      "subtitulo": "Llegada a Chaitén, organización del campamento y primera observación libre del lugar.",
+      "pregunta": "¿Cómo comenzó el reconocimiento de Chaitén?",
       "imagen": "assets/dias/D2FOTO1.webp",
       "imagenes": [
         {
@@ -101,53 +101,64 @@ window.DATOS_TRAVESIA = {
       ],
       "comentarios": [
         {
-          "tipo": "ruta",
-          "categoria": "VIAJE Y RUTA",
-          "autor": "Bitácora del día 02",
-          "texto": "La jornada comenzó con una pausa en Ayacara alrededor de las 6:00 AM.",
+          "tipo": "editorial",
+          "categoria": "LA OBRA Y SU ACONTECER",
+          "tituloNota": "La observación",
+          "subtituloNota": "Mirar sin una dirección fija.",
+          "textoVisible": "Después de instalarnos, salimos a observar. Cada uno podía ir donde quisiera.",
           "escena": 1
         },
         {
-          "tipo": "ruta",
-          "categoria": "NAVEGACIÓN",
-          "autor": "Bitácora del día 02",
-          "texto": "Luego se continuó la navegación hasta Chaitén, donde se llegó a las 10:00 AM.",
+          "tipo": "editorial",
+          "categoria": "LA OBRA Y SU ACONTECER",
+          "tituloNota": "La obra",
+          "textoVisible": "Los primeros pasos hacia la obra fueron llegar a Chaitén y comenzar a conocer el lugar donde se iba a trabajar.",
+          "escena": 1
+        },
+        {
+          "tipo": "editorial",
+          "categoria": "EL DESARROLLO DE LAS FAENAS",
+          "tituloNota": "La organización",
+          "subtituloNota": "Primero el campamento, luego la mirada.",
+          "textoVisible": "Al llegar armamos las carpas, comimos y recién en la tarde salimos a recorrer y observar.",
           "escena": 2
         },
         {
           "tipo": "croquis",
-          "imagenNota": "assets/dias/D1CROQUIS1.webp",
-          "altNota": "Croquis de referencia incorporado al registro del Día 02.",
-          "pieNota": "Croquis incorporado al registro del Día 02.",
+          "imagenNota": "assets/dias/D2CROQUIS1.webp",
+          "altNota": "Croquis provisional de referencia; reemplazar por el croquis del Día 02.",
+          "pieNota": "Croquis · Día 02",
           "escena": 2
         },
         {
-          "tipo": "organizacion",
-          "categoria": "CAMPAMENTO",
-          "autor": "Bitácora del día 02",
-          "texto": "Durante la mañana, las actividades estuvieron destinadas a la instalación del campamento.",
+          "tipo": "editorial",
+          "categoria": "LOS ACONTECIMIENTOS",
+          "tituloNota": "La llegada a Chaitén",
+          "subtituloNota": "De Ayacara al lugar de la obra.",
+          "textoVisible": "Paramos en Ayacara cerca de las 6 de la mañana y seguimos hasta Chaitén, donde llegamos a las 10. Desde ahí comenzó el reconocimiento del lugar.",
           "escena": 3
         },
         {
-          "tipo": "organizacion",
-          "categoria": "ESPACIOS COMPARTIDOS",
-          "autor": "Bitácora del día 02",
-          "texto": "También se organizaron los espacios compartidos para comenzar la estadía en Chaitén.",
+          "tipo": "editorial",
+          "categoria": "LOS ACONTECIMIENTOS",
+          "tituloNota": "Vida cotidiana",
+          "subtituloNota": "La primera comida en Chaitén.",
+          "textoVisible": "Al llegar comimos la fajita.",
           "escena": 4
         },
         {
-          "tipo": "mirada",
-          "categoria": "OBSERVACIÓN LIBRE",
-          "autor": "Bitácora del día 02",
-          "texto": "Tras el almuerzo, se realizó una primera salida de observación libre.",
-          "detalle": "Cada integrante pudo recorrer distintos sectores de Chaitén, dando inicio al reconocimiento del territorio que acogería los siguientes días de travesía.",
-          "escena": 5
+          "tipo": "editorial",
+          "categoria": "LOS ACONTECIMIENTOS",
+          "tituloNota": "El campamento",
+          "subtituloNota": "Las primeras carpas.",
+          "textoVisible": "Lo primero que hicimos al llegar fue armar las carpas.",
+          "escena": 4
         },
         {
           "tipo": "croquis",
-          "imagenNota": "assets/dias/D1CROQUIS1.webp",
-          "altNota": "Segundo croquis de referencia incorporado al registro del Día 02.",
-          "pieNota": "Croquis incorporado al registro del Día 02.",
+          "imagenNota": "assets/dias/D2CROQUIS2.webp",
+          "altNota": "Segundo croquis provisional de referencia; reemplazar por el croquis del Día 02.",
+          "pieNota": "Croquis · Día 02",
           "escena": 5
         }
       ]
@@ -246,9 +257,9 @@ window.DATOS_TRAVESIA = {
       "id": "dia-04",
       "numero": "04",
       "etiqueta": "Día 04",
-      "titulo": "Día 04",
+      "titulo": "Entre la observación y el primer despeje",
       "fecha": "15 de noviembre de 2026",
-      "subtitulo": "Preparación del lugar, observación libre y reconocimiento del territorio en Chaitén.",
+      "subtitulo": "La cuarta jornada tuvo como foco una salida libre de observación, lo cual permitió recorrer y detenerse en la observación de distintos aspectos del entorno de Chaitén. Luego de volver al camping las actividades se distribuyeron entre quienes se quedaron y un grupo reducido que fue al lugar de la obra para realizar limpieza del terreno. De este modo, la jornada reunió momentos de observación del territorio y trabajo en el espacio destinado a la intervención.",
       "pregunta": "¿Cómo se dispuso el lugar y qué permitió la observación del territorio?",
       "imagen": "assets/dias/D4FOTO1.webp",
       "imagenes": [
@@ -265,7 +276,7 @@ window.DATOS_TRAVESIA = {
         {
           "src": "assets/dias/D4FOTO3.webp",
           "alt": "Fotografía de registro de la jornada 04, tercera escena.",
-          "pie": "LOS ACONTECIMIENTOS · 2/2"
+          "pie": "LA OBRA Y SU ACONTECER · 1/2"
         },
         {
           "src": "assets/dias/D4FOTO4.webp",
@@ -294,14 +305,14 @@ window.DATOS_TRAVESIA = {
           "categoria": "LA OBRA Y SU ACONTECER",
           "tituloNota": "Preparación del lugar",
           "subtituloNota": "Un terreno por disponer",
-          "detalle": "Durante la jornada, un grupo reducido se dirigió hasta el lugar destinado a la obra para realizar labores de limpieza del terreno. Estas tareas formaron parte de la preparación del espacio donde se desarrollaría la intervención.",
+          "textoVisible": "Durante la jornada, un grupo reducido se dirigió hasta el lugar destinado a la obra para realizar labores de limpieza del terreno. Estas tareas formaron parte de la preparación del espacio donde se desarrollaría la intervención.",
           "escena": 1
         },
         {
           "tipo": "croquis",
           "imagenNota": "assets/dias/D4CROQUIS1.webp",
-          "altNota": "Croquis de referencia incorporado al registro del Día 04.",
-          "pieNota": "Croquis incorporado al registro del Día 04.",
+          "altNota": "Croquis de referencia pendiente de reemplazo por un croquis del Día 4.",
+          "pieNota": "Croquis · Día 04",
           "escena": 2
         },
         {
@@ -309,15 +320,15 @@ window.DATOS_TRAVESIA = {
           "categoria": "LOS ACONTECIMIENTOS",
           "tituloNota": "Recorrido y observación",
           "subtituloNota": "Detenerse en lo que ofrece el lugar",
-          "texto": "La jornada contempló una salida libre de observación por Chaitén, en la que los participantes pudieron recorrer el entorno antes de regresar al campamento y continuar con las actividades del día.",
+          "textoVisible": "La jornada contempló una salida libre de observación por Chaitén, en la que los participantes pudieron recorrer el entorno antes de regresar al campamento y continuar con las actividades del día.",
           "detalle": "A diferencia de las faenas desarrolladas en la obra, este momento estuvo destinado a la observación del territorio. La salida permitió disponer de un tiempo de recorrido sin una actividad constructiva específica, dando lugar al encuentro con distintos aspectos del entorno.",
           "escena": 4
         },
         {
           "tipo": "croquis",
           "imagenNota": "assets/dias/D4CROQUIS2.webp",
-          "altNota": "Segundo croquis de referencia incorporado al registro del Día 04.",
-          "pieNota": "Croquis incorporado al registro del Día 04.",
+          "altNota": "Croquis de referencia pendiente de reemplazo por un croquis del Día 4.",
+          "pieNota": "Croquis · Día 04",
           "escena": 5
         }
       ]
@@ -417,91 +428,75 @@ window.DATOS_TRAVESIA = {
       "id": "dia-06",
       "numero": "06",
       "etiqueta": "Día 06",
-      "titulo": "Día 06",
+      "titulo": "Primeras abstracciones y poses del carpintero negro",
       "fecha": "17 de noviembre de 2026",
-      "subtitulo": "Relato, fecha, imagen y nombre de la jornada por completar.",
+      "subtitulo": "Día de pruebas en el taller de Diseño. El foco estuvo en buscar cómo llevar la figura del carpintero negro a la madera, probando distintas formas de darle volumen, gesto y movimiento antes de empezar a construir las piezas definitivas.",
       "pregunta": "¿Qué cambió respecto del día anterior?",
       "imagen": "assets/dias/D6FOTO1.webp",
       "imagenes": [
         {
           "src": "assets/dias/D6FOTO1.webp",
           "alt": "Ilustración provisional de la jornada 06; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "pie": "PRUEBAS DE ABSTRACCIÓN"
         },
         {
           "src": "assets/dias/D6FOTO2.png",
           "alt": "Ilustración provisional de la jornada 06; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "pie": "LA FORMA: LLENO Y VACÍO"
         },
         {
           "src": "assets/dias/D6FOTO3.webp",
           "alt": "Ilustración provisional de la jornada 06; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
-        },
-        {
-          "src": "assets/dias/D6FOTO4.webp",
-          "alt": "Ilustración provisional de la jornada 06; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "pie": "MAQUETA Y POSES"
         }
       ],
       "comentarios": [
         {
-          "tipo": "mirada",
+          "tipo": "voz",
           "categoria": "MIRADAS",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué cambió respecto del día anterior?",
-          "detalle": "Contenido por incorporar: ampliar esta observación con el relato del participante, croquis, fotografías o antecedentes de la jornada. Este texto es una indicación editorial, no un testimonio."
+          "numeroVoz": "01",
+          "texto": "Hoy estuvimos en plena etapa de definición de todo: pose, escala y piezas para trabajar la figura del pájaro carpintero negro en madera. Fue una jornada de probar y decidir cómo abstraer su forma antes de pasar a la producción definitiva.",
+          "autor": "Amanda (Diseño)",
+          "escena": 1
         },
         {
-          "tipo": "obra",
+          "tipo": "voz",
           "categoria": "LA OBRA",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué se trabajó en la obra y quiénes estuvieron a cargo?"
+          "numeroVoz": "02",
+          "texto": "Trabajamos en la abstracción del pájaro carpintero negro con dos propuestas, una que opera desde el lleno y otra desde el vacío.",
+          "autor": "Amanda (Diseño)",
+          "detalle": "Para darle movimiento al conjunto, estamos definiendo tres poses distintas: el pájaro parado, otro con la cabeza hacia arriba y un tercero volando, si es que logramos resolverlo constructivamente.",
+          "escena": 2
         },
         {
-          "tipo": "organizacion",
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D6CROQUIS1.webp",
+          "altNota": "Croquis de referencia pendiente de reemplazo por un croquis del Día 6.",
+          "pieNota": "Croquis · Día 06",
+          "escena": 2
+        },
+        {
+          "tipo": "voz",
           "categoria": "LA ORGANIZACIÓN",
-          "autor": "Participante por identificar",
-          "texto": "¿Cómo se vivió y se organizó la jornada?",
-          "detalle": "Contenido por incorporar: ampliar esta observación con el relato del participante, croquis, fotografías o antecedentes de la jornada. Este texto es una indicación editorial, no un testimonio."
+          "numeroVoz": "03",
+          "texto": "Para abordar las distintas etapas del trabajo en madera nos dividimos en tres grupos dentro de la faena, uno dedicado a la abstracción formal, otro a la realización de la maqueta y un tercero encargado de la pintura.",
+          "autor": "Amanda (Diseño)",
+          "escena": 3
         },
         {
-          "tipo": "convivencia",
-          "categoria": "VIDA COTIDIANA",
-          "autor": "Participante por identificar",
-          "texto": "¿Cómo fue la convivencia, la alimentación y el campamento?"
-        },
-        {
-          "tipo": "pendiente",
-          "categoria": "VIAJE Y RUTA",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué se observó durante el desplazamiento de hoy?",
-          "detalle": "Registrar aquí una anécdota o una descripción del trayecto, junto con la fotografía o el croquis que corresponda. Registro pendiente de documentar."
-        },
-        {
-          "tipo": "pendiente",
+          "tipo": "voz",
           "categoria": "HERRAMIENTAS",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué materiales o herramientas se compartieron en esta jornada?"
+          "numeroVoz": "06",
+          "texto": "El material base de toda la exploración de hoy fue la madera, trabajando en el despiece y el maquetado inicial para probar las distintas escalas y poses del carpintero.",
+          "autor": "Amanda (Diseño)",
+          "escena": 3
         },
         {
-          "tipo": "pendiente",
-          "categoria": "ENCUENTROS",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué conversación abrió una pregunta nueva para el grupo?"
-        },
-        {
-          "tipo": "pendiente",
-          "categoria": "EL CAMPAMENTO",
-          "autor": "Participante por identificar",
-          "texto": "¿Cómo se prepararon las comidas y se repartieron las tareas cotidianas?"
-        },
-        {
-          "tipo": "pendiente",
-          "categoria": "REGISTRO GRÁFICO",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué fotografía o croquis ayuda a comprender este momento?",
-          "detalle": "Aquí podrá incluirse el dibujo o la fotografía, su autoría y una explicación de lo que se intentaba observar. Registro pendiente de documentar."
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D6CROQUIS2.webp",
+          "altNota": "Croquis de referencia pendiente de reemplazo por un croquis del Día 6.",
+          "pieNota": "Croquis · Día 06",
+          "escena": 3
         }
       ]
     },
@@ -509,84 +504,66 @@ window.DATOS_TRAVESIA = {
       "id": "dia-07",
       "numero": "07",
       "etiqueta": "Día 07",
-      "titulo": "Día 07",
+      "titulo": "Entre el corte de madera y la primera plataforma",
       "fecha": "18 de noviembre de 2026",
-      "subtitulo": "Relato, fecha, imagen y nombre de la jornada por completar.",
+      "subtitulo": "La faena del 18 de noviembre se distribuyó entre el corte y traslado de materiales hacia la obra, el armado de la primera plataforma y el inicio de las fundaciones de las siguientes.",
       "pregunta": "¿Qué tareas se repartieron?",
       "imagen": "assets/dias/D7FOTO1.webp",
       "imagenes": [
         {
           "src": "assets/dias/D7FOTO1.webp",
           "alt": "Ilustración provisional de la jornada 07; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "pie": "CORTE Y PREFABRICACIÓN"
         },
         {
           "src": "assets/dias/D7FOTO2.webp",
           "alt": "Ilustración provisional de la jornada 07; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "pie": "SUBIDA DE MATERIALES"
         },
         {
           "src": "assets/dias/D7FOTO3.webp",
           "alt": "Ilustración provisional de la jornada 07; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "pie": "PRIMERA PLATAFORMA"
         },
         {
           "src": "assets/dias/D7FOTO4.webp",
           "alt": "Ilustración provisional de la jornada 07; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "pie": "FUNDACIONES"
         },
         {
           "src": "assets/dias/D7FOTO5.webp",
           "alt": "Ilustración provisional de la jornada 07; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "pie": "REGISTRO FOTOGRÁFICO"
         }
       ],
       "comentarios": [
         {
-          "tipo": "mirada",
-          "categoria": "MIRADAS",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué tareas se repartieron?",
-          "detalle": "Contenido por incorporar: ampliar esta observación con el relato del participante, croquis, fotografías o antecedentes de la jornada. Este texto es una indicación editorial, no un testimonio."
+          "tipo": "voz",
+          "categoria": "LAS FAENAS",
+          "numeroVoz": "01",
+          "texto": "El 18 se dividió en secciones la faena, yo estuve en el cortado usando la sierra circular y subir los materiales a la obra, eso la mayoría del tiempo aunque también ayudaba arriba a veces.",
+          "escena": 1
         },
         {
-          "tipo": "obra",
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D7CROQUIS1.webp",
+          "altNota": "Croquis de referencia pendiente de reemplazo por un croquis del Día 7.",
+          "pieNota": "Croquis · Día 07",
+          "escena": 2
+        },
+        {
+          "tipo": "voz",
           "categoria": "LA OBRA",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué se trabajó en la obra y quiénes estuvieron a cargo?"
+          "numeroVoz": "02",
+          "texto": "Arriba, en cambio, fue el armado de la primera plataforma usando las barandas que hicimos anteriormente, se colocó el piso de la primera plataforma y se empezó a realizar las fundaciones de las siguientes plataformas.",
+          "escena": 3
         },
         {
-          "tipo": "organizacion",
-          "categoria": "LA ORGANIZACIÓN",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué detalles de la obra quedaron registrados?",
-          "detalle": "Contenido por incorporar: ampliar esta observación con el relato del participante, croquis, fotografías o antecedentes de la jornada. Este texto es una indicación editorial, no un testimonio."
-        },
-        {
-          "tipo": "convivencia",
-          "categoria": "VIDA COTIDIANA",
-          "autor": "Participante por identificar",
-          "texto": "¿Cómo fue la convivencia, la alimentación y el campamento?"
-        },
-        {
-          "tipo": "pendiente",
-          "categoria": "HERRAMIENTAS",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué materiales o herramientas se compartieron en esta jornada?",
-          "detalle": "Espacio para indicar quién se hizo cargo de los materiales, qué decisiones se tomaron y qué registros visuales acompañan esta tarea. Registro pendiente de documentar."
-        },
-        {
-          "tipo": "pendiente",
-          "categoria": "ENCUENTROS",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué conversación abrió una pregunta nueva para el grupo?"
-        },
-        {
-          "tipo": "pendiente",
-          "categoria": "EL CAMPAMENTO",
-          "autor": "Participante por identificar",
-          "texto": "¿Cómo se prepararon las comidas y se repartieron las tareas cotidianas?",
-          "detalle": "Por incorporar: organización de turnos, responsabilidades, alimentación y registro de la vida compartida. Registro pendiente de documentar."
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D7CROQUIS2.webp",
+          "altNota": "Croquis de referencia pendiente de reemplazo por un croquis del Día 7.",
+          "pieNota": "Croquis · Día 07",
+          "escena": 4
         }
       ]
     },
@@ -598,25 +575,25 @@ window.DATOS_TRAVESIA = {
       "fecha": "19 de noviembre de 2026",
       "subtitulo": "Relato, fecha, imagen y nombre de la jornada por completar.",
       "pregunta": "¿Qué se descubrió al observar?",
-      "imagen": "assets/dias/DIA8FOTO1.webp",
+      "imagen": "assets/dias/D8FOTO1.webp",
       "imagenes": [
         {
-          "src": "assets/dias/DIA8FOTO1.webp",
+          "src": "assets/dias/D8FOTO1.webp",
           "alt": "Ilustración provisional de la jornada 08; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/DIA8FOTO2.webp",
+          "src": "assets/dias/D8FOTO2.webp",
           "alt": "Ilustración provisional de la jornada 08; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/DIA8FOTO3.webp",
+          "src": "assets/dias/D8FOTO3.webp",
           "alt": "Ilustración provisional de la jornada 08; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/DIA8FOTO4.webp",
+          "src": "assets/dias/D8FOTO4.webp",
           "alt": "Ilustración provisional de la jornada 08; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         }
@@ -680,103 +657,120 @@ window.DATOS_TRAVESIA = {
       "id": "dia-09",
       "numero": "09",
       "etiqueta": "Día 09",
-      "titulo": "Día 09",
+      "titulo": "Apretar el ritmo entre plataformas, bancas y carpinteros",
       "fecha": "20 de noviembre de 2026",
-      "subtitulo": "Relato, fecha, imagen y nombre de la jornada por completar.",
+      "subtitulo": "Tras los días de lluvia que obligaron a cambiar el ritmo de las faenas, por fin salió el sol y la faena retomó todo su impulso. Los grupos de trabajo se desplegaron en distintos lugares entre el campamento y el bosque, levantando estructuras principales y empezando a dar forma a los detalles finales de la obra.",
       "pregunta": "¿Qué acontecimiento se quiere recordar?",
-      "imagen": "assets/dias/DIA9FOTO1.webp",
+      "imagen": "assets/dias/D9FOTO1.webp",
       "imagenes": [
         {
-          "src": "assets/dias/DIA9FOTO1.webp",
+          "src": "assets/dias/D9FOTO1.webp",
           "alt": "Ilustración provisional de la jornada 09; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "pie": "EL TRABAJO DESPUÉS DE LAS LLUVIAS"
         },
         {
-          "src": "assets/dias/DIA9FOTO2.webp",
+          "src": "assets/dias/D9FOTO2.webp",
           "alt": "Ilustración provisional de la jornada 09; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "pie": "PLATAFORMAS Y ESCALERAS"
         },
         {
-          "src": "assets/dias/DIA9FOTO3.webp",
+          "src": "assets/dias/D9FOTO3.webp",
           "alt": "Ilustración provisional de la jornada 09; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "pie": "FAENAS EN PARALELO"
         },
         {
-          "src": "assets/dias/DIA9FOTO4.webp",
+          "src": "assets/dias/D9FOTO4.webp",
           "alt": "Ilustración provisional de la jornada 09; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "pie": "HERRAMIENTAS Y TALLER AZUL"
         },
-         {
-          "src": "assets/dias/DIA9FOTO5.webp",
+        {
+          "src": "assets/dias/D9FOTO5.webp",
           "alt": "Ilustración provisional de la jornada 09; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "pie": "VIDA EN EL CAMPAMENTO"
         },
-         {
-          "src": "assets/dias/DIA9FOTO6.webp",
+        {
+          "src": "assets/dias/D9FOTO6.webp",
           "alt": "Ilustración provisional de la jornada 09; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
-        },
-        
-
+          "pie": "ENCUENTROS Y DECISIONES"
+        }
       ],
       "comentarios": [
         {
-          "tipo": "mirada",
+          "tipo": "voz",
           "categoria": "MIRADAS",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué acontecimiento se quiere recordar?",
-          "detalle": "Contenido por incorporar: ampliar esta observación con el relato del participante, croquis, fotografías o antecedentes de la jornada. Este texto es una indicación editorial, no un testimonio."
+          "numeroVoz": "01",
+          "texto": "Hoy tocó apurarse porque quedan pocos días y por fin salió el sol después de harta lluvia que nos obligaba a pausar el trabajo en el terreno.",
+          "autor": "Amanda (Diseño) y Catarína (Arquitectura)",
+          "detalle": "Aprovechamos el buen tiempo al máximo para avanzar tanto arriba en el bosque como en el taller azul, integrando las escaleras, las plataformas del mirador y los detalles escultóricos de los pájaros carpinteros.",
+          "escena": 1
         },
         {
-          "tipo": "obra",
+          "tipo": "voz",
           "categoria": "LA OBRA",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué se trabajó en la obra y quiénes estuvieron a cargo?"
+          "numeroVoz": "02",
+          "texto": "En Arquitectura nos dividimos en cuatro grupos, uno abajo prefabricando y cortando vigas y maderas a mano (ya que trabajamos sin electricidad), y tres arriba en el bosque.",
+          "autor": "Equipo de Arquitectura y Diseño",
+          "detalle": [
+            "Uno avanzó con el primer tramo de escaleras, otro puso el suelo de la segunda tarima y el tercero instaló estacas y vigas de la tercera plataforma, sumando además una cuarta plataforma decidida sobre la marcha. En paralelo, Diseño trabajó con Arturo Chicano en los niveles de la banca larga que remata en la cima, en la caja de texto para el poema de Carlos y en el ensamblaje y pintado (base blanca, rojo y negro) de los pájaros carpinteros en sus pilares en \"T\".",
+            "Para los pájaros carpinteros (macho y hembra) se dibujaron distintas poses a escala real: normal, erguido y picoteando, que luego se geometrizaron en matrices para calarlas y montarlas sobre listones en \"T\" que irán enterrados. La banca final tendrá desfases de 1,60 m con cuñas reposadoras donde se posarán los pájaros y se inscribirá el poema."
+          ],
+          "escena": 2
         },
         {
-          "tipo": "organizacion",
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D9CROQUIS1.webp",
+          "altNota": "Croquis de referencia pendiente de reemplazo por un croquis del Día 9.",
+          "pieNota": "Croquis · Día 09",
+          "escena": 2
+        },
+        {
+          "tipo": "voz",
           "categoria": "LA ORGANIZACIÓN",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué comentarios dejó cada participante?",
-          "detalle": "Contenido por incorporar: ampliar esta observación con el relato del participante, croquis, fotografías o antecedentes de la jornada. Este texto es una indicación editorial, no un testimonio."
+          "numeroVoz": "03",
+          "texto": "El trabajo se repartió en equipos paralelos según cada frente: cuatro cuadrillas en Arquitectura divididas entre el corte de madera abajo y el montaje en altura, mientras Diseño se organizó entre quienes levantaban los niveles de la banca, el grupo encargado de diagramar el texto del poema para el respaldo y la faena de pintado de los cantos interiores y exteriores de los pájaros.",
+          "escena": 3
         },
         {
-          "tipo": "convivencia",
-          "categoria": "VIDA COTIDIANA",
-          "autor": "Participante por identificar",
-          "texto": "¿Cómo fue la convivencia, la alimentación y el campamento?"
-        },
-        {
-          "tipo": "pendiente",
-          "categoria": "EL CAMPAMENTO",
-          "autor": "Participante por identificar",
-          "texto": "¿Cómo se prepararon las comidas y se repartieron las tareas cotidianas?",
-          "detalle": "Por incorporar: organización de turnos, responsabilidades, alimentación y registro de la vida compartida. Registro pendiente de documentar."
-        },
-        {
-          "tipo": "pendiente",
-          "categoria": "REGISTRO GRÁFICO",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué fotografía o croquis ayuda a comprender este momento?"
-        },
-        {
-          "tipo": "pendiente",
+          "tipo": "voz",
           "categoria": "VIAJE Y RUTA",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué se observó durante el desplazamiento de hoy?"
+          "numeroVoz": "05",
+          "texto": "El movimiento diario ocurre entre dos polos dentro del mismo camping: el sector del quincho y el taller azul, donde trabajamos las piezas de los pájaros, y el sendero que sube por el bosque hacia la obra, donde estamos armando el mirador y las pasarelas entre los árboles.",
+          "autor": "Amanda (Diseño)",
+          "escena": 3
         },
         {
-          "tipo": "pendiente",
+          "tipo": "voz",
           "categoria": "HERRAMIENTAS",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué materiales o herramientas se compartieron en esta jornada?"
+          "numeroVoz": "06",
+          "texto": "En la obra misma trabajamos sin electricidad y con recursos acotados, a puro pulso con herramientas manuales como serruchos, martillos y clavos.",
+          "autor": "Amanda (Diseño) y Catarína (Arquitectura)",
+          "detalle": "En cambio, para calar los pájaros carpinteros, un vecino que vive en una casa del campamento nos abrió su \"taller azul\" y nos prestó sus herramientas, incluyendo una caladora de pedestal (mid grinder) y una fresadora.",
+          "escena": 4
         },
         {
-          "tipo": "pendiente",
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D9CROQUIS2.webp",
+          "altNota": "Croquis de referencia pendiente de reemplazo por un croquis del Día 9.",
+          "pieNota": "Croquis · Día 09",
+          "escena": 4
+        },
+        {
+          "tipo": "voz",
+          "categoria": "VIDA COTIDIANA",
+          "numeroVoz": "04",
+          "texto": "Tenemos las carpas armadas cerca del baño y del quincho que usamos como cocina, dentro del camping. Aunque en las noches hace bastante frío, nos hemos adaptado súper bien.",
+          "autor": "Ignacia Pérez y Catarina",
+          "detalle": "El grupo de ámbito organizó un amigo secreto muy entretenido y los encargados de restauro se han lucido con la comida, hoy desayunamos pan con huevo revuelto, mermelada o manjar y avena con leche, y almorzamos arroz con fritos de lentejas con cebolla morada, limonada y conservas de durazno y frutilla.",
+          "escena": 5
+        },
+        {
+          "tipo": "voz",
           "categoria": "ENCUENTROS",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué conversación abrió una pregunta nueva para el grupo?",
-          "detalle": "Por incorporar: transcripción o síntesis de la conversación, personas participantes y momento de la jornada. Registro pendiente de documentar."
+          "numeroVoz": "07",
+          "texto": "El encuentro con el vecino del campamento que nos facilitó su taller y sus herramientas permitió resolver el calado fino de las matrices de los pájaros.",
+          "autor": "Amanda y Antonella Saa",
+          "detalle": "Al mismo tiempo, las conversaciones en obra con los profesores, como decidir sobre la marcha una cuarta plataforma o definir junto a Chicano cómo integrar el poema de Carlos y las poses de los carpinteros en la banca, fueron abriendo nuevas decisiones de diseño sobre cómo rematar el recorrido del mirador.",
+          "escena": 6
         }
       ]
     },
@@ -788,75 +782,109 @@ window.DATOS_TRAVESIA = {
       "fecha": "21 de noviembre de 2026",
       "subtitulo": "La jornada estuvo dedicada a las terminaciones de la obra en el Sendero de los Carpinteros. En Arquitectura se completó el entablado de la cuarta plataforma y se avanzó en las escaleras que conectan los distintos niveles del recorrido. Paralelamente, Diseño continuó con la construcción de las bancas, la ubicación de las figuras del pájaro carpintero y los trabajos de pintura. Durante la tarde, las labores se concentraron en pintar y limpiar las superficies, afectadas por el barro acumulado tras las lluvias.",
       "pregunta": "¿Cómo se transformó el trabajo?",
-      "imagen": "assets/dias/DIA10FOTO1.webp",
+      "imagen": "assets/dias/D10FOTO1.webp",
       "imagenes": [
         {
-          "src": "assets/dias/DIA10FOTO1.webp",
+          "src": "assets/dias/D10FOTO1.webp",
           "alt": "Ilustración provisional de la jornada 10; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "pie": "LA OBRA Y SU ACONTECER · 1/4"
         },
         {
-          "src": "assets/dias/DIA10FOTO2.webp",
+          "src": "assets/dias/D10FOTO2.webp",
           "alt": "Ilustración provisional de la jornada 10; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "pie": "EL DESARROLLO DE LAS FAENAS · 2/4"
         },
         {
-          "src": "assets/dias/DIA10FOTO3.webp",
+          "src": "assets/dias/D10FOTO3.webp",
           "alt": "Ilustración provisional de la jornada 10; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "pie": "LOS ACONTECIMIENTOS · 3/4"
         },
         {
-          "src": "assets/dias/DIA10FOTO4.webp",
+          "src": "assets/dias/D10FOTO4.webp",
           "alt": "Ilustración provisional de la jornada 10; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "pie": "LA VIDA COMPARTIDA · 4/4"
         }
       ],
       "comentarios": [
         {
-          "tipo": "mirada",
-          "categoria": "MIRADAS",
-          "autor": "Participante por identificar",
-          "texto": "¿Cómo se transformó el trabajo?",
-          "detalle": "Contenido por incorporar: ampliar esta observación con el relato del participante, croquis, fotografías o antecedentes de la jornada. Este texto es una indicación editorial, no un testimonio."
+          "tipo": "editorial",
+          "categoria": "LA OBRA Y SU ACONTECER",
+          "tituloNota": "La observación",
+          "subtituloNota": "La obra en sus últimas faenas.",
+          "detalle": "Las faenas se concentraron en completar los elementos principales del recorrido e incorporar las piezas que acompañarán sus espacios de detención. Entre plataformas, escaleras y bancas, la obra avanzó hacia sus terminaciones.",
+          "escena": 1
         },
         {
-          "tipo": "obra",
-          "categoria": "LA OBRA",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué se trabajó en la obra y quiénes estuvieron a cargo?"
+          "tipo": "editorial",
+          "categoria": "LA OBRA Y SU ACONTECER",
+          "tituloNota": "La obra",
+          "subtituloNota": "Las conexiones entre plataformas.",
+          "detalle": "Se completó el entablado del piso de la cuarta plataforma y la escalera que conduce hasta ella. También se trabajó en el tramo de escalera que conecta la segunda y tercera plataforma, dando continuidad al recorrido por los distintos niveles del bosque.",
+          "escena": 1
         },
         {
-          "tipo": "organizacion",
-          "categoria": "LA ORGANIZACIÓN",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué decisiones se tomaron colectivamente?",
-          "detalle": "Contenido por incorporar: ampliar esta observación con el relato del participante, croquis, fotografías o antecedentes de la jornada. Este texto es una indicación editorial, no un testimonio."
+          "tipo": "editorial",
+          "categoria": "EL DESARROLLO DE LAS FAENAS",
+          "tituloNota": "La organización",
+          "subtituloNota": "Faenas simultáneas en la obra.",
+          "detalle": "Mientras un grupo trabajaba en la construcción del piso de una banca, otros participantes revisaban la ubicación de las figuras del pájaro carpintero. Paralelamente, se continuó con el armado de la banca del último descanso y la preparación de las superficies para pintar.",
+          "escena": 2
         },
         {
-          "tipo": "convivencia",
-          "categoria": "VIDA COTIDIANA",
-          "autor": "Participante por identificar",
-          "texto": "¿Cómo fue la convivencia, la alimentación y el campamento?"
+          "tipo": "editorial",
+          "categoria": "EL DESARROLLO DE LAS FAENAS",
+          "tituloNota": "Las herramientas",
+          "subtituloNota": "Marcar, clavar y preparar las superficies.",
+          "detalle": "La construcción del piso de la banca requirió marcar y clavar las maderas que conforman su superficie. Para las faenas de pintura se consideró la limpieza previa mediante un escobillón y agua, retirando los restos de barro acumulados en el lugar.",
+          "escena": 2
         },
         {
-          "tipo": "pendiente",
-          "categoria": "REGISTRO GRÁFICO",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué fotografía o croquis ayuda a comprender este momento?",
-          "detalle": "Aquí podrá incluirse el dibujo o la fotografía, su autoría y una explicación de lo que se intentaba observar. Registro pendiente de documentar."
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D10CROQUIS1.webp",
+          "altNota": "Croquis de referencia pendiente de reemplazo por un croquis del Día 10.",
+          "pieNota": "Croquis · Día 10",
+          "escena": 2
         },
         {
-          "tipo": "pendiente",
-          "categoria": "VIAJE Y RUTA",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué se observó durante el desplazamiento de hoy?"
+          "tipo": "editorial",
+          "categoria": "LOS ACONTECIMIENTOS",
+          "tituloNota": "Figuras del pájaro carpintero",
+          "subtituloNota": "Las figuras comienzan a ocupar el recorrido.",
+          "detalle": "Durante las terminaciones se comenzó a incorporar las representaciones del pájaro carpintero en distintos puntos de la obra. Las piezas, desarrolladas por Diseño a partir de la figura del ave, acompañan las estructuras de madera y los espacios de detención del sendero.",
+          "cita": "¿No será que el cielo de la travesía es la abertura?",
+          "autorCita": "Carlos",
+          "escena": 3
         },
         {
-          "tipo": "pendiente",
-          "categoria": "HERRAMIENTAS",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué materiales o herramientas se compartieron en esta jornada?",
-          "detalle": "Espacio para indicar quién se hizo cargo de los materiales, qué decisiones se tomaron y qué registros visuales acompañan esta tarea. Registro pendiente de documentar."
+          "tipo": "editorial",
+          "categoria": "LOS ACONTECIMIENTOS",
+          "tituloNota": "El lugar y la obra",
+          "subtituloNota": "La presencia del pájaro carpintero en el bosque.",
+          "detalle": "El pájaro carpintero forma parte de la fauna que habita el bosque donde se desarrolla la obra. Su presencia, reconocible por el sonido y por su aparición entre los árboles, fue tomada como referencia para la elaboración de las figuras que se incorporan al recorrido.",
+          "escena": 3
+        },
+        {
+          "tipo": "editorial",
+          "categoria": "LA VIDA COMPARTIDA",
+          "tituloNota": "Vida cotidiana",
+          "subtituloNota": "Las comidas de las jornadas.",
+          "detalle": "Durante la mañana, el desayuno consistió en pan con huevo, mermelada o manjar, acompañado de avena con leche. Para el almuerzo se prepararon garbanzos o sopa, con mandarinas de postre y jugo de limón.",
+          "escena": 4
+        },
+        {
+          "tipo": "editorial",
+          "categoria": "LA VIDA COMPARTIDA",
+          "tituloNota": "El campamento",
+          "subtituloNota": "El trabajo después de las lluvias.",
+          "detalle": "Las precipitaciones habían dejado una importante acumulación de barro en el sector de la obra. Durante la tarde, parte de las faenas se orientó a la limpieza del lugar y a las labores de pintura, atendiendo a las condiciones que presentaban las superficies.",
+          "escena": 4
+        },
+        {
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D10CROQUIS2.webp",
+          "altNota": "Croquis de referencia pendiente de reemplazo por un croquis del Día 10.",
+          "pieNota": "Croquis · Día 10",
+          "escena": 4
         }
       ]
     },
@@ -864,85 +892,103 @@ window.DATOS_TRAVESIA = {
       "id": "dia-11",
       "numero": "11",
       "etiqueta": "Día 11",
-      "titulo": "Día 11",
+      "titulo": "Los hitos del carpintero ocupan su lugar",
       "fecha": "22 de noviembre de 2026",
-      "subtitulo": "Relato, fecha, imagen y nombre de la jornada por completar.",
+      "subtitulo": "La jornada estuvo dedicada a los remates finales de la obra en el Sendero de los Carpinteros. Arquitectura no realizó nuevas intervenciones en su área, pues sus labores principales ya concluyeron, y Diseño continuó con los ajustes finales. El trabajo se concentró en un banco que lleva en sus extremos hitos alusivos a los carpinteros, donde se montaron las piezas, se nivelaron la estructura y los pilares y se ejecutaron las terminaciones para dar por concluida la obra.",
       "pregunta": "¿Qué momentos compartieron los talleres?",
       "imagen": "assets/dias/dia-11.svg",
       "imagenes": [
         {
           "src": "assets/dias/dia-11.svg",
           "alt": "Ilustración provisional de la jornada 11; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "pie": "LA OBRA Y SU ACONTECER · 1/4"
         },
         {
           "src": "assets/dias/dia-11.svg",
           "alt": "Ilustración provisional de la jornada 11; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "pie": "EL DESARROLLO DE LAS FAENAS · 2/4"
         },
         {
           "src": "assets/dias/dia-11.svg",
           "alt": "Ilustración provisional de la jornada 11; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "pie": "LOS ACONTECIMIENTOS · 3/4"
         },
         {
           "src": "assets/dias/dia-11.svg",
           "alt": "Ilustración provisional de la jornada 11; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "pie": "LA VIDA COMPARTIDA · 4/4"
         }
       ],
       "comentarios": [
         {
-          "tipo": "mirada",
-          "categoria": "MIRADAS",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué momentos compartieron los talleres?",
-          "detalle": "Contenido por incorporar: ampliar esta observación con el relato del participante, croquis, fotografías o antecedentes de la jornada. Este texto es una indicación editorial, no un testimonio."
+          "tipo": "editorial",
+          "categoria": "LA OBRA Y SU ACONTECER",
+          "tituloNota": "La observación",
+          "subtituloNota": "La obra en sus remates finales.",
+          "detalle": "Con las labores principales ya concluidas, la jornada se orientó a los ajustes finales de diseño. El banco, con sus hitos en los extremos, concentró el trabajo del día.",
+          "escena": 1
         },
         {
-          "tipo": "obra",
-          "categoria": "LA OBRA",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué se trabajó en la obra y quiénes estuvieron a cargo?"
+          "tipo": "editorial",
+          "categoria": "LA OBRA Y SU ACONTECER",
+          "tituloNota": "La obra",
+          "subtituloNota": "Un banco con memoria del lugar.",
+          "detalle": "El banco incorpora en sus extremos hitos representativos de los carpinteros, en referencia al lugar donde se emplaza. Con su montaje, la obra se acerca a su cierre.",
+          "escena": 1
         },
         {
-          "tipo": "organizacion",
-          "categoria": "LA ORGANIZACIÓN",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué fotografías y croquis se produjeron?",
-          "detalle": "Contenido por incorporar: ampliar esta observación con el relato del participante, croquis, fotografías o antecedentes de la jornada. Este texto es una indicación editorial, no un testimonio."
+          "tipo": "editorial",
+          "categoria": "EL DESARROLLO DE LAS FAENAS",
+          "tituloNota": "La organización",
+          "subtituloNota": "Del recorte al montaje.",
+          "detalle": "Mientras Arquitectura ya no intervenía en su área, Diseño dedicó la jornada al montaje de los hitos en el banco y a definir su ubicación definitiva.",
+          "escena": 2
         },
         {
-          "tipo": "convivencia",
-          "categoria": "VIDA COTIDIANA",
-          "autor": "Participante por identificar",
-          "texto": "¿Cómo fue la convivencia, la alimentación y el campamento?"
+          "tipo": "editorial",
+          "categoria": "EL DESARROLLO DE LAS FAENAS",
+          "tituloNota": "Las herramientas",
+          "subtituloNota": "Nivelar, asegurar y afinar.",
+          "detalle": "Se niveló la estructura y se aseguró la correcta instalación de los pilares que la sostendrán. Para terminar, se hicieron detalles de pintura y cortes específicos en las tablas, que dan un acabado más elaborado al diseño.",
+          "escena": 2
         },
         {
-          "tipo": "pendiente",
-          "categoria": "VIAJE Y RUTA",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué se observó durante el desplazamiento de hoy?",
-          "detalle": "Registrar aquí una anécdota o una descripción del trayecto, junto con la fotografía o el croquis que corresponda. Registro pendiente de documentar."
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D11CROQUIS1.webp",
+          "altNota": "Croquis de referencia pendiente de reemplazo por un croquis del Día 11.",
+          "pieNota": "Croquis · Día 11",
+          "escena": 2
         },
         {
-          "tipo": "pendiente",
-          "categoria": "HERRAMIENTAS",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué materiales o herramientas se compartieron en esta jornada?"
+          "tipo": "editorial",
+          "categoria": "LOS ACONTECIMIENTOS",
+          "tituloNota": "Los hitos del carpintero",
+          "subtituloNota": "Figuras que pasan de la forma al banco.",
+          "detalle": "Las piezas son abstracciones geométricas del carpintero, hechas a escala 1:1 y recortadas en una faena finalizada hace un par de días. Hoy se montaron en los extremos del banco.",
+          "escena": 3
         },
         {
-          "tipo": "pendiente",
-          "categoria": "ENCUENTROS",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué conversación abrió una pregunta nueva para el grupo?"
+          "tipo": "editorial",
+          "categoria": "LOS ACONTECIMIENTOS",
+          "tituloNota": "El lugar y la obra",
+          "subtituloNota": "Un banco que nombra el sendero.",
+          "detalle": "Los hitos remiten al Sendero de los Carpinteros, el lugar donde se emplaza la obra. La forma del ave se abstrae en geometría y queda como señal del sitio.",
+          "escena": 3
         },
         {
-          "tipo": "pendiente",
-          "categoria": "EL CAMPAMENTO",
-          "autor": "Participante por identificar",
-          "texto": "¿Cómo se prepararon las comidas y se repartieron las tareas cotidianas?",
-          "detalle": "Por incorporar: organización de turnos, responsabilidades, alimentación y registro de la vida compartida. Registro pendiente de documentar."
+          "tipo": "editorial",
+          "categoria": "LA VIDA COMPARTIDA",
+          "tituloNota": "Vida cotidiana",
+          "subtituloNota": "Las comidas de la jornada.",
+          "detalle": "El desayuno fue pan con mantequilla y avena con leche. Para el almuerzo se sirvió un guiso de arroz cremoso con pollo, al estilo risotto, acompañado de ensalada de lechuga.",
+          "escena": 4
+        },
+        {
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D11CROQUIS2.webp",
+          "altNota": "Croquis de referencia pendiente de reemplazo por un croquis del Día 11.",
+          "pieNota": "Croquis · Día 11",
+          "escena": 4
         }
       ]
     },
@@ -1296,7 +1342,7 @@ window.DATOS_TRAVESIA = {
       const cuerpo=Array.isArray(c.detalle)?c.detalle.filter(Boolean):(c.detalle?[c.detalle]:[]);
       const extra=cuerpo.length?`<button class="voz-desplegar" type="button" aria-expanded="false" aria-controls="${id}"><span class="voz-boton-texto">Leer más</span><span class="voz-boton-simbolo" aria-hidden="true">+</span></button><div class="voz-detalle" id="${id}" hidden>${cuerpo.map(t=>`<p>${esc(t)}</p>`).join('')}</div>`:'';
       const cita=c.cita?`<blockquote class="voz-editorial-cita">«${esc(c.cita)}»</blockquote>${c.autorCita?`<p class="voz-editorial-atribucion">${esc(c.autorCita)}</p>`:''}`:'';
-      return `<article class="voz-burbuja voz-editorial" data-revelar="1" style="--retardo:${Math.min(orden,3)*140}ms"><p class="voz-categoria">${esc(c.categoria||'REGISTRO')}</p><h3 class="voz-editorial-titulo">${esc(c.tituloNota||'Registro de la jornada')}</h3>${c.subtituloNota?`<p class="voz-editorial-entradilla">${esc(c.subtituloNota)}</p>`:''}${cita}${extra}</article>`;
+      return `<article class="voz-burbuja voz-editorial" data-revelar="1" style="--retardo:${Math.min(orden,3)*140}ms"><p class="voz-categoria">${esc(c.categoria||'REGISTRO')}</p><h3 class="voz-editorial-titulo">${esc(c.tituloNota||'Registro de la jornada')}</h3>${c.subtituloNota?`<p class="voz-editorial-entradilla">${esc(c.subtituloNota)}</p>`:''}${c.textoVisible?`<p class="voz-editorial-texto">${esc(c.textoVisible)}</p>`:''}${cita}${extra}</article>`;
     }
     const color=['','roja','crema','oscura'][k%4];
     const etiqueta=c.categoria||'REGISTRO PENDIENTE';
@@ -1304,10 +1350,10 @@ window.DATOS_TRAVESIA = {
     const id=`detalle-${diaNumero}-${k}`;
     const imagenNota=c.imagenNota?`<figure class="voz-imagen-nota"><img loading="lazy" src="${esc(c.imagenNota)}" alt="${esc(c.altNota||'Croquis o registro visual de la jornada')}">${c.pieNota?`<figcaption>${esc(c.pieNota)}</figcaption>`:''}</figure>`:'';
     const extra=detalle.length?`<button class="voz-desplegar" type="button" aria-expanded="false" aria-controls="${id}"><span class="voz-boton-texto">Leer más</span><span class="voz-boton-simbolo" aria-hidden="true">+</span></button><div class="voz-detalle" id="${id}" hidden><span class="voz-detalle-titulo">AMPLIAR EL REGISTRO</span>${detalle.map(t=>`<p>${esc(t)}</p>`).join('')}${c.imagenDetalle?`<figure><img loading="lazy" src="${esc(c.imagenDetalle)}" alt="${esc(c.altDetalle||'Registro adicional de la jornada')}">${c.pieDetalle?`<figcaption>${esc(c.pieDetalle)}</figcaption>`:''}</figure>`:''}</div>`:'';
-    return `<article class="voz-burbuja ${color}${c.imagenNota?' voz-con-imagen':''}" data-revelar="1" style="--retardo:${Math.min(orden,3)*140}ms"><p class="voz-categoria">${esc(etiqueta)}</p><blockquote>“${esc(c.texto||'Testimonio por incorporar')}”</blockquote>${imagenNota}<div class="voz-autor"><strong>${esc(c.autor||'Participante por identificar')}</strong><span>VOZ ${String(k+1).padStart(2,'0')}</span></div>${extra}</article>`;
+    return `<article class="voz-burbuja ${color}${c.imagenNota?' voz-con-imagen':''}" data-revelar="1" style="--retardo:${Math.min(orden,3)*140}ms"><p class="voz-categoria">${esc(etiqueta)}</p><blockquote>“${esc(c.texto||'Testimonio por incorporar')}”</blockquote>${imagenNota}<div class="voz-autor">${c.autor?`<strong>${esc(c.autor)}</strong>`:''}<span>VOZ ${esc(c.numeroVoz||String(k+1).padStart(2,'0'))}</span></div>${extra}</article>`;
   }
   function contenidoEscena(asignadas,j,diaNumero){
-    if(!asignadas.length)return '<span class="escena-sin-voces" data-revelar="1">Espacio para agregar comentarios sobre esta imagen.</span>';
+    if(!asignadas.length)return ['04','06','07','09','10','11'].includes(diaNumero)?'':'<span class="escena-sin-voces" data-revelar="1">Espacio para agregar comentarios sobre esta imagen.</span>';
     const grupos=[];
     // Se revelan en tramos diferentes del scroll. Cada pareja está en pantalla a la vez.
     for(let k=0;k<asignadas.length;k+=2){
