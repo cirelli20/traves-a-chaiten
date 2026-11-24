@@ -4,62 +4,64 @@ window.DATOS_TRAVESIA = {
       "id": "dia-01",
       "numero": "01",
       "etiqueta": "Día 01",
-      "titulo": "El inicio del viaje",
+      "titulo": "El inicio del viaje.",
       "fecha": "12 de noviembre de 2026",
-      "subtitulo": "La travesía a Chaitén comenzó en Viña del Mar con los preparativos para la partida. Antes de salir, el taller se reunió en torno a las bitácoras, cada participante pintó su portada y se leyó un fragmento de Amereida. Luego, el grupo emprendió el viaje hacia el sur. El recorrido pasó por Casablanca, San Antonio y las cercanías del lago Rapel, y continuó por San Fernando hasta la primera parada en Talca. Desde allí, el grupo siguió por tierra hasta Puerto Montt, donde se embarcó cerca de las diez de la noche para continuar por mar hacia Chaitén",
+      "subtitulo": "La travesía a Chaitén comenzó en Viña del Mar con los preparativos para la partida. Antes de salir, el taller se reunió en torno a las bitácoras, cada participante pintó su portada y se leyó un fragmento de Amereida. Luego, el grupo emprendió el viaje hacia el sur. El recorrido pasó por Casablanca, San Antonio y las cercanías del lago Rapel, y continuó por San Fernando hasta la primera parada en Talca. Desde allí, el grupo siguió por tierra hasta Puerto Montt, donde se embarcó cerca de las diez de la noche para continuar por mar hacia Chaitén.",
       "pregunta": "¿Cómo comenzó la travesía?",
       "imagen": "assets/dias/D1FOTO1.webp",
       "imagenes": [
         {
           "src": "assets/dias/D1FOTO1.webp",
           "alt": "Registro de las primeras acciones de la travesía.",
-          "pie": "PREPARATIVOS Y ORGANIZACIÓN"
+          "pie": "LA OBRA Y SU ACONTECER · 1/3"
         },
         {
           "src": "assets/dias/D1FOTO2.webp",
           "alt": "Registro del viaje durante la primera jornada.",
-          "pie": "SALIDA DESDE VIÑA DEL MAR"
+          "pie": "LOS ACONTECIMIENTOS · 2/3"
         },
         {
           "src": "assets/dias/D1FOTO3.webp",
           "alt": "Registro del desplazamiento hacia el sur.",
-          "pie": "TRAYECTO HACIA EL SUR"
+          "pie": "LOS ACONTECIMIENTOS · 2/3"
         },
         {
           "src": "assets/dias/D1FOTO4.webp",
           "alt": "Registro de la navegación nocturna hacia Chaitén.",
-          "pie": "NAVEGACIÓN HACIA CHAITÉN"
+          "pie": "LA VIDA COMPARTIDA · 3/3"
         }
       ],
       "comentarios": [
         {
-          "tipo": "organizacion",
-          "categoria": "ANTES DE PARTIR",
-          "autor": "Registro del día 01",
-          "texto": "Antes de partir se realizaron distintas faenas de preparación y organización para disponer lo necesario para la travesía.",
-          "detalle": [
-            "Durante la jornada se reunieron materiales, registros y acuerdos para iniciar el viaje.",
-            "Estas tareas previas permitieron ordenar la salida y preparar lo necesario para el recorrido."
-          ],
+          "tipo": "editorial",
+          "categoria": "LA OBRA Y SU ACONTECER",
+          "tituloNota": "Las bitácoras",
+          "subtituloNota": "Un mismo dibujo, una portada propia.",
+          "detalle": "Para confeccionar las bitácoras, el grupo de ámbito preparó portadas con un diseño del volcán de Chaitén realizado mediante corte láser. Durante el acto, las dispusieron en fila sobre el suelo y se reunieron a su alrededor. Cada participante pintó la suya con pinturas en spray de tonos azules y verdes.",
           "escena": 1
         },
         {
-          "tipo": "ruta",
-          "categoria": "VIAJE Y RUTA",
-          "autor": "Bitácora de viaje",
-          "texto": "El viaje comenzó en Viña del Mar, atravesando la zona central para continuar hacia el sur.",
-          "detalle": [
-            "Alrededor de las 17:30 PM se realizó una primera parada en Talca, antes de seguir rumbo a Puerto Montt.",
-            "Cerca de las 22:00 PM comenzó la navegación hacia Chaitén."
-          ],
+          "tipo": "editorial",
+          "categoria": "LOS ACONTECIMIENTOS",
+          "tituloNota": "El recorrido",
+          "subtituloNota": "De Viña del Mar a Puerto Montt.",
+          "detalle": "Desde Viña del Mar, el grupo pasó por Casablanca y San Antonio. El viaje continuó por las cercanías del lago Rapel, a la altura de Las Cabras, y siguió por San Fernando hasta Talca, donde hicieron la primera parada. Desde allí continuaron hasta Puerto Montt. Cerca de las diez de la noche se embarcaron rumbo a Chaitén.",
           "escena": 2
         },
         {
           "tipo": "croquis",
           "imagenNota": "assets/dias/D1CROQUIS1.webp",
-          "altNota": "Croquis panorámico del paisaje correspondiente al Día 01.",
+          "altNota": "Croquis incorporado al registro del Día 01.",
           "pieNota": "Croquis incorporado al registro del Día 01.",
           "escena": 3
+        },
+        {
+          "tipo": "editorial",
+          "categoria": "LA VIDA COMPARTIDA",
+          "tituloNota": "El encuentro",
+          "subtituloNota": "Un nombre a quien buscar.",
+          "detalle": "Entre las bitácoras había sobres mezclados, cada uno con una tarjeta que llevaba el nombre de uno de los participantes de la Travesía. Cada uno escogió un sobre, leyó el nombre y buscó a esa persona entre sus compañeros para entregarle la tarjeta. El acto incluyó la lectura de un fragmento de Amereida. Finalmente, cada cual se llevó su bitácora junto con el soporte que el taller había preparado.",
+          "escena": 4
         }
       ]
     },
@@ -69,7 +71,7 @@ window.DATOS_TRAVESIA = {
       "etiqueta": "Día 02",
       "titulo": "La llegada a Chaitén",
       "fecha": "13 de noviembre de 2026",
-      "subtitulo": "La jornada estuvo dedicada al traslado y a la llegada a Chaitén. Tras una parada en Ayacara cerca de las 6 de la mañana, el grupo continuó hasta su destino, adonde llegó a las 10. Se armaron las carpas, se comió la fajita y, durante la tarde, los participantes salieron a observar el lugar por donde quisieran.",
+      "subtitulo": "Llegada a Chaitén, organización del campamento y primera observación libre del lugar.",
       "pregunta": "¿Cómo comenzó el reconocimiento de Chaitén?",
       "imagen": "assets/dias/D2FOTO1.webp",
       "imagenes": [
@@ -996,94 +998,69 @@ window.DATOS_TRAVESIA = {
       "id": "dia-12",
       "numero": "12",
       "etiqueta": "Día 12",
-      "titulo": "Día 12",
+      "titulo": "La despedida de Chaitén.",
       "fecha": "23 de noviembre de 2026",
-      "subtitulo": "Relato, fecha, imagen y nombre de la jornada por completar.",
-      "pregunta": "¿Qué dejó esta jornada?",
+      "subtitulo": "La última jornada comenzó con el desarme del campamento. Al mediodía, el grupo volvió a subir por el sendero, esta vez para reunirse en torno a la obra terminada y participar en su bendición. Después de un almuerzo compartido y una tarde en el pueblo, los talleres se encontraron en la naviera para emprender el regreso por mar.",
+      "pregunta": "¿Cómo se vivió la despedida de Chaitén?",
       "imagen": "assets/dias/dia-12.svg",
       "imagenes": [
         {
           "src": "assets/dias/dia-12.svg",
-          "alt": "Ilustración provisional de la jornada 12; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "alt": "Fondo provisional del Día 12, pendiente de fotografías de la bendición de la obra.",
+          "pie": "LA OBRA Y SU ACONTECER · 1/3"
         },
         {
           "src": "assets/dias/dia-12.svg",
-          "alt": "Ilustración provisional de la jornada 12; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "alt": "Fondo provisional del Día 12, pendiente de fotografías del regreso por mar.",
+          "pie": "LOS ACONTECIMIENTOS · 2/3"
         },
         {
           "src": "assets/dias/dia-12.svg",
-          "alt": "Ilustración provisional de la jornada 12; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "alt": "Fondo provisional del Día 12, pendiente de fotografías de la vida compartida.",
+          "pie": "LA VIDA COMPARTIDA · 3/3"
         },
         {
           "src": "assets/dias/dia-12.svg",
-          "alt": "Ilustración provisional de la jornada 12; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "alt": "Fondo provisional del Día 12, pendiente de fotografías del acto final.",
+          "pie": "LA VIDA COMPARTIDA · 3/3"
         }
       ],
       "comentarios": [
         {
-          "tipo": "mirada",
-          "categoria": "MIRADAS",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué dejó esta jornada?",
-          "detalle": "Contenido por incorporar: ampliar esta observación con el relato del participante, croquis, fotografías o antecedentes de la jornada. Este texto es una indicación editorial, no un testimonio."
+          "tipo": "editorial",
+          "categoria": "LA OBRA Y SU ACONTECER",
+          "tituloNota": "La bendición de la obra",
+          "subtituloNota": "Recorrido final por el sendero.",
+          "detalle": "Durante la última subida hasta la obra, un sacerdote celebró la misa de bendición, el estudiante Cristóbal Guerra acompañó con la guitarra, cantando junto a la estudiante Bárbara. Antes de bajar al campamento, el grupo se quedó un momento para tomarse fotografías junto a la obra.",
+          "escena": 1
         },
         {
-          "tipo": "obra",
-          "categoria": "LA OBRA",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué se trabajó en la obra y quiénes estuvieron a cargo?"
+          "tipo": "editorial",
+          "categoria": "LOS ACONTECIMIENTOS",
+          "tituloNota": "El regreso por mar",
+          "subtituloNota": "El momento de la partida.",
+          "detalle": "Cerca de las seis de la tarde pasaron a recoger las mochilas grandes y los materiales de Restauro y Pañol. Mientras algunos se quedaron cuidando el equipaje, otros aprovecharon las últimas horas en Chaitén para recorrer el pueblo. A las nueve de la noche, el grupo volvió a reunirse en la naviera. Tras la carga del equipaje y el control de identidad, el ferry zarpó a las once de la noche.",
+          "escena": 2
         },
         {
-          "tipo": "organizacion",
-          "categoria": "LA ORGANIZACIÓN",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué preguntas acompañan el regreso o la continuación?",
-          "detalle": "Contenido por incorporar: ampliar esta observación con el relato del participante, croquis, fotografías o antecedentes de la jornada. Este texto es una indicación editorial, no un testimonio."
+          "tipo": "editorial",
+          "categoria": "LA VIDA COMPARTIDA",
+          "tituloNota": "El almuerzo de despedida",
+          "subtituloNota": "Una mesa al volver de la obra.",
+          "detalle": "Al bajar del sendero, la anfitriona del camping los esperaba con pollo asado, papas mayo, choripanes y ensaladas. También había preparado una alternativa vegetariana. Después de almorzar y reunir sus pertenencias, los estudiantes de Diseño y Arquitectura pasaron parte de la tarde descansando.",
+          "escena": 3
         },
         {
-          "tipo": "convivencia",
-          "categoria": "VIDA COTIDIANA",
-          "autor": "Participante por identificar",
-          "texto": "¿Cómo fue la convivencia, la alimentación y el campamento?"
-        },
-        {
-          "tipo": "pendiente",
-          "categoria": "HERRAMIENTAS",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué materiales o herramientas se compartieron en esta jornada?",
-          "detalle": "Espacio para indicar quién se hizo cargo de los materiales, qué decisiones se tomaron y qué registros visuales acompañan esta tarea. Registro pendiente de documentar."
-        },
-        {
-          "tipo": "pendiente",
-          "categoria": "ENCUENTROS",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué conversación abrió una pregunta nueva para el grupo?"
-        },
-        {
-          "tipo": "pendiente",
-          "categoria": "EL CAMPAMENTO",
-          "autor": "Participante por identificar",
-          "texto": "¿Cómo se prepararon las comidas y se repartieron las tareas cotidianas?"
-        },
-        {
-          "tipo": "pendiente",
-          "categoria": "REGISTRO GRÁFICO",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué fotografía o croquis ayuda a comprender este momento?"
-        },
-        {
-          "tipo": "pendiente",
-          "categoria": "VIAJE Y RUTA",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué se observó durante el desplazamiento de hoy?",
-          "detalle": "Registrar aquí una anécdota o una descripción del trayecto, junto con la fotografía o el croquis que corresponda. Registro pendiente de documentar."
+          "tipo": "editorial",
+          "categoria": "LA VIDA COMPARTIDA",
+          "tituloNota": "Acto final",
+          "subtituloNota": "Descubrir quién dejaba los regalos.",
+          "detalle": "Durante la semana, cada participante había dejado pequeños regalos en el sobre de su amigo secreto. A la hora del almuerzo, el grupo de Ámbito reunió al grupo para revelar quién había estado detrás de cada regalo. En medio de la actividad empezó a llover, pero luego la lluvia paró.",
+          "escena": 4
         }
       ]
     }
+
   ],
   "categorias": [
     {
