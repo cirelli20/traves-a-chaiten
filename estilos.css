@@ -672,3 +672,8 @@ body{font-family:var(--sans);font-size:1.0625rem;line-height:1.61}
 .voz-burbuja .voz-editorial-cita{font:italic 500 clamp(.94rem,1.2vw,1.15rem)/1.5 var(--serif);padding-left:13px;border-left:2px solid var(--carmin);margin:15px 0 5px;color:#3b2c26}
 .voz-editorial-atribucion{margin:0 0 12px 15px;color:#736559;font:.68rem/1.4 var(--sans);letter-spacing:.04em}
 @media(max-width:600px){.voz-editorial-titulo{font-size:1.15rem}.voz-editorial-entradilla{font-size:.98rem}}
+
+/* Tarjetas editoriales: texto breve legible sin abrir un desplegable. */
+.voz-editorial-texto { margin: 12px 0 0; font: 400 .94rem/1.58 var(--sans); color: inherit; }
+.voz-editorial-titulo + .voz-editorial-texto { margin-top: 16px; }
+@media (max-width: 600px) { .voz-editorial-texto { font-size: .88rem; line-height: 1.55; } }
