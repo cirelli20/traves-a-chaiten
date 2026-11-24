@@ -6,82 +6,60 @@ window.DATOS_TRAVESIA = {
       "etiqueta": "Día 01",
       "titulo": "Día 01",
       "fecha": "12 de noviembre de 2026",
-      "subtitulo": "Relato, fecha, imagen y nombre de la jornada por completar.",
-      "pregunta": "¿Qué sucedió durante esta jornada?",
-      "imagen": "assets/dias/D1foto1.3.webp",
+      "subtitulo": "Preparación del viaje, salida desde Viña del Mar y navegación nocturna hacia Chaitén.",
+      "pregunta": "¿Cómo comenzó la travesía?",
+      "imagen": "assets/dias/D1FOTO1.webp",
       "imagenes": [
         {
-          "src": "assets/dias/D1foto1.3.webp",
-          "alt": "fotográfía al primer acto",
-          "pie": "Interveción a las bitacoras"
+          "src": "assets/dias/D1FOTO1.webp",
+          "alt": "Registro de las primeras acciones de la travesía.",
+          "pie": "PREPARATIVOS Y ORGANIZACIÓN"
         },
         {
-          "src": "assets/dias/D1foto2.1.jpg",
-          "alt": "Ilustración provisional de la jornada 01; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "src": "assets/dias/D1FOTO2.webp",
+          "alt": "Registro del viaje durante la primera jornada.",
+          "pie": "SALIDA DESDE VIÑA DEL MAR"
         },
         {
           "src": "assets/dias/D1FOTO3.webp",
-          "alt": "Ilustración provisional de la jornada 01; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "alt": "Registro del desplazamiento hacia el sur.",
+          "pie": "TRAYECTO HACIA EL SUR"
         },
         {
           "src": "assets/dias/D1FOTO4.webp",
-          "alt": "Ilustración provisional de la jornada 01; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
-        },
-         {
-          "src": "assets/dias/D1FOTO5.webp",
-          "alt": "Ilustración provisional de la jornada 01; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
-        },
+          "alt": "Registro de la navegación nocturna hacia Chaitén.",
+          "pie": "NAVEGACIÓN HACIA CHAITÉN"
+        }
       ],
       "comentarios": [
         {
-          "tipo": "mirada",
-          "categoria": "MIRADAS",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué sucedió durante esta jornada?",
-          "detalle": "Contenido por incorporar: ampliar esta observación con el relato del participante, croquis, fotografías o antecedentes de la jornada. Este texto es una indicación editorial, no un testimonio."
-        },
-        {
-          "tipo": "obra",
-          "categoria": "LA OBRA",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué se trabajó en la obra y quiénes estuvieron a cargo?"
-        },
-        {
           "tipo": "organizacion",
-          "categoria": "LA ORGANIZACIÓN",
-          "autor": "Participante por identificar",
-          "texto": "¿Quiénes participaron en los distintos momentos del día?",
-          "detalle": "Contenido por incorporar: ampliar esta observación con el relato del participante, croquis, fotografías o antecedentes de la jornada. Este texto es una indicación editorial, no un testimonio."
+          "categoria": "ANTES DE PARTIR",
+          "autor": "Registro del día 01",
+          "texto": "Antes de partir se realizaron distintas faenas de preparación y organización para disponer lo necesario para la travesía.",
+          "detalle": [
+            "Durante la jornada se reunieron materiales, registros y acuerdos para iniciar el viaje.",
+            "Estas tareas previas permitieron ordenar la salida y preparar lo necesario para el recorrido."
+          ],
+          "escena": 1
         },
         {
-          "tipo": "convivencia",
-          "categoria": "VIDA COTIDIANA",
-          "autor": "Participante por identificar",
-          "texto": "¿Cómo fue la convivencia, la alimentación y el campamento?"
-        },
-        {
-          "tipo": "pendiente",
+          "tipo": "ruta",
           "categoria": "VIAJE Y RUTA",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué se observó durante el desplazamiento de hoy?",
-          "detalle": "Registrar aquí una anécdota o una descripción del trayecto, junto con la fotografía o el croquis que corresponda. Registro pendiente de documentar."
+          "autor": "Bitácora de viaje",
+          "texto": "El viaje comenzó en Viña del Mar, atravesando la zona central para continuar hacia el sur.",
+          "detalle": [
+            "Alrededor de las 17:30 PM se realizó una primera parada en Talca, antes de seguir rumbo a Puerto Montt.",
+            "Cerca de las 22:00 PM comenzó la navegación hacia Chaitén."
+          ],
+          "escena": 2
         },
         {
-          "tipo": "pendiente",
-          "categoria": "HERRAMIENTAS",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué materiales o herramientas se compartieron en esta jornada?"
-        },
-        {
-          "tipo": "pendiente",
-          "categoria": "ENCUENTROS",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué conversación abrió una pregunta nueva para el grupo?",
-          "detalle": "Por incorporar: transcripción o síntesis de la conversación, personas participantes y momento de la jornada. Registro pendiente de documentar."
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D1CROQUIS1.webp",
+          "altNota": "Croquis panorámico del paisaje correspondiente al Día 01.",
+          "pieNota": "Croquis incorporado al registro del Día 01.",
+          "escena": 3
         }
       ]
     },
@@ -91,79 +69,86 @@ window.DATOS_TRAVESIA = {
       "etiqueta": "Día 02",
       "titulo": "Día 02",
       "fecha": "13 de noviembre de 2026",
-      "subtitulo": "Relato, fecha, imagen y nombre de la jornada por completar.",
-      "pregunta": "¿Cómo se organizó el trabajo?",
-      "imagen": "assets/dias/D2FOTO.1.webp",
+      "subtitulo": "Pausa en Ayacara, llegada a Chaitén, instalación del campamento y primera observación libre del territorio.",
+      "pregunta": "¿Cómo se inició la llegada al territorio?",
+      "imagen": "assets/dias/D2FOTO1.webp",
       "imagenes": [
         {
-          "src": "assets/dias/D2FOTO.1.webp",
-          "alt": "Ilustración provisional de la jornada 02; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "src": "assets/dias/D2FOTO1.webp",
+          "alt": "Registro de la pausa en Ayacara durante la segunda jornada.",
+          "pie": "PAUSA EN AYACARA"
         },
         {
-          "src": "assets/dias/D2FOTO.2.webp",
-          "alt": "Ilustración provisional de la jornada 02; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "src": "assets/dias/D2FOTO2.webp",
+          "alt": "Registro de la navegación y llegada a Chaitén.",
+          "pie": "LLEGADA A CHAITÉN"
         },
         {
-          "src": "assets/dias/D2FOTO.3.webp",
-          "alt": "Ilustración provisional de la jornada 02; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "src": "assets/dias/D2FOTO3.webp",
+          "alt": "Registro de la instalación del campamento.",
+          "pie": "INSTALACIÓN DEL CAMPAMENTO"
+        },
+        {
+          "src": "assets/dias/D2FOTO4.webp",
+          "alt": "Registro de la organización de los espacios compartidos.",
+          "pie": "ORGANIZACIÓN DE LOS ESPACIOS"
+        },
+        {
+          "src": "assets/dias/D2FOTO5.webp",
+          "alt": "Registro de la primera observación libre en Chaitén.",
+          "pie": "PRIMERA OBSERVACIÓN LIBRE"
         }
-       
       ],
       "comentarios": [
         {
-          "tipo": "mirada",
-          "categoria": "MIRADAS",
-          "autor": "Participante por identificar",
-          "texto": "¿Cómo se organizó el trabajo?",
-          "detalle": "Contenido por incorporar: ampliar esta observación con el relato del participante, croquis, fotografías o antecedentes de la jornada. Este texto es una indicación editorial, no un testimonio."
+          "tipo": "ruta",
+          "categoria": "VIAJE Y RUTA",
+          "autor": "Bitácora del día 02",
+          "texto": "La jornada comenzó con una pausa en Ayacara alrededor de las 6:00 AM.",
+          "escena": 1
         },
         {
-          "tipo": "obra",
-          "categoria": "LA OBRA",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué se trabajó en la obra y quiénes estuvieron a cargo?"
+          "tipo": "ruta",
+          "categoria": "NAVEGACIÓN",
+          "autor": "Bitácora del día 02",
+          "texto": "Luego se continuó la navegación hasta Chaitén, donde se llegó a las 10:00 AM.",
+          "escena": 2
+        },
+        {
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D1CROQUIS1.webp",
+          "altNota": "Croquis de referencia incorporado al registro del Día 02.",
+          "pieNota": "Croquis incorporado al registro del Día 02.",
+          "escena": 2
         },
         {
           "tipo": "organizacion",
-          "categoria": "LA ORGANIZACIÓN",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué decisiones y cambios marcaron el día?",
-          "detalle": "Contenido por incorporar: ampliar esta observación con el relato del participante, croquis, fotografías o antecedentes de la jornada. Este texto es una indicación editorial, no un testimonio."
+          "categoria": "CAMPAMENTO",
+          "autor": "Bitácora del día 02",
+          "texto": "Durante la mañana, las actividades estuvieron destinadas a la instalación del campamento.",
+          "escena": 3
         },
         {
-          "tipo": "convivencia",
-          "categoria": "VIDA COTIDIANA",
-          "autor": "Participante por identificar",
-          "texto": "¿Cómo fue la convivencia, la alimentación y el campamento?"
+          "tipo": "organizacion",
+          "categoria": "ESPACIOS COMPARTIDOS",
+          "autor": "Bitácora del día 02",
+          "texto": "También se organizaron los espacios compartidos para comenzar la estadía en Chaitén.",
+          "escena": 4
         },
         {
-          "tipo": "pendiente",
-          "categoria": "HERRAMIENTAS",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué materiales o herramientas se compartieron en esta jornada?",
-          "detalle": "Espacio para indicar quién se hizo cargo de los materiales, qué decisiones se tomaron y qué registros visuales acompañan esta tarea. Registro pendiente de documentar."
+          "tipo": "mirada",
+          "categoria": "OBSERVACIÓN LIBRE",
+          "autor": "Bitácora del día 02",
+          "texto": "Tras el almuerzo, se realizó una primera salida de observación libre.",
+          "detalle": "Cada integrante pudo recorrer distintos sectores de Chaitén, dando inicio al reconocimiento del territorio que acogería los siguientes días de travesía.",
+          "escena": 5
         },
         {
-          "tipo": "pendiente",
-          "categoria": "ENCUENTROS",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué conversación abrió una pregunta nueva para el grupo?"
-        },
-        {
-          "tipo": "pendiente",
-          "categoria": "EL CAMPAMENTO",
-          "autor": "Participante por identificar",
-          "texto": "¿Cómo se prepararon las comidas y se repartieron las tareas cotidianas?"
-        },
-        {
-          "tipo": "pendiente",
-          "categoria": "REGISTRO GRÁFICO",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué fotografía o croquis ayuda a comprender este momento?",
-          "detalle": "Aquí podrá incluirse el dibujo o la fotografía, su autoría y una explicación de lo que se intentaba observar. Registro pendiente de documentar."
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D1CROQUIS1.webp",
+          "altNota": "Segundo croquis de referencia incorporado al registro del Día 02.",
+          "pieNota": "Croquis incorporado al registro del Día 02.",
+          "escena": 5
         }
       ]
     },
@@ -171,96 +156,89 @@ window.DATOS_TRAVESIA = {
       "id": "dia-03",
       "numero": "03",
       "etiqueta": "Día 03",
-      "titulo": "Día 03",
+      "titulo": "El primer encuentro con la extensión",
       "fecha": "14 de noviembre de 2026",
-      "subtitulo": "Relato, fecha, imagen y nombre de la jornada por completar.",
-      "pregunta": "¿Qué se observó del lugar?",
+      "subtitulo": "La jornada estuvo dedicada al reconocimiento de Chaitén y sus alrededores. Mediante recorridos libres de observación, los participantes pudieron explorar distintos sectores del territorio, aproximándose a las características del lugar que acogería las siguientes jornadas de travesía. Me parece un buen título porque no se limita a decir que fueron a recorrer Chaitén. Introduce la idea de extensión, presente en el lenguaje de la Escuela, sin alejarse de lo que efectivamente se sabe de la jornada.",
+      "pregunta": "¿Qué comienza a revelarse al observar el territorio?",
       "imagen": "assets/dias/D3FOTO1.webp",
       "imagenes": [
         {
           "src": "assets/dias/D3FOTO1.webp",
-          "alt": "Ilustración provisional de la jornada 03; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "alt": "Fotografía de registro de la jornada 03, primera escena.",
+          "pie": "LA OBRA Y SU ACONTECER · 1/3"
         },
         {
           "src": "assets/dias/D3FOTO2.webp",
-          "alt": "Ilustración provisional de la jornada 03; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "alt": "Fotografía de registro de la jornada 03, segunda escena.",
+          "pie": "LA OBRA Y SU ACONTECER · 1/3"
         },
         {
           "src": "assets/dias/D3FOTO3.webp",
-          "alt": "Ilustración provisional de la jornada 03; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "alt": "Fotografía de registro de la jornada 03, tercera escena.",
+          "pie": "LOS ACONTECIMIENTOS · 2/3"
         },
         {
           "src": "assets/dias/D3FOTO4.webp",
-          "alt": "Ilustración provisional de la jornada 03; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
-        },
-        {
-          "src": "assets/dias/D3FOTO5.webp",
-          "alt": "Ilustración provisional de la jornada 03; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "alt": "Fotografía de registro de la jornada 03, cuarta escena.",
+          "pie": "LA VIDA COMPARTIDA · 3/3"
         }
       ],
       "comentarios": [
         {
-          "tipo": "mirada",
-          "categoria": "MIRADAS",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué se observó del lugar?",
-          "detalle": "Contenido por incorporar: ampliar esta observación con el relato del participante, croquis, fotografías o antecedentes de la jornada. Este texto es una indicación editorial, no un testimonio."
+          "tipo": "editorial",
+          "categoria": "LA OBRA Y SU ACONTECER",
+          "tituloNota": "La observación",
+          "subtituloNota": "De lo imaginado a lo encontrado.",
+          "detalle": "Los recorridos libres permitieron una primera aproximación al entorno de Chaitén. Antes de concentrarse en las faenas de construcción, la jornada abrió un tiempo para observar el lugar, reconocer sus espacios y atender a las distintas condiciones que lo conforman.",
+          "escena": 1
         },
         {
-          "tipo": "obra",
-          "categoria": "LA OBRA",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué se trabajó en la obra y quiénes estuvieron a cargo?"
+          "tipo": "editorial",
+          "categoria": "LA OBRA Y SU ACONTECER",
+          "tituloNota": "El lugar y la obra",
+          "subtituloNota": "Entre los árboles se abre un recorrido.",
+          "detalle": "Dentro del campamento se encuentra un sendero que asciende entre los árboles hasta un mirador con un columpio. Este recorrido constituye el lugar considerado para la obra de travesía, cuya propuesta contempla incorporar puntos de detención y observación a lo largo del camino.",
+          "escena": 2
         },
         {
-          "tipo": "organizacion",
-          "categoria": "LA ORGANIZACIÓN",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué registros permiten reconstruirlo?",
-          "detalle": "Contenido por incorporar: ampliar esta observación con el relato del participante, croquis, fotografías o antecedentes de la jornada. Este texto es una indicación editorial, no un testimonio."
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D3CROQUIS1.webp",
+          "altNota": "Croquis de referencia, pendiente de reemplazo por un croquis del Día 03.",
+          "pieNota": "Croquis incorporado al registro del Día 03.",
+          "escena": 2
         },
         {
-          "tipo": "convivencia",
-          "categoria": "VIDA COTIDIANA",
-          "autor": "Participante por identificar",
-          "texto": "¿Cómo fue la convivencia, la alimentación y el campamento?"
+          "tipo": "editorial",
+          "categoria": "LOS ACONTECIMIENTOS",
+          "tituloNota": "El recorrido",
+          "subtituloNota": "Mirar aquello que nos rodea.",
+          "detalle": "La salida libre de observación permitió recorrer distintos sectores de Chaitén sin un itinerario único. Cada participante pudo detenerse en los aspectos del entorno que llamaron su atención, dando lugar a distintas miradas sobre un mismo territorio.",
+          "escena": 3
         },
         {
-          "tipo": "pendiente",
-          "categoria": "ENCUENTROS",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué conversación abrió una pregunta nueva para el grupo?",
-          "detalle": "Por incorporar: transcripción o síntesis de la conversación, personas participantes y momento de la jornada. Registro pendiente de documentar."
+          "tipo": "editorial",
+          "categoria": "LOS ACONTECIMIENTOS",
+          "tituloNota": "El poema",
+          "subtituloNota": "La disposición hacia lo abierto.",
+          "detalle": "La llegada a Chaitén supone un encuentro entre aquello que se imaginó antes de partir y lo que comienza a descubrirse en el lugar. Las palabras de Carlos acompañan este primer acercamiento al territorio, invitando a reconocer en la observación una abertura hacia lo no previsto.",
+          "cita": "Y que salir de travesía es salir a ejercer el don de lo abierto",
+          "autorCita": "Carlos",
+          "escena": 3
         },
         {
-          "tipo": "pendiente",
-          "categoria": "EL CAMPAMENTO",
-          "autor": "Participante por identificar",
-          "texto": "¿Cómo se prepararon las comidas y se repartieron las tareas cotidianas?"
+          "tipo": "editorial",
+          "categoria": "LA VIDA COMPARTIDA",
+          "tituloNota": "El campamento",
+          "subtituloNota": "Del viaje a la permanencia.",
+          "detalle": "Tras las primeras jornadas de traslado e instalación, el campamento comienza a constituirse como el espacio cotidiano de la travesía. Los tiempos de desplazamiento dan paso a la permanencia en un lugar común, donde se desarrollarán las actividades y la convivencia del grupo.",
+          "escena": 4
         },
         {
-          "tipo": "pendiente",
-          "categoria": "REGISTRO GRÁFICO",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué fotografía o croquis ayuda a comprender este momento?"
-        },
-        {
-          "tipo": "pendiente",
-          "categoria": "VIAJE Y RUTA",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué se observó durante el desplazamiento de hoy?"
-        },
-        {
-          "tipo": "pendiente",
-          "categoria": "HERRAMIENTAS",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué materiales o herramientas se compartieron en esta jornada?",
-          "detalle": "Espacio para indicar quién se hizo cargo de los materiales, qué decisiones se tomaron y qué registros visuales acompañan esta tarea. Registro pendiente de documentar."
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D3CROQUIS2.webp",
+          "altNota": "Segundo croquis de referencia, pendiente de reemplazo por un croquis del Día 03.",
+          "pieNota": "Croquis incorporado al registro del Día 03.",
+          "escena": 4
         }
       ]
     },
@@ -270,82 +248,77 @@ window.DATOS_TRAVESIA = {
       "etiqueta": "Día 04",
       "titulo": "Día 04",
       "fecha": "15 de noviembre de 2026",
-      "subtitulo": "Relato, fecha, imagen y nombre de la jornada por completar.",
-      "pregunta": "¿Cómo avanzaron las faenas?",
+      "subtitulo": "Preparación del lugar, observación libre y reconocimiento del territorio en Chaitén.",
+      "pregunta": "¿Cómo se dispuso el lugar y qué permitió la observación del territorio?",
       "imagen": "assets/dias/D4FOTO1.webp",
       "imagenes": [
         {
           "src": "assets/dias/D4FOTO1.webp",
-          "alt": "Ilustración provisional de la jornada 04; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "alt": "Fotografía de registro de la jornada 04, primera escena.",
+          "pie": "LA OBRA Y SU ACONTECER · 1/2"
         },
         {
           "src": "assets/dias/D4FOTO2.webp",
-          "alt": "Ilustración provisional de la jornada 04; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "alt": "Fotografía de registro de la jornada 04, segunda escena.",
+          "pie": "LA OBRA Y SU ACONTECER · 1/2"
         },
         {
           "src": "assets/dias/D4FOTO3.webp",
-          "alt": "Ilustración provisional de la jornada 04; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "alt": "Fotografía de registro de la jornada 04, tercera escena.",
+          "pie": "LOS ACONTECIMIENTOS · 2/2"
         },
         {
           "src": "assets/dias/D4FOTO4.webp",
-          "alt": "Ilustración provisional de la jornada 04; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "alt": "Fotografía de registro de la jornada 04, cuarta escena.",
+          "pie": "LOS ACONTECIMIENTOS · 2/2"
         },
         {
           "src": "assets/dias/D4FOTO5.webp",
-          "alt": "Ilustración provisional de la jornada 04; sustituir por una fotografía real.",
-          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+          "alt": "Fotografía de registro de la jornada 04, quinta escena.",
+          "pie": "LOS ACONTECIMIENTOS · 2/2"
+        },
+        {
+          "src": "assets/dias/D4FOTO6.webp",
+          "alt": "Fotografía de registro de la jornada 04, sexta escena.",
+          "pie": "LOS ACONTECIMIENTOS · 2/2"
+        },
+        {
+          "src": "assets/dias/D4FOTO7.webp",
+          "alt": "Fotografía de registro de la jornada 04, séptima escena.",
+          "pie": "LOS ACONTECIMIENTOS · 2/2"
         }
       ],
       "comentarios": [
         {
-          "tipo": "mirada",
-          "categoria": "MIRADAS",
-          "autor": "Participante por identificar",
-          "texto": "¿Cómo avanzaron las faenas?",
-          "detalle": "Contenido por incorporar: ampliar esta observación con el relato del participante, croquis, fotografías o antecedentes de la jornada. Este texto es una indicación editorial, no un testimonio."
+          "tipo": "editorial",
+          "categoria": "LA OBRA Y SU ACONTECER",
+          "tituloNota": "Preparación del lugar",
+          "subtituloNota": "Un terreno por disponer",
+          "detalle": "Durante la jornada, un grupo reducido se dirigió hasta el lugar destinado a la obra para realizar labores de limpieza del terreno. Estas tareas formaron parte de la preparación del espacio donde se desarrollaría la intervención.",
+          "escena": 1
         },
         {
-          "tipo": "obra",
-          "categoria": "LA OBRA",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué se trabajó en la obra y quiénes estuvieron a cargo?"
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D4CROQUIS1.webp",
+          "altNota": "Croquis de referencia incorporado al registro del Día 04.",
+          "pieNota": "Croquis incorporado al registro del Día 04.",
+          "escena": 2
         },
         {
-          "tipo": "organizacion",
-          "categoria": "LA ORGANIZACIÓN",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué se aprendió del trabajo compartido?",
-          "detalle": "Contenido por incorporar: ampliar esta observación con el relato del participante, croquis, fotografías o antecedentes de la jornada. Este texto es una indicación editorial, no un testimonio."
+          "tipo": "editorial",
+          "categoria": "LOS ACONTECIMIENTOS",
+          "tituloNota": "Recorrido y observación",
+          "subtituloNota": "Detenerse en lo que ofrece el lugar",
+          "texto": "La jornada contempló una salida libre de observación por Chaitén, en la que los participantes pudieron recorrer el entorno antes de regresar al campamento y continuar con las actividades del día.",
+          "detalle": "A diferencia de las faenas desarrolladas en la obra, este momento estuvo destinado a la observación del territorio. La salida permitió disponer de un tiempo de recorrido sin una actividad constructiva específica, dando lugar al encuentro con distintos aspectos del entorno.",
+          "escena": 4
         },
         {
-          "tipo": "convivencia",
-          "categoria": "VIDA COTIDIANA",
-          "autor": "Participante por identificar",
-          "texto": "¿Cómo fue la convivencia, la alimentación y el campamento?"
-        },
-        {
-          "tipo": "pendiente",
-          "categoria": "EL CAMPAMENTO",
-          "autor": "Participante por identificar",
-          "texto": "¿Cómo se prepararon las comidas y se repartieron las tareas cotidianas?",
-          "detalle": "Por incorporar: organización de turnos, responsabilidades, alimentación y registro de la vida compartida. Registro pendiente de documentar."
-        },
-        {
-          "tipo": "pendiente",
-          "categoria": "REGISTRO GRÁFICO",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué fotografía o croquis ayuda a comprender este momento?"
-        },
-        {
-          "tipo": "pendiente",
-          "categoria": "VIAJE Y RUTA",
-          "autor": "Participante por identificar",
-          "texto": "¿Qué se observó durante el desplazamiento de hoy?",
-          "detalle": "Registrar aquí una anécdota o una descripción del trayecto, junto con la fotografía o el croquis que corresponda. Registro pendiente de documentar."
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D4CROQUIS2.webp",
+          "altNota": "Segundo croquis de referencia incorporado al registro del Día 04.",
+          "pieNota": "Croquis incorporado al registro del Día 04.",
+          "escena": 5
         }
       ]
     },
@@ -540,25 +513,30 @@ window.DATOS_TRAVESIA = {
       "fecha": "18 de noviembre de 2026",
       "subtitulo": "Relato, fecha, imagen y nombre de la jornada por completar.",
       "pregunta": "¿Qué tareas se repartieron?",
-      "imagen": "assets/dias/dia-07.svg",
+      "imagen": "assets/dias/D7FOTO1.webp",
       "imagenes": [
         {
-          "src": "assets/dias/dia-07.svg",
+          "src": "assets/dias/D7FOTO1.webp",
           "alt": "Ilustración provisional de la jornada 07; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/dia-07.svg",
+          "src": "assets/dias/D7FOTO2.webp",
           "alt": "Ilustración provisional de la jornada 07; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/dia-07.svg",
+          "src": "assets/dias/D7FOTO3.webp",
           "alt": "Ilustración provisional de la jornada 07; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/dia-07.svg",
+          "src": "assets/dias/D7FOTO4.webp",
+          "alt": "Ilustración provisional de la jornada 07; sustituir por una fotografía real.",
+          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+        },
+        {
+          "src": "assets/dias/D7FOTO5.webp",
           "alt": "Ilustración provisional de la jornada 07; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         }
@@ -620,25 +598,25 @@ window.DATOS_TRAVESIA = {
       "fecha": "19 de noviembre de 2026",
       "subtitulo": "Relato, fecha, imagen y nombre de la jornada por completar.",
       "pregunta": "¿Qué se descubrió al observar?",
-      "imagen": "assets/dias/dia-08.svg",
+      "imagen": "assets/dias/DIA8FOTO1.webp",
       "imagenes": [
         {
-          "src": "assets/dias/dia-08.svg",
+          "src": "assets/dias/DIA8FOTO1.webp",
           "alt": "Ilustración provisional de la jornada 08; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/dia-08.svg",
+          "src": "assets/dias/DIA8FOTO2.webp",
           "alt": "Ilustración provisional de la jornada 08; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/dia-08.svg",
+          "src": "assets/dias/DIA8FOTO3.webp",
           "alt": "Ilustración provisional de la jornada 08; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/dia-08.svg",
+          "src": "assets/dias/DIA8FOTO4.webp",
           "alt": "Ilustración provisional de la jornada 08; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         }
@@ -706,28 +684,40 @@ window.DATOS_TRAVESIA = {
       "fecha": "20 de noviembre de 2026",
       "subtitulo": "Relato, fecha, imagen y nombre de la jornada por completar.",
       "pregunta": "¿Qué acontecimiento se quiere recordar?",
-      "imagen": "assets/dias/dia-09.svg",
+      "imagen": "assets/dias/DIA9FOTO1.webp",
       "imagenes": [
         {
-          "src": "assets/dias/dia-09.svg",
+          "src": "assets/dias/DIA9FOTO1.webp",
           "alt": "Ilustración provisional de la jornada 09; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/dia-09.svg",
+          "src": "assets/dias/DIA9FOTO2.webp",
           "alt": "Ilustración provisional de la jornada 09; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/dia-09.svg",
+          "src": "assets/dias/DIA9FOTO3.webp",
           "alt": "Ilustración provisional de la jornada 09; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/dia-09.svg",
+          "src": "assets/dias/DIA9FOTO4.webp",
           "alt": "Ilustración provisional de la jornada 09; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
-        }
+        },
+         {
+          "src": "assets/dias/DIA9FOTO5.webp",
+          "alt": "Ilustración provisional de la jornada 09; sustituir por una fotografía real.",
+          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+        },
+         {
+          "src": "assets/dias/DIA9FOTO6.webp",
+          "alt": "Ilustración provisional de la jornada 09; sustituir por una fotografía real.",
+          "pie": "IMAGEN PROVISORIA / SUSTITUIR"
+        },
+        
+
       ],
       "comentarios": [
         {
@@ -794,29 +784,29 @@ window.DATOS_TRAVESIA = {
       "id": "dia-10",
       "numero": "10",
       "etiqueta": "Día 10",
-      "titulo": "Día 10",
+      "titulo": "Las últimas piezas de la obra toman su lugar",
       "fecha": "21 de noviembre de 2026",
-      "subtitulo": "Relato, fecha, imagen y nombre de la jornada por completar.",
+      "subtitulo": "La jornada estuvo dedicada a las terminaciones de la obra en el Sendero de los Carpinteros. En Arquitectura se completó el entablado de la cuarta plataforma y se avanzó en las escaleras que conectan los distintos niveles del recorrido. Paralelamente, Diseño continuó con la construcción de las bancas, la ubicación de las figuras del pájaro carpintero y los trabajos de pintura. Durante la tarde, las labores se concentraron en pintar y limpiar las superficies, afectadas por el barro acumulado tras las lluvias.",
       "pregunta": "¿Cómo se transformó el trabajo?",
-      "imagen": "assets/dias/dia-10.svg",
+      "imagen": "assets/dias/DIA10FOTO1.webp",
       "imagenes": [
         {
-          "src": "assets/dias/dia-10.svg",
+          "src": "assets/dias/DIA10FOTO1.webp",
           "alt": "Ilustración provisional de la jornada 10; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/dia-10.svg",
+          "src": "assets/dias/DIA10FOTO2.webp",
           "alt": "Ilustración provisional de la jornada 10; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/dia-10.svg",
+          "src": "assets/dias/DIA10FOTO3.webp",
           "alt": "Ilustración provisional de la jornada 10; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         },
         {
-          "src": "assets/dias/dia-10.svg",
+          "src": "assets/dias/DIA10FOTO4.webp",
           "alt": "Ilustración provisional de la jornada 10; sustituir por una fotografía real.",
           "pie": "IMAGEN PROVISORIA / SUSTITUIR"
         }
@@ -1295,12 +1285,26 @@ window.DATOS_TRAVESIA = {
     return asignadas;
   }
   function tarjeta({c,k},diaNumero,orden){
+    // Variante gráfica: solo croquis y pie, sin cita, autor, categoría ni desplegable.
+    // Se revela durante el scroll igual que las notas de texto.
+    if(c.tipo==='croquis' && c.imagenNota){
+      return `<article class="voz-burbuja voz-croquis" data-revelar="1" style="--retardo:${Math.min(orden,3)*140}ms"><figure class="voz-croquis-figura"><img loading="lazy" src="${esc(c.imagenNota)}" alt="${esc(c.altNota||'Croquis de la jornada')}">${c.pieNota?`<figcaption>${esc(c.pieNota)}</figcaption>`:''}</figure></article>`;
+    }
+    // Tarjetas editoriales con título, frase de entrada y relato completo desplegable.
+    if(c.tipo==='editorial'){
+      const id=`detalle-${diaNumero}-${k}`;
+      const cuerpo=Array.isArray(c.detalle)?c.detalle.filter(Boolean):(c.detalle?[c.detalle]:[]);
+      const extra=cuerpo.length?`<button class="voz-desplegar" type="button" aria-expanded="false" aria-controls="${id}"><span class="voz-boton-texto">Leer más</span><span class="voz-boton-simbolo" aria-hidden="true">+</span></button><div class="voz-detalle" id="${id}" hidden>${cuerpo.map(t=>`<p>${esc(t)}</p>`).join('')}</div>`:'';
+      const cita=c.cita?`<blockquote class="voz-editorial-cita">«${esc(c.cita)}»</blockquote>${c.autorCita?`<p class="voz-editorial-atribucion">${esc(c.autorCita)}</p>`:''}`:'';
+      return `<article class="voz-burbuja voz-editorial" data-revelar="1" style="--retardo:${Math.min(orden,3)*140}ms"><p class="voz-categoria">${esc(c.categoria||'REGISTRO')}</p><h3 class="voz-editorial-titulo">${esc(c.tituloNota||'Registro de la jornada')}</h3>${c.subtituloNota?`<p class="voz-editorial-entradilla">${esc(c.subtituloNota)}</p>`:''}${cita}${extra}</article>`;
+    }
     const color=['','roja','crema','oscura'][k%4];
     const etiqueta=c.categoria||'REGISTRO PENDIENTE';
     const detalle=Array.isArray(c.detalle)?c.detalle.filter(Boolean):(c.detalle?[c.detalle]:[]);
     const id=`detalle-${diaNumero}-${k}`;
+    const imagenNota=c.imagenNota?`<figure class="voz-imagen-nota"><img loading="lazy" src="${esc(c.imagenNota)}" alt="${esc(c.altNota||'Croquis o registro visual de la jornada')}">${c.pieNota?`<figcaption>${esc(c.pieNota)}</figcaption>`:''}</figure>`:'';
     const extra=detalle.length?`<button class="voz-desplegar" type="button" aria-expanded="false" aria-controls="${id}"><span class="voz-boton-texto">Leer más</span><span class="voz-boton-simbolo" aria-hidden="true">+</span></button><div class="voz-detalle" id="${id}" hidden><span class="voz-detalle-titulo">AMPLIAR EL REGISTRO</span>${detalle.map(t=>`<p>${esc(t)}</p>`).join('')}${c.imagenDetalle?`<figure><img loading="lazy" src="${esc(c.imagenDetalle)}" alt="${esc(c.altDetalle||'Registro adicional de la jornada')}">${c.pieDetalle?`<figcaption>${esc(c.pieDetalle)}</figcaption>`:''}</figure>`:''}</div>`:'';
-    return `<article class="voz-burbuja ${color}" data-revelar="1" style="--retardo:${Math.min(orden,3)*140}ms"><p class="voz-categoria">${esc(etiqueta)}</p><blockquote>“${esc(c.texto||'Testimonio por incorporar')}”</blockquote><div class="voz-autor"><strong>${esc(c.autor||'Participante por identificar')}</strong><span>VOZ ${String(k+1).padStart(2,'0')}</span></div>${extra}</article>`;
+    return `<article class="voz-burbuja ${color}${c.imagenNota?' voz-con-imagen':''}" data-revelar="1" style="--retardo:${Math.min(orden,3)*140}ms"><p class="voz-categoria">${esc(etiqueta)}</p><blockquote>“${esc(c.texto||'Testimonio por incorporar')}”</blockquote>${imagenNota}<div class="voz-autor"><strong>${esc(c.autor||'Participante por identificar')}</strong><span>VOZ ${String(k+1).padStart(2,'0')}</span></div>${extra}</article>`;
   }
   function contenidoEscena(asignadas,j,diaNumero){
     if(!asignadas.length)return '<span class="escena-sin-voces" data-revelar="1">Espacio para agregar comentarios sobre esta imagen.</span>';

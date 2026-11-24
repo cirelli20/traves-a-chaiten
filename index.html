@@ -42,32 +42,23 @@
 <!-- SEGUNDA SECCIÓN: mapa editorial con dos accesos a los momentos de la travesía. -->
 <section aria-labelledby="titulo-mapa-travesia" class="mapa-travesia seccion-observable" id="mapa-travesia">
 <div class="contenedor mapa-travesia-composicion">
-<div aria-label="Mapa gráfico de Chile con dos destinos seleccionables" class="mapa-papel" role="group">
-<span class="mapa-mar">OCÉANO PACÍFICO</span>
-<svg aria-labelledby="mapa-svg-titulo mapa-svg-descripcion" class="mapa-silueta" role="img" viewbox="0 0 470 725">
-<title id="mapa-svg-titulo">Silueta editorial de Chile</title>
-<desc id="mapa-svg-descripcion">Representación estilizada del territorio chileno, de norte a sur. Los botones superpuestos permiten abrir Viña del Mar y Chaitén.</desc>
-<path class="chile-sombra" d="M204 28 L224 22 227 48 218 72 227 94 223 122 232 149 230 180 239 206 234 230 245 260 238 283 250 312 246 345 252 366 248 397 266 421 271 448 279 474 294 491 290 511 319 532 316 556 347 571 331 597 355 615 337 631 354 648 337 657 342 679 319 671 310 650 294 651 296 624 277 613 282 593 264 574 270 552 249 532 252 510 228 482 225 457 217 427 214 405 211 373 203 346 205 317 198 294 206 269 201 239 200 211 198 184 198 151 197 115 196 80 195 52 Z"></path>
-<g class="islas-del-sur"><path d="M311 596l-12 15 10 16-5 18m25-34-3 14 17 12m-48-72-11 16 14 5"></path><path d="M356 644l7 16-13 16m-48 11 18-10 9 12"></path></g>
-<path class="ruta-puntos" d="M208 345 Q291 399 271 482"></path>
-</svg>
-<span class="mapa-norte">N</span>
-<div class="mapa-destino destino-vina">
-<a aria-label="Abrir Antes de partir, Viña del Mar" class="mapa-pin" href="antes-de-partir.html"><span class="pin-centro"></span></a>
-<a aria-label="Abrir Antes de partir en Viña del Mar" class="mapa-etiqueta" href="antes-de-partir.html"><small>01 / ORIGEN</small><strong>Viña del Mar</strong><span>Antes de partir ↗</span></a>
-</div>
-<div class="mapa-destino destino-chaiten">
-<a aria-label="Ir a la bitácora de los 12 días de Chaitén" class="mapa-pin" href="diario.html"><span class="pin-centro"></span></a>
-<a class="mapa-etiqueta" href="diario.html"><small>02 / DESTINO</small><strong>Chaitén</strong><span>Travesía día a día ↗</span></a>
-</div>
-<span class="mapa-pie">Esquema geográfico orientativo · No a escala</span>
+<div class="mapa-papel" role="group" aria-label="Mapa dibujado de Chile con accesos a Viña del Mar y Chaitén">
+  <div class="mapa-croquis">
+    <img class="mapa-croquis-imagen" src="assets/mapa-chile-croquis.png" alt="Croquis lineal del territorio de Chile" width="1280" height="2048" loading="lazy" decoding="async" />
+    <a class="mapa-boton-svg mapa-boton-vina" href="antes-de-partir.html" aria-label="Viña del Mar: abrir Antes de partir">
+      <img src="assets/boton-vina-del-mar.svg" alt="Viña del Mar" width="743" height="124" />
+    </a>
+    <a class="mapa-boton-svg mapa-boton-chaiten" href="diario.html" aria-label="Chaitén: abrir Bitácora de los doce días">
+      <img src="assets/boton-chaiten.svg" alt="Chaitén" width="568" height="124" />
+    </a>
+  </div>
 </div>
 <div class="mapa-lecturas">
-<a aria-label="Abrir Antes de partir en Viña del Mar" class="mapa-lectura" href="antes-de-partir.html"><span class="mapa-lectura-num">01 / VIÑA DEL MAR</span><span aria-hidden="true" class="mapa-lectura-flecha">↗</span><h3>Antes de partir</h3>
+<a aria-label="Abrir Antes de partir en Viña del Mar" class="mapa-lectura" href="antes-de-partir.html"><span class="mapa-lectura-num">01 · VIÑA DEL MAR</span><span aria-hidden="true" class="mapa-lectura-flecha">↗</span><h3>Antes de partir</h3>
     <p>La travesía comienza mucho antes del viaje, 
       entre preparativos, preguntas y decisiones colectivas que dan inicio al encuentro con un nuevo territorio. 
 </p></a>
-<a class="mapa-lectura" href="diario.html"><span class="mapa-lectura-num">02 / CHAITÉN</span><span aria-hidden="true" class="mapa-lectura-flecha">↗</span><h3>Doce días en travesía</h3>
+<a class="mapa-lectura" href="diario.html"><span class="mapa-lectura-num">02 · CHAITÉN</span><span aria-hidden="true" class="mapa-lectura-flecha">↗</span><h3>Doce días en travesía</h3>
   <p>Cada jornada reúne distintas formas de participar en la travesía, el trabajo de construcción, 
     los actos poéticos, los recorridos y las labores cotidianas. Estos registros permiten seguir el desarrollo de la obra y
      los encuentros que acompañaron su realización.

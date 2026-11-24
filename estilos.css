@@ -101,26 +101,16 @@ html{scroll-behavior:auto}
 }
 .mapa-travesia{background:#f2efe8;padding-block:clamp(86px,8vw,126px);border-bottom:1px solid var(--filete)}
 .mapa-travesia-composicion{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.92fr);gap:26px;align-items:stretch}
-.mapa-papel{position:relative;height:735px;min-height:620px;overflow:hidden;border:1px solid #d9d2c4;background:linear-gradient(150deg,#faf8f0,#e5e2d7);isolation:isolate}
-.mapa-papel:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 57px,#d6d1c42e 58px),repeating-linear-gradient(90deg,transparent,transparent 57px,#d6d1c42e 58px);pointer-events:none}
-.mapa-silueta{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
-.mapa-silueta .chile-sombra{fill:#9cafa1;stroke:#607565;stroke-width:1.4;stroke-linejoin:round}
-.mapa-silueta .islas-del-sur{stroke:#6d8575;stroke-width:7;stroke-linecap:round}
-.mapa-silueta .ruta-puntos{fill:none;stroke:var(--carmin);stroke-width:3;stroke-dasharray:5 9;opacity:.8}
-.mapa-mar{position:absolute;top:40%;left:6%;letter-spacing:.24em;font-size:.59rem;font-weight:600;color:#8c9994;transform:rotate(-90deg);transform-origin:center;z-index:1}
-.mapa-norte{position:absolute;top:23px;right:27px;font:italic 1.3rem/1 var(--serif);color:var(--carmin)}
-.mapa-pie{position:absolute;bottom:17px;left:22px;font-size:.65rem;color:var(--tinta-suave)}
-.mapa-destino{position:absolute;z-index:3;display:flex;align-items:center;gap:13px;transform:translate(-50%,-50%)}
-.destino-vina{left:45%;top:47.5%}
-.destino-chaiten{left:57%;top:66.5%}
-.mapa-pin{width:43px;height:43px;display:grid;place-items:center;background:var(--carmin);border:4px solid var(--papel);border-radius:100%;box-shadow:0 2px 0 #4d211b,0 0 0 7px #ae2d1330;flex:none;transition:transform .25s}
-.mapa-pin:hover,.mapa-pin:focus-visible{transform:scale(1.14)}
-.pin-centro{width:8px;height:8px;border-radius:100%;background:var(--papel)}
-.mapa-etiqueta{display:flex;flex-direction:column;min-width:166px;gap:1px;line-height:1.28;padding:10px 14px;background:var(--papel);border:1px solid #d6cec0;text-decoration:none;box-shadow:0 5px 16px #2d291514;transition:background .2s}
-.mapa-etiqueta:hover{background:#fff;color:var(--carmin)}
-.mapa-etiqueta small{font-size:.57rem;letter-spacing:.12em;color:var(--carmin);font-weight:700}
-.mapa-etiqueta strong{font-size:1.07rem;letter-spacing:-.02em}
-.mapa-etiqueta span{font-size:.69rem;color:var(--tinta-suave)}
+/* Mapa ilustrado: conserva los archivos originales; botones SVG sobre el croquis */
+.mapa-papel{position:relative;display:flex;align-items:center;justify-content:center;height:735px;min-height:620px;overflow:hidden;border:1px solid #d9d2c4;background:#fff}
+.mapa-croquis{position:relative;flex:none;height:calc(100% - 28px);max-height:700px;aspect-ratio:1280 / 2048}
+.mapa-croquis-imagen{display:block;width:100%;height:100%;object-fit:contain}
+.mapa-boton-svg{position:absolute;z-index:2;display:block;width:clamp(175px,19vw,250px);height:auto;line-height:0;transform:translate(-91%,-50%);transition:filter .2s ease,scale .2s ease;cursor:pointer;border-radius:4px}
+.mapa-boton-svg img{width:100%;height:auto;display:block}
+.mapa-boton-svg:hover,.mapa-boton-svg:focus-visible{filter:brightness(.77);scale:1.04}
+.mapa-boton-svg:focus-visible{outline:2px solid var(--carmin);outline-offset:5px}
+.mapa-boton-vina{top:42%;left:47%}
+.mapa-boton-chaiten{top:63.6%;left:44%;width:clamp(170px,17vw,225px);transform:translate(-10%,-50%)}
 .mapa-lecturas{display:grid;grid-template-rows:1fr 1fr auto;gap:15px}
 .mapa-lectura{position:relative;display:flex;flex-direction:column;align-items:start;padding:32px 36px;background:var(--papel);text-decoration:none;border:1px solid var(--filete);transition:background .2s}
 .mapa-lectura:hover{background:#f9f3ed;color:var(--tinta)}
@@ -130,8 +120,6 @@ html{scroll-behavior:auto}
 .mapa-lectura>p{font-size:.87rem;line-height:1.65;max-width:370px;color:var(--tinta-suave);margin-bottom:14px}
 .mapa-lectura-flecha{position:absolute;right:32px;top:26px;font-size:1.7rem;color:var(--carmin)}
 @media (max-width:1060px){
-.mapa-etiqueta{min-width:135px;padding:9px 10px}
-.mapa-etiqueta strong{font-size:.92rem}
 .mapa-travesia-composicion{grid-template-columns:1fr 1fr}
 }
 @media (max-width:880px){
@@ -143,24 +131,15 @@ html{scroll-behavior:auto}
 @media (max-width:650px){
 .mapa-travesia{padding-block:70px}
 .mapa-papel{height:595px;min-height:0}
-.mapa-etiqueta{min-width:117px}
-.mapa-etiqueta strong{font-size:.8rem}
-.mapa-etiqueta small{font-size:.5rem}
-.mapa-etiqueta span{font-size:.58rem}
-.mapa-pin{height:34px;width:34px;border-width:3px;box-shadow:0 0 0 5px #ae2d1330}
-.mapa-destino{gap:7px}
-.destino-vina{left:45%;top:47%}
-.destino-chaiten{left:56.5%;top:66.5%}
 .mapa-lecturas{grid-template-columns:1fr}
 .mapa-lectura{min-height:270px}
 .mapa-lectura h3{font-size:2.45rem}
 }
-.mapa-destino{transform:translateY(-50%)}
-.destino-vina{left:calc(45% - 21px)}
-.destino-chaiten{left:calc(57% - 21px)}
+
 @media (max-width:650px){
-.destino-vina{left:calc(45% - 17px)}
-.destino-chaiten{left:calc(56.5% - 17px)}
+.mapa-croquis{height:calc(100% - 22px);max-height:575px;translate:11px 0}
+.mapa-boton-svg{width:174px}
+.mapa-boton-chaiten{width:170px}
 }
 .pagina-home{scroll-snap-type:y proximity}
 .pagina-home .portada,.pagina-home .mapa-travesia{scroll-snap-align:start;scroll-margin-top:var(--header)}
@@ -650,3 +629,46 @@ body{font-family:var(--sans);font-size:1.0625rem;line-height:1.61}
 @media (max-width: 900px){.marca-logo-integrado{width:140px;max-width:33vw}}
 @media (max-width: 640px){.marca-logo-integrado{width:120px;max-width:37vw}}
 @media (max-width: 420px){.marca-logo-integrado{width:110px;max-width:39vw}}
+
+
+.voz-imagen-nota{margin:0 0 18px;border-radius:6px;overflow:hidden;background:#f6f2eb;border:1px solid #cfc7b8;padding:10px}
+.voz-imagen-nota img{display:block;width:100%;height:auto;max-height:300px;object-fit:contain;background:#f3f0ea}
+.voz-imagen-nota figcaption{margin-top:8px;font-size:.64rem;line-height:1.45;opacity:.78;text-transform:uppercase;letter-spacing:.08em}
+.voz-con-imagen blockquote{margin-bottom:16px}
+.roja .voz-imagen-nota,.oscura .voz-imagen-nota{background:#f7f1e7;border-color:#eadccb;color:#2d261f}
+
+
+/* Nota de croquis: imagen y bajada, sin marco de cita ni controles extra. */
+.voz-grupo .voz-burbuja.voz-croquis{
+  width:100%;max-width:440px;
+  padding:11px 11px 13px;
+  background:#fcfbf7;
+  color:#625d55;
+  border-radius:2px;
+  box-shadow:0 14px 36px #16171130,0 1px 2px #16171121;
+}
+.voz-burbuja.voz-croquis::after{display:none}
+.voz-croquis-figura{margin:0}
+.voz-croquis-figura img{display:block;width:100%;height:auto;object-fit:contain}
+.voz-croquis-figura figcaption{
+  padding:10px 5px 0;
+  font:600 .64rem/1.5 var(--sans);
+  letter-spacing:.07em;
+  text-transform:uppercase;
+  color:#777168;
+}
+@media (max-width:600px){
+  .voz-grupo .voz-burbuja.voz-croquis{padding:8px 8px 12px;max-width:100%}
+  .voz-croquis-figura figcaption{font-size:.6rem}
+}
+
+
+/* Día 03 y siguientes: tarjeta editorial de bitácora con lectura ampliable. */
+.voz-editorial{background:#f5efe4;color:#2d2822}
+.voz-editorial .voz-categoria{margin-bottom:12px}
+.voz-editorial-titulo{font:700 clamp(1.15rem,1.55vw,1.45rem)/1.2 var(--sans);letter-spacing:-.015em;margin:0 0 11px}
+.voz-editorial-entradilla{font:italic 400 clamp(.98rem,1.25vw,1.15rem)/1.45 var(--serif);margin:0 0 11px;color:#5d5148}
+.voz-editorial .voz-desplegar{margin-top:12px}
+.voz-burbuja .voz-editorial-cita{font:italic 500 clamp(.94rem,1.2vw,1.15rem)/1.5 var(--serif);padding-left:13px;border-left:2px solid var(--carmin);margin:15px 0 5px;color:#3b2c26}
+.voz-editorial-atribucion{margin:0 0 12px 15px;color:#736559;font:.68rem/1.4 var(--sans);letter-spacing:.04em}
+@media(max-width:600px){.voz-editorial-titulo{font-size:1.15rem}.voz-editorial-entradilla{font-size:.98rem}}
