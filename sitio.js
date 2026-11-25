@@ -1149,26 +1149,21 @@ window.DATOS_TRAVESIA = {
       "fecha": "23 de noviembre de 2026",
       "subtitulo": "La última jornada comenzó con el desarme del campamento. Al mediodía, el grupo volvió a subir por el sendero, esta vez para reunirse en torno a la obra terminada y participar en su bendición. Después de un almuerzo compartido y una tarde en el pueblo, los talleres se encontraron en la naviera para emprender el regreso por mar.",
       "pregunta": "¿Cómo se vivió la despedida de Chaitén?",
-      "imagen": "assets/dias/dia-12.svg",
+      "imagen": "assets/dias/DIA12FOTO1.webp",
       "imagenes": [
         {
-          "src": "assets/dias/dia-12.svg",
+          "src": "assets/dias/DIA12FOTO1.webp",
           "alt": "Fondo provisional del Día 12, pendiente de fotografías de la bendición de la obra.",
           "pie": "LA OBRA Y SU ACONTECER · 1/3"
         },
         {
-          "src": "assets/dias/dia-12.svg",
+          "src": "assets/dias/DIA12FOTO2.webp",
           "alt": "Fondo provisional del Día 12, pendiente de fotografías del regreso por mar.",
           "pie": "LOS ACONTECIMIENTOS · 2/3"
         },
         {
-          "src": "assets/dias/dia-12.svg",
+          "src": "assets/dias/DIA12FOTO3.webp",
           "alt": "Fondo provisional del Día 12, pendiente de fotografías de la vida compartida.",
-          "pie": "LA VIDA COMPARTIDA · 3/3"
-        },
-        {
-          "src": "assets/dias/dia-12.svg",
-          "alt": "Fondo provisional del Día 12, pendiente de fotografías del acto final.",
           "pie": "LA VIDA COMPARTIDA · 3/3"
         }
       ],
