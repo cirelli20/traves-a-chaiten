@@ -1536,3 +1536,69 @@ window.DATOS_TRAVESIA = {
   mostrar(activo,false);
 })();
 
+
+
+/* GALERÍA AUTOMÁTICA EN PORTADA DE BITÁCORA.
+   Para cambiar la secuencia edita las rutas de este arreglo.
+   No necesita botones y vuelve al comienzo después de la última portada. */
+(function iniciarGaleriaPortadas(){
+  const contenedor=document.querySelector('.pagina-diario .diario-portadas-galeria');
+  if(!contenedor)return;
+  const capas=[...contenedor.querySelectorAll('.diario-portada-capa')];
+  if(capas.length!==2)return;
+  const portadas=[
+    'assets/portadas/PORTADA1.webp',
+    'assets/portadas/PORTADA2.webp',
+    'assets/portadas/PORTADA3.webp',
+    'assets/portadas/PORTADA4.webp',
+    'assets/portadas/PORTADA5.webp',
+    'assets/portadas/PORTADA6.webp',
+    'assets/portadas/PORTADA7.webp',
+    'assets/portadas/PORTADA8.webp',
+    'assets/portadas/PORTADA9.webp',
+    'assets/portadas/PORTADA10.webp',
+    'assets/portadas/PORTADA12.webp',
+    'assets/portadas/PORTADA13.webp'
+  ];
+  if(portadas.length<2 || window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  const tiempoVisible=3000; // Cambio de tiempo de las portadas
+  let indice=0;
+  let capaActiva=0;
+  let temporizador=null;
+  let comprobacion=0;
+  function programar(){
+    clearTimeout(temporizador);
+    if(!document.hidden)temporizador=setTimeout(avanzar,tiempoVisible);
+  }
+  function avanzar(){
+    if(document.hidden)return;
+    const siguienteIndice=(indice+1)%portadas.length;
+    const ruta=portadas[siguienteIndice];
+    const capaNueva=capas[1-capaActiva];
+    const ticket=++comprobacion;
+    const precarga=new Image();
+    precarga.onload=()=>{
+      if(ticket!==comprobacion)return;
+      capaNueva.src=ruta;
+      // El nuevo fondo se hace visible mientras el anterior se desvanece.
+      requestAnimationFrame(()=>{
+        capaNueva.classList.add('activa');
+        capas[capaActiva].classList.remove('activa');
+        capaActiva=1-capaActiva;
+        indice=siguienteIndice;
+        programar();
+      });
+    };
+    precarga.onerror=()=>{
+      if(ticket!==comprobacion)return;
+      indice=siguienteIndice;
+      programar();
+    };
+    precarga.src=ruta;
+  }
+  document.addEventListener('visibilitychange',()=>{
+    if(document.hidden){clearTimeout(temporizador);++comprobacion;}
+    else programar();
+  });
+  programar();
+})();

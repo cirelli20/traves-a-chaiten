@@ -677,3 +677,44 @@ body{font-family:var(--sans);font-size:1.0625rem;line-height:1.61}
 .voz-editorial-texto { margin: 12px 0 0; font: 400 .94rem/1.58 var(--sans); color: inherit; }
 .voz-editorial-titulo + .voz-editorial-texto { margin-top: 16px; }
 @media (max-width: 600px) { .voz-editorial-texto { font-size: .88rem; line-height: 1.55; } }
+
+
+/* GALERÍA AUTOMÁTICA: PORTADAS DE LA BITÁCORA */
+.pagina-diario .diario-portada-fotografica{
+  background:#d7d5cd;
+  background-image:none;
+  isolation:isolate;
+  overflow:hidden;
+}
+.pagina-diario .diario-portadas-galeria{
+  position:absolute;
+  inset:0;
+  z-index:0;
+  overflow:hidden;
+  pointer-events:none;
+}
+.pagina-diario .diario-portada-capa{
+  display:block;
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  opacity:0;
+  transition:opacity 1.35s ease-in-out;
+}
+.pagina-diario .diario-portada-capa.activa{opacity:1}
+.pagina-diario .diario-portadas-velo{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,rgba(251,249,244,.78) 0%,rgba(251,249,244,.66) 48%,rgba(251,249,244,.24) 100%);
+}
+.pagina-diario .diario-portada-fotografica .diario-intro{position:relative;z-index:1}
+@media (max-width:680px){
+  .pagina-diario .diario-portada-fotografica{background-image:none}
+  .pagina-diario .diario-portadas-velo{background:linear-gradient(180deg,rgba(251,249,244,.82) 0%,rgba(251,249,244,.65) 55%,rgba(251,249,244,.40) 100%)}
+}
+@media (prefers-reduced-motion:reduce){
+  .pagina-diario .diario-portada-capa{transition:none}
+}
