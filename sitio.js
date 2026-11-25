@@ -51,8 +51,8 @@ window.DATOS_TRAVESIA = {
         {
           "tipo": "croquis",
           "imagenNota": "assets/dias/D1CROQUIS1.webp",
-          "altNota": "Croquis incorporado al registro del Día 01.",
-          "pieNota": "Croquis incorporado al registro del Día 01.",
+          "altNota": "Croquis 1 del día 01.",
+          "pieNota": "Croquis · Día 01",
           "escena": 3
         },
         {
@@ -61,6 +61,27 @@ window.DATOS_TRAVESIA = {
           "tituloNota": "El encuentro",
           "subtituloNota": "Un nombre a quien buscar.",
           "detalle": "Entre las bitácoras había sobres mezclados, cada uno con una tarjeta que llevaba el nombre de uno de los participantes de la Travesía. Cada uno escogió un sobre, leyó el nombre y buscó a esa persona entre sus compañeros para entregarle la tarjeta. El acto incluyó la lectura de un fragmento de Amereida. Finalmente, cada cual se llevó su bitácora junto con el soporte que el taller había preparado.",
+          "escena": 4
+        },
+        {
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D1CROQUIS2.webp",
+          "altNota": "Croquis 2 del día 01.",
+          "pieNota": "Croquis · Día 01",
+          "escena": 1
+        },
+        {
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D1CROQUIS3.webp",
+          "altNota": "Croquis 3 del día 01.",
+          "pieNota": "Croquis · Día 01",
+          "escena": 2
+        },
+        {
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D1CROQUIS4.webp",
+          "altNota": "Croquis 4 del día 01.",
+          "pieNota": "Croquis · Día 01",
           "escena": 4
         }
       ]
@@ -71,7 +92,7 @@ window.DATOS_TRAVESIA = {
       "etiqueta": "Día 02",
       "titulo": "La llegada a Chaitén",
       "fecha": "13 de noviembre de 2026",
-      "subtitulo": "Llegada a Chaitén, organización del campamento y primera observación libre del lugar.",
+      "subtitulo": "La jornada estuvo dedicada al traslado y a la llegada a Chaitén. Tras una parada en Ayacara cerca de las 6 de la mañana, el grupo continuó hasta su destino, adonde llegó a las 10. Se armaron las carpas, se comió la fajita y, durante la tarde, los participantes salieron a observar el lugar por donde quisieran.",
       "pregunta": "¿Cómo comenzó el reconocimiento de Chaitén?",
       "imagen": "assets/dias/D2FOTO1.webp",
       "imagenes": [
@@ -128,7 +149,7 @@ window.DATOS_TRAVESIA = {
         {
           "tipo": "croquis",
           "imagenNota": "assets/dias/D2CROQUIS1.webp",
-          "altNota": "Croquis provisional de referencia; reemplazar por el croquis del Día 02.",
+          "altNota": "Croquis 1 del día 02.",
           "pieNota": "Croquis · Día 02",
           "escena": 2
         },
@@ -159,7 +180,7 @@ window.DATOS_TRAVESIA = {
         {
           "tipo": "croquis",
           "imagenNota": "assets/dias/D2CROQUIS2.webp",
-          "altNota": "Segundo croquis provisional de referencia; reemplazar por el croquis del Día 02.",
+          "altNota": "Croquis 2 del día 02.",
           "pieNota": "Croquis · Día 02",
           "escena": 5
         }
@@ -216,8 +237,8 @@ window.DATOS_TRAVESIA = {
         {
           "tipo": "croquis",
           "imagenNota": "assets/dias/D3CROQUIS1.webp",
-          "altNota": "Croquis de referencia, pendiente de reemplazo por un croquis del Día 03.",
-          "pieNota": "Croquis incorporado al registro del Día 03.",
+          "altNota": "Croquis 1 del día 03.",
+          "pieNota": "Croquis · Día 03",
           "escena": 2
         },
         {
@@ -249,9 +270,16 @@ window.DATOS_TRAVESIA = {
         {
           "tipo": "croquis",
           "imagenNota": "assets/dias/D3CROQUIS2.webp",
-          "altNota": "Segundo croquis de referencia, pendiente de reemplazo por un croquis del Día 03.",
-          "pieNota": "Croquis incorporado al registro del Día 03.",
+          "altNota": "Croquis 2 del día 03.",
+          "pieNota": "Croquis · Día 03",
           "escena": 4
+        },
+        {
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D3CROQUIS3.webp",
+          "altNota": "Croquis 3 del día 03.",
+          "pieNota": "Croquis · Día 03",
+          "escena": 1
         }
       ]
     },
@@ -313,7 +341,7 @@ window.DATOS_TRAVESIA = {
         {
           "tipo": "croquis",
           "imagenNota": "assets/dias/D4CROQUIS1.webp",
-          "altNota": "Croquis de referencia pendiente de reemplazo por un croquis del Día 4.",
+          "altNota": "Croquis 1 del día 04.",
           "pieNota": "Croquis · Día 04",
           "escena": 2
         },
@@ -325,13 +353,6 @@ window.DATOS_TRAVESIA = {
           "textoVisible": "La jornada contempló una salida libre de observación por Chaitén, en la que los participantes pudieron recorrer el entorno antes de regresar al campamento y continuar con las actividades del día.",
           "detalle": "A diferencia de las faenas desarrolladas en la obra, este momento estuvo destinado a la observación del territorio. La salida permitió disponer de un tiempo de recorrido sin una actividad constructiva específica, dando lugar al encuentro con distintos aspectos del entorno.",
           "escena": 4
-        },
-        {
-          "tipo": "croquis",
-          "imagenNota": "assets/dias/D4CROQUIS2.webp",
-          "altNota": "Croquis de referencia pendiente de reemplazo por un croquis del Día 4.",
-          "pieNota": "Croquis · Día 04",
-          "escena": 5
         }
       ]
     },
@@ -423,6 +444,27 @@ window.DATOS_TRAVESIA = {
           "autor": "Participante por identificar",
           "texto": "¿Qué conversación abrió una pregunta nueva para el grupo?",
           "detalle": "Por incorporar: transcripción o síntesis de la conversación, personas participantes y momento de la jornada. Registro pendiente de documentar."
+        },
+        {
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D5CROQUIS1.webp",
+          "altNota": "Croquis 1 del día 05.",
+          "pieNota": "Croquis · Día 05",
+          "escena": 1
+        },
+        {
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D5CROQUIS2.webp",
+          "altNota": "Croquis 2 del día 05.",
+          "pieNota": "Croquis · Día 05",
+          "escena": 3
+        },
+        {
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D5CROQUIS3.webp",
+          "altNota": "Croquis 3 del día 05.",
+          "pieNota": "Croquis · Día 05",
+          "escena": 5
         }
       ]
     },
@@ -473,7 +515,7 @@ window.DATOS_TRAVESIA = {
         {
           "tipo": "croquis",
           "imagenNota": "assets/dias/D6CROQUIS1.webp",
-          "altNota": "Croquis de referencia pendiente de reemplazo por un croquis del Día 6.",
+          "altNota": "Croquis 1 del día 06.",
           "pieNota": "Croquis · Día 06",
           "escena": 2
         },
@@ -496,7 +538,7 @@ window.DATOS_TRAVESIA = {
         {
           "tipo": "croquis",
           "imagenNota": "assets/dias/D6CROQUIS2.webp",
-          "altNota": "Croquis de referencia pendiente de reemplazo por un croquis del Día 6.",
+          "altNota": "Croquis 2 del día 06.",
           "pieNota": "Croquis · Día 06",
           "escena": 3
         }
@@ -549,7 +591,7 @@ window.DATOS_TRAVESIA = {
         {
           "tipo": "croquis",
           "imagenNota": "assets/dias/D7CROQUIS1.webp",
-          "altNota": "Croquis de referencia pendiente de reemplazo por un croquis del Día 7.",
+          "altNota": "Croquis 1 del día 07.",
           "pieNota": "Croquis · Día 07",
           "escena": 2
         },
@@ -563,9 +605,16 @@ window.DATOS_TRAVESIA = {
         {
           "tipo": "croquis",
           "imagenNota": "assets/dias/D7CROQUIS2.webp",
-          "altNota": "Croquis de referencia pendiente de reemplazo por un croquis del Día 7.",
+          "altNota": "Croquis 2 del día 07.",
           "pieNota": "Croquis · Día 07",
           "escena": 4
+        },
+        {
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D7CROQUIS3.webp",
+          "altNota": "Croquis 3 del día 07.",
+          "pieNota": "Croquis · Día 07",
+          "escena": 5
         }
       ]
     },
@@ -652,6 +701,104 @@ window.DATOS_TRAVESIA = {
           "autor": "Participante por identificar",
           "texto": "¿Qué se observó durante el desplazamiento de hoy?",
           "detalle": "Registrar aquí una anécdota o una descripción del trayecto, junto con la fotografía o el croquis que corresponda. Registro pendiente de documentar."
+        },
+        {
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D8CROQUIS1.webp",
+          "altNota": "Croquis 1 del día 08.",
+          "pieNota": "Croquis · Día 08",
+          "escena": 1
+        },
+        {
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D8CROQUIS2.webp",
+          "altNota": "Croquis 2 del día 08.",
+          "pieNota": "Croquis · Día 08",
+          "escena": 2
+        },
+        {
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D8CROQUIS3.webp",
+          "altNota": "Croquis 3 del día 08.",
+          "pieNota": "Croquis · Día 08",
+          "escena": 3
+        },
+        {
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D8CROQUIS4.webp",
+          "altNota": "Croquis 4 del día 08.",
+          "pieNota": "Croquis · Día 08",
+          "escena": 4
+        },
+        {
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D8CROQUIS5.webp",
+          "altNota": "Croquis 5 del día 08.",
+          "pieNota": "Croquis · Día 08",
+          "escena": 1
+        },
+        {
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D8CROQUIS6.webp",
+          "altNota": "Croquis 6 del día 08.",
+          "pieNota": "Croquis · Día 08",
+          "escena": 2
+        },
+        {
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D8CROQUIS7.webp",
+          "altNota": "Croquis 7 del día 08.",
+          "pieNota": "Croquis · Día 08",
+          "escena": 3
+        },
+        {
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D8CROQUIS8.webp",
+          "altNota": "Croquis 8 del día 08.",
+          "pieNota": "Croquis · Día 08",
+          "escena": 4
+        },
+        {
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D8CROQUIS9.webp",
+          "altNota": "Croquis 9 del día 08.",
+          "pieNota": "Croquis · Día 08",
+          "escena": 1
+        },
+        {
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D8CROQUIS10.webp",
+          "altNota": "Croquis 10 del día 08.",
+          "pieNota": "Croquis · Día 08",
+          "escena": 2
+        },
+        {
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D8CROQUIS11.webp",
+          "altNota": "Croquis 11 del día 08.",
+          "pieNota": "Croquis · Día 08",
+          "escena": 3
+        },
+        {
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D8CROQUIS12.webp",
+          "altNota": "Croquis 12 del día 08.",
+          "pieNota": "Croquis · Día 08",
+          "escena": 4
+        },
+        {
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D8CROQUIS13.webp",
+          "altNota": "Croquis 13 del día 08.",
+          "pieNota": "Croquis · Día 08",
+          "escena": 1
+        },
+        {
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D8CROQUIS14.webp",
+          "altNota": "Croquis 14 del día 08.",
+          "pieNota": "Croquis · Día 08",
+          "escena": 2
         }
       ]
     },
@@ -721,7 +868,7 @@ window.DATOS_TRAVESIA = {
         {
           "tipo": "croquis",
           "imagenNota": "assets/dias/D9CROQUIS1.webp",
-          "altNota": "Croquis de referencia pendiente de reemplazo por un croquis del Día 9.",
+          "altNota": "Croquis 1 del día 09.",
           "pieNota": "Croquis · Día 09",
           "escena": 2
         },
@@ -752,7 +899,7 @@ window.DATOS_TRAVESIA = {
         {
           "tipo": "croquis",
           "imagenNota": "assets/dias/D9CROQUIS2.webp",
-          "altNota": "Croquis de referencia pendiente de reemplazo por un croquis del Día 9.",
+          "altNota": "Croquis 2 del día 09.",
           "pieNota": "Croquis · Día 09",
           "escena": 4
         },
@@ -772,6 +919,13 @@ window.DATOS_TRAVESIA = {
           "texto": "El encuentro con el vecino del campamento que nos facilitó su taller y sus herramientas permitió resolver el calado fino de las matrices de los pájaros.",
           "autor": "Amanda y Antonella Saa",
           "detalle": "Al mismo tiempo, las conversaciones en obra con los profesores, como decidir sobre la marcha una cuarta plataforma o definir junto a Chicano cómo integrar el poema de Carlos y las poses de los carpinteros en la banca, fueron abriendo nuevas decisiones de diseño sobre cómo rematar el recorrido del mirador.",
+          "escena": 6
+        },
+        {
+          "tipo": "croquis",
+          "imagenNota": "assets/dias/D9CROQUIS3.webp",
+          "altNota": "Croquis 3 del día 09.",
+          "pieNota": "Croquis · Día 09",
           "escena": 6
         }
       ]
@@ -843,7 +997,7 @@ window.DATOS_TRAVESIA = {
         {
           "tipo": "croquis",
           "imagenNota": "assets/dias/D10CROQUIS1.webp",
-          "altNota": "Croquis de referencia pendiente de reemplazo por un croquis del Día 10.",
+          "altNota": "Croquis 1 del día 10.",
           "pieNota": "Croquis · Día 10",
           "escena": 2
         },
@@ -879,13 +1033,6 @@ window.DATOS_TRAVESIA = {
           "tituloNota": "El campamento",
           "subtituloNota": "El trabajo después de las lluvias.",
           "detalle": "Las precipitaciones habían dejado una importante acumulación de barro en el sector de la obra. Durante la tarde, parte de las faenas se orientó a la limpieza del lugar y a las labores de pintura, atendiendo a las condiciones que presentaban las superficies.",
-          "escena": 4
-        },
-        {
-          "tipo": "croquis",
-          "imagenNota": "assets/dias/D10CROQUIS2.webp",
-          "altNota": "Croquis de referencia pendiente de reemplazo por un croquis del Día 10.",
-          "pieNota": "Croquis · Día 10",
           "escena": 4
         }
       ]
@@ -957,7 +1104,7 @@ window.DATOS_TRAVESIA = {
         {
           "tipo": "croquis",
           "imagenNota": "assets/dias/D11CROQUIS1.webp",
-          "altNota": "Croquis de referencia pendiente de reemplazo por un croquis del Día 11.",
+          "altNota": "Croquis 1 del día 11.",
           "pieNota": "Croquis · Día 11",
           "escena": 2
         },
@@ -988,7 +1135,7 @@ window.DATOS_TRAVESIA = {
         {
           "tipo": "croquis",
           "imagenNota": "assets/dias/D11CROQUIS2.webp",
-          "altNota": "Croquis de referencia pendiente de reemplazo por un croquis del Día 11.",
+          "altNota": "Croquis 2 del día 11.",
           "pieNota": "Croquis · Día 11",
           "escena": 4
         }
@@ -1060,7 +1207,6 @@ window.DATOS_TRAVESIA = {
         }
       ]
     }
-
   ],
   "categorias": [
     {
