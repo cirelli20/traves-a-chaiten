@@ -718,3 +718,78 @@ body{font-family:var(--sans);font-size:1.0625rem;line-height:1.61}
 @media (prefers-reduced-motion:reduce){
   .pagina-diario .diario-portada-capa{transition:none}
 }
+
+/* ===== AJUSTE DE COMPOSICIÓN: MAPA Y CUADERNO ===== */
+/* Botones del mapa: más discretos, sin reducir la zona de navegación del sitio. */
+@media (min-width: 651px) {
+  .pagina-home .mapa-boton-svg { width: clamp(122px, 12.7vw, 172px); }
+  .pagina-home .mapa-boton-chaiten { width: clamp(116px, 11.6vw, 154px); }
+}
+@media (max-width: 650px) {
+  .pagina-home .mapa-boton-svg { width: 115px; }
+  .pagina-home .mapa-boton-chaiten { width: 105px; }
+}
+
+/* Cuaderno: cabe en pantallas comunes y cada texto comienza arriba. */
+.pagina-antes .libro-marco {
+  height: clamp(510px, calc(100svh - var(--header) - 170px), 575px);
+}
+.pagina-antes .libro-pagina,
+.pagina-antes .libro-pagina.pagina-izquierda:not(.pagina-talleres) {
+  padding-top: 28px;
+  padding-bottom: 24px;
+  justify-content: flex-start;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #d4c8b8 transparent;
+}
+.pagina-antes .libro-apertura,
+.pagina-antes .libro-final { justify-content: flex-start; }
+/* La izquierda no tiene rótulo superior: este margen alinea su título con el de la derecha. */
+.pagina-antes .libro-apertura > div:first-child,
+.pagina-antes .libro-final > div:first-child { margin-top: 30px; }
+.pagina-antes .capitulo-texto {
+  margin-top: 15px;
+  padding-bottom: 0;
+}
+.pagina-antes .dibujo-lugar { margin: 0 auto 16px; }
+.pagina-antes .libro-lista-grafica { margin: 0 0 16px; }
+.pagina-antes .libro-lista-grafica span { padding: 10px 0; }
+.pagina-antes .libro-croquis { margin: 6px -3% 0; padding: 12px; }
+.pagina-antes .libro-croquis img { max-height: 455px; }
+.pagina-antes .libro-cita { margin-bottom: 16px; }
+.pagina-antes .talleres-libro { margin: 15px 0 5px; }
+
+@media (max-width: 650px) {
+  .pagina-antes .libro-marco {
+    height: clamp(535px, calc(100svh - var(--header) - 110px), 620px);
+  }
+  .pagina-antes .libro-pagina,
+  .pagina-antes .libro-pagina.pagina-izquierda:not(.pagina-talleres) {
+    padding: 24px 22px 20px;
+  }
+  .pagina-antes .capitulo-texto { margin-top: 13px; }
+  .pagina-antes .talleres-libro { margin-top: 12px; }
+}
+/* Croquis del cuaderno: limitar la altura dentro de la nueva proporción de página. */
+.pagina-antes .dibujo-lugar img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: min(41vh, 355px);
+  object-fit: contain;
+}
+.pagina-antes .libro-croquis img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: min(48vh, 390px);
+  object-fit: contain;
+}
+/* Mantener un área cómoda de pulsación incluso al reducir los SVG. */
+.pagina-home .mapa-boton-svg::before {
+  content: "";
+  position: absolute;
+  inset: -12px -9px;
+}
