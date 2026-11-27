@@ -109,7 +109,8 @@ html{scroll-behavior:auto}
 .mapa-boton-svg img{width:100%;height:auto;display:block}
 .mapa-boton-svg:hover,.mapa-boton-svg:focus-visible{filter:brightness(.77);scale:1.04}
 .mapa-boton-svg:focus-visible{outline:2px solid var(--carmin);outline-offset:5px}
-.mapa-boton-vina{top:42%;left:47%}
+/* El centro del punto coincide con el borde costero occidental del croquis. */
+.mapa-boton-vina{top:42%;left:45.3%}
 .mapa-boton-chaiten{top:63.6%;left:44%;width:clamp(170px,17vw,225px);transform:translate(-10%,-50%)}
 .mapa-lecturas{display:grid;grid-template-rows:1fr 1fr auto;gap:15px}
 .mapa-lectura{position:relative;display:flex;flex-direction:column;align-items:start;padding:32px 36px;background:var(--papel);text-decoration:none;border:1px solid var(--filete);transition:background .2s}
@@ -187,13 +188,6 @@ body{animation:none!important;transition:none!important}
 .libro-croquis img{height:auto;max-height:430px;object-fit:contain}
 .libro-final{justify-content:space-between}
 .pagina-talleres{gap:14px}
-.talleres-libro{display:grid;grid-template-rows:1fr 1fr;gap:13px;margin:35px 0 18px;min-height:0;flex:1}
-.talleres-libro a{display:flex;flex-direction:column;gap:9px;border:1px solid #d5c7b7;background:#f4efe6;padding:19px 21px;text-decoration:none;transition:background .2s}
-.talleres-libro a:hover{background:#ece2d5}
-.talleres-libro a small{font-size:.57rem;font-weight:700;letter-spacing:.11em;color:var(--carmin)}
-.talleres-libro a strong{font-size:clamp(.94rem,1.25vw,1.3rem);font-weight:500;line-height:1.25}
-.talleres-libro a span{font-size:.7rem;color:#61584e;line-height:1.35}
-.talleres-libro a b{font-size:.63rem;font-weight:700;letter-spacing:.1em;margin-top:auto;color:var(--carmin)}
 .libro-volteo{position:absolute;z-index:6;top:0;bottom:0;left:50%;width:50%;transform-style:preserve-3d;transform-origin:left center;pointer-events:none}
 .libro-volteo .cara{position:absolute;inset:0;backface-visibility:hidden;overflow:hidden}
 .libro-volteo .cara-back{transform:rotateY(180deg)}
@@ -202,21 +196,11 @@ body{animation:none!important;transition:none!important}
 .libro-volteo.anterior{animation:voltear-anterior .86s cubic-bezier(.35,.04,.24,.99) forwards}
 @keyframes voltear-siguiente{from{transform:rotateY(0)}to{transform:rotateY(-180deg)}}
 @keyframes voltear-anterior{from{transform:rotateY(-180deg)}to{transform:rotateY(0)}}
-.controles-libro{display:flex;align-items:center;justify-content:space-between;gap:18px;padding-block:30px 24px;border-bottom:1px solid #cfc4b4}
-.controles-libro button{min-width:190px;background:#fcfaf4;border:1px solid #cfc4b4;color:#443b32;padding:15px 19px;cursor:pointer;font-size:.83rem;font-weight:600;display:flex;justify-content:space-between;gap:20px}
-.controles-libro button:hover:not(:disabled){border-color:var(--carmin);color:var(--carmin)}
-.controles-libro button:disabled{opacity:.32;cursor:default}
-.avance-libro{display:flex;flex-direction:column;align-items:center;gap:8px;color:var(--carmin);font-size:.7rem;font-weight:600;letter-spacing:.14em}
-.avance-marcas{display:flex;gap:8px}
-.avance-marcas i{width:23px;height:3px;background:#d6cabc}
-.avance-marcas i.activo{background:var(--carmin)}
 @media (max-width:950px){
 .libro-marco{height:620px}
 .libro-pagina{padding:25px 24px 22px}
 .capitulo-texto h3{font-size:2.7rem}
 .libro-apertura h2,.libro-final h2{font-size:2.7rem}
-.talleres-libro a{padding:14px}
-.talleres-libro a strong{font-size:.99rem}
 }
 @media (max-width:650px){
 .libro-encima{display:block}
@@ -231,38 +215,14 @@ body{animation:none!important;transition:none!important}
 .libro-lomo{left:0;width:16px}
 .libro-volteo{left:0;width:100%}
 .libro-volteo .cara .pagina-izquierda{display:flex}
-.controles-libro button{min-width:0;padding:12px 9px;font-size:.73rem;gap:10px}
-.controles-libro{gap:9px}
-.avance-marcas i{width:10px}
-.talleres-libro a strong{font-size:1.12rem}
-.talleres-libro{margin:24px 0 18px}
 .pagina-talleres{padding:20px}
-.talleres-libro a{padding:15px}
 .libro-final h2{font-size:2.5rem}
 }
 @media (prefers-reduced-motion:reduce){
 .libro-volteo.siguiente,.libro-volteo.anterior{animation:none}
 }
 .pagina-antes .seccion-libro{padding-bottom:clamp(150px,14vw,205px)}
-.pagina-antes .controles-libro{
- position:fixed;bottom:max(18px,env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);
- z-index:180;width:min(690px,calc(100vw - 36px));max-width:calc(100vw - 36px);
- display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:16px;
- padding:12px 14px;border:1px solid #d0c3b2;background:#fcfaf4f0;
- box-shadow:0 12px 48px #211a1238,0 2px 9px #211a1210;backdrop-filter:blur(17px);
- border-radius:7px;
-}
-.pagina-antes .controles-libro button{width:100%;min-width:0;max-width:225px;padding:13px 16px;align-items:center;border-radius:3px;background:#fffdf8;white-space:nowrap;}
-.pagina-antes .controles-libro button:last-child{justify-self:end;background:var(--carmin);color:#fff;border-color:var(--carmin)}
-.pagina-antes .controles-libro button:last-child:hover:not(:disabled){background:#8e2611;color:#fff;}
-.pagina-antes .controles-libro button:disabled{background:#f5eee4;color:#857c71;border-color:#d7cdc0;opacity:.55}
-.pagina-antes .avance-libro{min-width:91px}
 @media (max-width:650px){
-.pagina-antes .controles-libro{width:calc(100vw - 20px);max-width:calc(100vw - 20px);bottom:max(8px,env(safe-area-inset-bottom));gap:8px;padding:8px;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr)}
-.pagina-antes .controles-libro button{font-size:.69rem;padding:11px 9px;gap:5px;white-space:normal;line-height:1.25}
-.pagina-antes .avance-libro{min-width:55px;font-size:.63rem}
-.pagina-antes .avance-marcas{gap:3px}
-.pagina-antes .avance-marcas i{width:7px}
 .pagina-antes .seccion-libro{padding-bottom:145px}
 }
 
@@ -576,48 +536,15 @@ body{font-family:var(--sans);font-size:1.0625rem;line-height:1.61}
 .pagina-antes .libro-final p{max-width:43ch}
 .pagina-antes .libro-lista-grafica span{color:#746b5c;padding:15px 0}
 .pagina-antes .libro-lista-grafica span b{margin-left:4px}
-.pagina-antes .talleres-libro{margin:25px 0 15px}
-.pagina-antes .talleres-libro a b{font-size:.67rem;letter-spacing:.05em}
-.pagina-antes .controles-libro{
-  grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);
-  width:min(615px,calc(100vw - 36px));
-  padding:9px 11px;gap:10px;border-radius:3px;
-  background:rgba(252,250,244,.97);border:1px solid #cfc6b7;
-  box-shadow:0 7px 26px #241f1529;backdrop-filter:blur(12px)
-}
-.pagina-antes .controles-libro button,
-.pagina-antes .controles-libro .libro-continuar{
-  min-width:0;max-width:none;width:100%;display:flex;align-items:center;justify-content:center;
-  min-height:44px;padding:10px 15px;border:1px solid transparent;border-radius:2px;
-  background:transparent;color:var(--tinta);font:600 .87rem/1.2 var(--sans);
-  text-decoration:none;cursor:pointer;transition:background .18s,border-color .18s,color .18s;
-}
-.pagina-antes .controles-libro button:hover:not(:disabled){background:#f1e9dc;border-color:#ded1c2;color:var(--tinta)}
-.pagina-antes .controles-libro button:last-of-type{background:transparent;border-color:transparent;color:var(--tinta);justify-self:stretch}
-.pagina-antes .controles-libro button:last-of-type:hover:not(:disabled){background:#f1e9dc;border-color:#ded1c2;color:var(--tinta)}
-.pagina-antes .controles-libro button:disabled{opacity:.34;background:transparent;color:var(--tinta);border-color:transparent}
-.pagina-antes .controles-libro .libro-continuar{background:var(--carmin);color:#fff;justify-self:stretch;white-space:nowrap}
-.pagina-antes .controles-libro .libro-continuar:hover{background:#872310;color:#fff}
-.pagina-antes .controles-libro [hidden]{display:none!important}
-.pagina-antes .avance-libro{min-width:85px;font-size:.69rem;gap:7px}
-.pagina-antes .avance-marcas i{width:13px;height:3px;border-radius:1px}
 @media (max-width:650px){
 .pagina-antes .seccion-libro{padding-top:30px;padding-bottom:120px}
 .pagina-antes .libro-encima{display:flex;margin-bottom:12px;justify-content:space-between;flex-wrap:wrap;gap:8px}
 .pagina-antes .libro-marco{height:650px}
 .pagina-antes .libro-pagina{padding:26px 23px}
 .pagina-antes .capitulo-texto{margin-top:clamp(40px,9vh,90px)}
-.pagina-antes .controles-libro{width:calc(100vw - 20px);max-width:calc(100vw - 20px);padding:7px;gap:5px}
-.pagina-antes .controles-libro button,.pagina-antes .controles-libro .libro-continuar{font-size:.79rem;padding:11px 7px;min-height:44px;white-space:normal;text-align:center}
-.pagina-antes .avance-libro{min-width:57px;font-size:.64rem}
-.pagina-antes .avance-marcas i{width:7px}
-.pagina-antes .talleres-libro{margin:12px 0 10px}
-.pagina-antes .talleres-libro a{padding:13px 15px;gap:5px}
-.pagina-antes .talleres-libro a strong{font-size:1rem}
 .pagina-antes .pagina-superior{font-size:.64rem}
 }
 @media (prefers-reduced-motion:reduce){
-.pagina-antes .controles-libro button,.pagina-antes .controles-libro .libro-continuar{transition:none}
 }
 
 
@@ -732,7 +659,7 @@ body{font-family:var(--sans);font-size:1.0625rem;line-height:1.61}
 
 /* Cuaderno: cabe en pantallas comunes y cada texto comienza arriba. */
 .pagina-antes .libro-marco {
-  height: clamp(510px, calc(100svh - var(--header) - 170px), 575px);
+  height: var(--alto-cuaderno, clamp(520px, calc(100svh - var(--header) - 175px), 650px));
 }
 .pagina-antes .libro-pagina,
 .pagina-antes .libro-pagina.pagina-izquierda:not(.pagina-talleres) {
@@ -759,18 +686,16 @@ body{font-family:var(--sans);font-size:1.0625rem;line-height:1.61}
 .pagina-antes .libro-croquis { margin: 6px -3% 0; padding: 12px; }
 .pagina-antes .libro-croquis img { max-height: 455px; }
 .pagina-antes .libro-cita { margin-bottom: 16px; }
-.pagina-antes .talleres-libro { margin: 15px 0 5px; }
 
 @media (max-width: 650px) {
   .pagina-antes .libro-marco {
-    height: clamp(535px, calc(100svh - var(--header) - 110px), 620px);
+    height: var(--alto-cuaderno, clamp(550px, calc(100svh - var(--header) - 150px), 670px));
   }
   .pagina-antes .libro-pagina,
   .pagina-antes .libro-pagina.pagina-izquierda:not(.pagina-talleres) {
     padding: 24px 22px 20px;
   }
   .pagina-antes .capitulo-texto { margin-top: 13px; }
-  .pagina-antes .talleres-libro { margin-top: 12px; }
 }
 /* Croquis del cuaderno: limitar la altura dentro de la nueva proporción de página. */
 .pagina-antes .dibujo-lugar img {
@@ -792,4 +717,503 @@ body{font-family:var(--sans);font-size:1.0625rem;line-height:1.61}
   content: "";
   position: absolute;
   inset: -12px -9px;
+}
+
+/* ===== AJUSTES DE LECTURA: PORTADA Y ACCESOS ===== */
+/* El GIF conserva su animación. La opacidad baja convierte el trazo negro
+   en un gris suave sobre beige, sin competir con el título. */
+.pagina-home .portada-original {
+  background: linear-gradient(135deg, #f2ece1, #e3d5bf);
+}
+.pagina-home .portada-original .diapositivas {
+  opacity: .16;
+  mix-blend-mode: multiply;
+}
+/* Ancho completo, proporción original y recorte vertical centrado si hace falta. */
+.pagina-home .portada-original .diapositivas img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  object-fit: contain;
+  transform: translateY(-50%);
+}
+.pagina-home .portada-original .portada-centro {
+  padding: 2.25rem 0 6.25rem;
+}
+/* Logo a la izquierda: 1cap equivale a la altura de una mayúscula de esta fuente. */
+.portada-titulo-logo {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: .24em;
+  max-width: 100%;
+  font: 700 clamp(2rem, 5.35vw, 4.05rem)/1.15 var(--sans);
+  color: var(--carmin-oscuro);
+}
+.portada-emblema {
+  display: block;
+  flex: none;
+  width: .72em;
+  height: .72em;
+  width: 1.1cap;
+  height: 1.1cap;
+  background: currentColor;
+  -webkit-mask: url("assets/logo-travesia.png") center / contain no-repeat;
+  mask: url("assets/logo-travesia.png") center / contain no-repeat;
+}
+.pagina-home .portada-original #titulo-principal {
+  width: auto;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+}
+
+/* El papel y la imagen de Chile son transparentes; los puntos mantienen su posición. */
+.mapa-papel {
+  border: 0;
+  background: transparent;
+  overflow: visible;
+}
+/* Cada tarjeta es un enlace completo y permanece visible. */
+.mapa-entrada {
+  position: absolute;
+  z-index: 3;
+  width: clamp(142px, 13.5vw, 176px);
+  padding: 12px 14px;
+  border: 1px solid #d9cfbe;
+  border-radius: 2px;
+  background: #fbf8f2;
+  color: var(--tinta);
+  text-decoration: none;
+  transition: border-color .2s, background .2s;
+}
+.mapa-entrada-vina {
+  right: 64%;
+  bottom: calc(58% + 1.5rem);
+}
+.mapa-entrada-chaiten {
+  left: 60%;
+  top: calc(63.6% + 1.5rem);
+}
+.mapa-entrada:hover,
+.mapa-entrada:focus-visible {
+  border-color: var(--carmin);
+  background: #f7f0e6;
+}
+.mapa-entrada h3 {
+  font: 500 .9rem/1.35 var(--sans);
+  margin-bottom: .4rem;
+  letter-spacing: -.02em;
+  text-decoration: underline;
+  text-decoration-color: #b79b88;
+  text-underline-offset: .2em;
+}
+.mapa-entrada h3 em {
+  color: var(--carmin);
+  font-family: var(--serif);
+  font-weight: 400;
+}
+.mapa-entrada p {
+  margin: 0;
+  font: 400 .78rem/1.5 var(--sans);
+  color: var(--tinta-suave);
+}
+.preparacion-viaje {
+  align-self: center;
+}
+.preparacion-recuadro {
+  padding: clamp(22px, 2.5vw, 32px);
+  background: #fbf8f2;
+  border: 1px solid #e6e0d4;
+}
+.preparacion-continuar {
+  margin-top: .15rem;
+}
+.preparacion-viaje h2 {
+  font-size: clamp(1.5rem, 2.3vw, 2rem);
+  margin-bottom: 1rem;
+}
+.preparacion-recuadro > p {
+  font-size: .95rem;
+  max-width: 53ch;
+}
+.talleres-preparacion {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-block: 1.3rem 0;
+}
+.talleres-preparacion a {
+  display: grid;
+  gap: .4rem;
+  padding-top: .9rem;
+  border-top: 1px solid var(--filete);
+  text-decoration: none;
+}
+.talleres-preparacion small,
+.talleres-preparacion b {
+  font-size: .64rem;
+  letter-spacing: .09em;
+  color: var(--carmin);
+}
+.talleres-preparacion strong {
+  font-size: .95rem;
+  font-weight: 500;
+  line-height: 1.35;
+}
+.talleres-preparacion span {
+  font-size: .8rem;
+  color: var(--tinta-suave);
+}
+.boton-enlace {
+  display: inline-block;
+  padding: .75rem 1rem;
+  border: 1px solid var(--carmin);
+  border-radius: 0;
+  background: transparent;
+  color: var(--carmin);
+  font-size: .84rem;
+  line-height: 1.45;
+  text-decoration: none;
+  transition: color .2s ease, background .2s ease;
+}
+.boton-enlace:hover,
+.boton-enlace:focus-visible {
+  background: var(--carmin);
+  color: var(--papel);
+}
+
+/* Segundo slide: mapa y accesos visibles junto al texto, con alturas proporcionadas
+   a la pantalla. En celular el contenido se apila y conserva un tamaño legible. */
+.pagina-home .mapa-travesia {
+  min-height: calc(100svh - var(--header));
+  padding-block: clamp(24px, 4svh, 42px);
+  display: grid;
+  align-items: center;
+}
+.pagina-home .mapa-travesia-composicion {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(24px, 3vw, 48px);
+  align-items: center;
+}
+.pagina-home .mapa-papel {
+  height: clamp(380px, calc(100svh - var(--header) - 84px), 610px);
+  min-height: 0;
+}
+.pagina-home .mapa-croquis {
+  height: calc(100% - 12px);
+  max-height: 100%;
+}
+.mapa-entrada:hover h3,
+.mapa-entrada:focus-visible h3 {
+  color: var(--carmin);
+  text-decoration-color: currentColor;
+}
+
+/* ===== CUADERNO: GIRO EN LAS HOJAS Y FOLIOS =====
+   El texto puede desplazarse dentro de cada cara, sin mover su número de página. */
+.pagina-antes .seccion-libro {
+  padding-bottom: calc(120px + env(safe-area-inset-bottom, 0px));
+}
+.pagina-antes .libro-hoja {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.pagina-antes .libro-hoja[hidden],
+.pagina-antes .libro-hoja .libro-pagina[hidden] {
+  display: none;
+}
+.pagina-antes .libro-hoja .libro-pagina {
+  display: flex;
+  padding: 28px clamp(24px, 4vw, 59px) 43px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.libro-cuerpo {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #d4c8b8 transparent;
+}
+.pagina-antes .libro-pagina > .libro-cuerpo {
+  margin: 0;
+}
+/* Solo la página del croquis carece de scroll. Los textos largos conservan el suyo. */
+.pagina-antes .libro-hoja .libro-pagina.pagina-croquis {
+  overflow: hidden;
+}
+.pagina-antes .pagina-croquis > .libro-cuerpo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.pagina-antes .pagina-croquis .libro-croquis {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+.pagina-antes .pagina-croquis .libro-croquis img {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.numero-pagina {
+  position: absolute;
+  bottom: 12px;
+  color: #84786b;
+  font: 500 .78rem/1.4 var(--sans);
+  letter-spacing: .08em;
+}
+.pagina-izquierda .numero-pagina {
+  left: 24px;
+}
+.pagina-derecha .numero-pagina {
+  right: 24px;
+}
+.libro-pagina:focus-visible {
+  outline: 2px solid var(--carmin);
+  outline-offset: -4px;
+}
+.libro-ayuda {
+  margin-top: 1.35rem;
+  margin-bottom: 0;
+  text-align: center;
+  font: 400 .77rem/1.6 var(--sans);
+  color: var(--tinta-suave);
+}
+/* Panel de lectura flotante: pequeño, centrado y separado del borde inferior. */
+.pagina-antes .controles-libro {
+  position: fixed;
+  inset: auto auto calc(16px + env(safe-area-inset-bottom, 0px)) 50%;
+  transform: translateX(-50%);
+  z-index: 120;
+  width: max-content;
+  max-width: calc(100% - 32px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.1rem;
+  margin: 0;
+  padding: .55rem 1.1rem;
+  background: rgba(252, 250, 244, .98);
+  border: 1px solid #d2c8b9;
+  border-radius: 3px;
+  box-shadow: 0 5px 18px #453a2914;
+}
+.pagina-antes .controles-libro .boton-enlace {
+  padding: .55rem .7rem;
+  border: 0;
+  background: transparent;
+  color: var(--tinta-suave);
+  font-size: .84rem;
+  font-weight: 500;
+  text-align: center;
+  max-width: none;
+}
+.pagina-antes .controles-libro .boton-enlace + .boton-enlace {
+  border-left: 1px solid var(--filete);
+  border-radius: 0;
+  padding-left: 1.35rem;
+}
+.pagina-antes .controles-libro .boton-enlace:hover,
+.pagina-antes .controles-libro .boton-enlace:focus-visible {
+  color: var(--carmin);
+  text-decoration: underline;
+}
+.pagina-antes .pie {
+  padding-bottom: calc(115px + env(safe-area-inset-bottom, 0px));
+}
+
+/* Se reserva una franja de papel para las flechas y los folios. */
+.pagina-antes .libro-marco .libro-pagina,
+.pagina-antes .libro-marco .libro-pagina.pagina-izquierda {
+  padding: 26px clamp(24px, 3.3vw, 47px) 77px;
+  overflow: hidden;
+}
+.pagina-antes .libro-marco .libro-pagina[hidden] { display: none; }
+.paso-pagina {
+  position: absolute;
+  bottom: 29px;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--papel);
+  cursor: pointer;
+}
+.paso-pagina::before {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border-radius: 50%;
+  background: var(--carmin);
+  transition: background .2s;
+}
+.paso-pagina svg { width: 14px; height: 14px; position: relative; }
+.paso-pagina:hover::before { background: var(--carmin-oscuro); }
+.paso-pagina:disabled { opacity: .3; cursor: default; }
+.paso-anterior { left: 8px; }
+.paso-siguiente { right: 8px; }
+.pagina-izquierda .paso-siguiente,
+.pagina-derecha .paso-anterior { display: none; }
+
+/* Pequeño doblez en la esquina superior de las páginas derechas. */
+.pagina-derecha::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 26px;
+  height: 26px;
+  background: linear-gradient(225deg, #e2d9c9 0 47%, #d3c6b2 49%, #f0e8da 55%);
+  box-shadow: -2px 2px 4px #453a2914;
+  pointer-events: none;
+}
+
+/* Página 8: todo el texto fluye sin scroll interno. El script aumenta la altura
+   del papel cuando hace falta, por ejemplo en celular o con letras ampliadas. */
+.pagina-antes .pagina-obra > .libro-cuerpo {
+  flex: 0 0 auto;
+  min-height: auto;
+  overflow: visible;
+}
+.pagina-antes .pagina-obra .capitulo-texto { margin-top: 12px; }
+.pagina-antes .pagina-obra .capitulo-texto > p {
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: none;
+  margin-bottom: .7rem;
+}
+
+/* Durante el giro, el fondo conserva la mitad que no se está pasando.
+   Las páginas originales solo cambian al terminar; se evita el destello. */
+.libro-fondo {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  pointer-events: none;
+}
+.libro-fondo .libro-pagina { height: 100%; }
+.libro-volteo { will-change: transform; }
+.libro-volteo .cara { -webkit-backface-visibility: hidden; }
+.libro-volteo .numero-pagina { display: block; }
+
+@media (max-width: 760px) {
+  .pagina-home .mapa-travesia-composicion { grid-template-columns: 1fr; gap: 24px; }
+  .pagina-home .mapa-papel { height: 450px; }
+  .pagina-home .mapa-croquis { translate: 0; }
+  .talleres-preparacion { gap: 1rem; }
+  .portada-titulo-logo { font-size: clamp(2rem, 6.5vw, 3.1rem); }
+}
+@media (max-width: 650px) {
+  .pagina-antes .libro-marco .libro-pagina,
+  .pagina-antes .libro-marco .libro-pagina.pagina-izquierda {
+    padding: 24px 25px 77px;
+  }
+  .libro-fondo { grid-template-columns: 1fr; }
+  .pagina-izquierda .paso-siguiente,
+  .pagina-derecha .paso-anterior { display: grid; }
+  .pagina-antes .controles-libro { gap: .6rem; }
+  .pagina-antes .controles-libro .boton-enlace { font-size: .8rem; padding: .65rem .7rem; }
+}
+
+/* ===== DIARIO: CAMBIO DE DÍA SOBRE LA ÚLTIMA FOTOGRAFÍA ===== */
+.escena-diario > .jornada-controles {
+  position: absolute;
+  bottom: 4.5rem;
+  left: max(30px, calc((100% - 1260px) / 2));
+  right: max(30px, calc((100% - 1260px) / 2));
+  z-index: 5;
+  justify-content: space-between;
+  pointer-events: none;
+}
+.escena-diario > .jornada-controles button {
+  pointer-events: auto;
+  background: rgba(252, 251, 247, .94);
+}
+.escena-diario > .jornada-controles button:disabled {
+  opacity: .65;
+}
+@media (max-width: 880px) {
+  .mapa-travesia-composicion {
+    gap: 2.25rem;
+  }
+}
+@media (max-width: 650px) {
+  .pagina-antes .libro-hoja {
+    display: block;
+  }
+  .pagina-antes .libro-hoja .libro-pagina {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 25px 25px 77px;
+    border: 0;
+  }
+  .pagina-antes .libro-hoja .libro-pagina[hidden] {
+    display: none;
+  }
+  .escena-diario > .jornada-controles {
+    left: 16px;
+    right: 16px;
+    bottom: 4rem;
+    gap: 10px;
+  }
+  .escena-diario > .jornada-controles button {
+    font-size: .75rem;
+    padding: 12px 13px;
+  }
+}
+
+/* Al estrecharse la pantalla, las tarjetas dejan de flotar sobre el dibujo. */
+@media (max-width: 600px) {
+  .pagina-home .mapa-papel {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    height: auto;
+    align-items: stretch;
+  }
+  .pagina-home .mapa-croquis {
+    grid-column: 1 / -1;
+    justify-self: center;
+    height: 360px;
+    max-width: 100%;
+  }
+  .mapa-entrada {
+    position: static;
+    width: auto;
+    min-width: 0;
+    padding: 12px;
+  }
+  .pagina-antes .controles-libro {
+    bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+    max-width: calc(100% - 24px);
+    gap: .4rem;
+    padding: .45rem .65rem;
+  }
+  .pagina-antes .controles-libro .boton-enlace {
+    font-size: .8rem;
+    padding: .55rem .45rem;
+  }
+  .pagina-antes .controles-libro .boton-enlace + .boton-enlace {
+    padding-left: .85rem;
+  }
 }

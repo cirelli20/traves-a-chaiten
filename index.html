@@ -6,7 +6,7 @@
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="#fcfbf7" name="theme-color"/>
 <meta content="Propuesta editorial de bitácora de la Travesía La Escalera del Carpintero, Chaitén 2026: los días, las personas y la obra desde la preparación hasta el regreso." name="description"/>
-<title>Bitácora · E muelle del Carpintero · Chaitén 2026</title>
+<title>Bitácora · El muelle del carpintero · Chaitén 2026</title>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Roboto+Serif:ital,wght@1,400&amp;display=swap" rel="stylesheet"/>
@@ -24,12 +24,16 @@
 </div>
 </header>
 <main id="contenido">
-<!-- PORTADA: El título de la obra es provisorio, tal como indica la corrección. -->
+<!-- Portada: el GIF ocupa todo el ancho sobre beige y se atenúa en estilos.css. El logo utiliza el PNG normal
+     como máscara para tomar el mismo rojo y la altura de una mayúscula del título. -->
 <section aria-labelledby="titulo-principal" class="portada portada-original seccion-observable" id="inicio">
-<div aria-hidden="true" class="diapositivas"><img alt="" class="activa" fetchpriority="high" height="750" src="assets/portada-1.svg" width="1200"/></div>
+<div aria-hidden="true" class="diapositivas"><img alt="" class="activa" fetchpriority="high" height="1088" src="assets/gifportada.gif" width="1632"/></div>
 <div class="contenedor portada-centro">
 <p class="identidad"><strong>e[ad]</strong><span>Escuela de Arquitectura y Diseño</span></p>
+<div class="portada-titulo-logo">
+<span class="portada-emblema" role="img" aria-label="Logo de la travesía: un pájaro carpintero"></span>
 <h1 id="titulo-principal">El muelle del carpintero</h1>
+</div>
 <p class="nombre-obra-portada">TRAVESÍA CHAITÉN 2026</p>
 </div>
 <nav aria-label="Secciones principales de la bitácora" class="menu-portada">
@@ -44,34 +48,39 @@
 <div class="contenedor mapa-travesia-composicion">
 <div class="mapa-papel" role="group" aria-label="Mapa dibujado de Chile con accesos a Viña del Mar y Chaitén">
   <div class="mapa-croquis">
-    <img class="mapa-croquis-imagen" src="assets/mapa-chile-croquis.png" alt="Croquis lineal del territorio de Chile" width="1280" height="2048" loading="lazy" decoding="async" />
-    <a class="mapa-boton-svg mapa-boton-vina" href="antes-de-partir.html" aria-label="Viña del Mar: abrir Antes de partir">
-      <img src="assets/boton-vina-del-mar.svg" alt="Viña del Mar" width="743" height="124" />
+    <img class="mapa-croquis-imagen" src="assets/mapa-chile-croquis-TRANSPARENTE.png" alt="Croquis lineal del territorio de Chile" width="1280" height="2048" loading="lazy" decoding="async" />
+    <a class="mapa-boton-svg mapa-boton-vina" href="antes-de-partir.html" aria-label="Viña del Mar: ir a Antes de partir">
+      <img src="assets/boton-vina-del-mar.svg" alt="Viña del Mar" width="743" height="124"/>
     </a>
-    <a class="mapa-boton-svg mapa-boton-chaiten" href="diario.html" aria-label="Chaitén: abrir Bitácora de los doce días">
-      <img src="assets/boton-chaiten.svg" alt="Chaitén" width="568" height="124" />
+    <a class="mapa-boton-svg mapa-boton-chaiten" href="diario.html" aria-label="Chaitén: ir a Doce días de travesía">
+      <img src="assets/boton-chaiten.svg" alt="Chaitén" width="568" height="124"/>
     </a>
   </div>
+  <!-- Los recuadros se posicionan respecto al área completa, fuera del trazo
+       del país. En pantallas pequeñas pasan a dos columnas debajo del mapa. -->
+  <a class="mapa-entrada mapa-entrada-vina" id="entrada-vina" href="antes-de-partir.html">
+    <h3>Ir a <em>Antes de partir</em></h3>
+    <p>Preparativos, preguntas y decisiones que abren el viaje desde Viña del Mar.</p>
+  </a>
+  <a class="mapa-entrada mapa-entrada-chaiten" id="entrada-chaiten" href="diario.html">
+    <h3>Ir a <em>Doce días de travesía</em></h3>
+    <p>Doce jornadas de obra, actos poéticos, recorridos y vida compartida en Chaitén.</p>
+  </a>
 </div>
-<div class="mapa-lecturas">
-<a aria-label="Abrir Antes de partir en Viña del Mar" class="mapa-lectura" href="antes-de-partir.html"><span class="mapa-lectura-num">01 · VIÑA DEL MAR</span><span aria-hidden="true" class="mapa-lectura-flecha">↗</span><h3>Antes de partir</h3>
-    <p>La travesía comienza mucho antes del viaje, 
-      entre preparativos, preguntas y decisiones colectivas que dan inicio al encuentro con un nuevo territorio. 
-</p></a>
-<a class="mapa-lectura" href="diario.html"><span class="mapa-lectura-num">02 · CHAITÉN</span><span aria-hidden="true" class="mapa-lectura-flecha">↗</span><h3>Doce días en travesía</h3>
-  <p>Cada jornada reúne distintas formas de participar en la travesía, el trabajo de construcción, 
-    los actos poéticos, los recorridos y las labores cotidianas. Estos registros permiten seguir el desarrollo de la obra y
-     los encuentros que acompañaron su realización.
-</p></a>
+<!-- Información trasladada desde la última doble página del cuaderno. -->
+<div class="preparacion-viaje">
+  <!-- El primer acceso queda junto al párrafo; después se presentan los talleres. -->
+  <div class="preparacion-recuadro">
+  <h2 id="titulo-mapa-travesia">Quienes preparan el viaje</h2>
+  <p>La preparación de la Travesía a Chaitén 2026 reúne a estudiantes y profesores de Arquitectura y Diseño en torno a un viaje y una experiencia de trabajo compartida.
+La organización de las responsabilidades, los materiales y las distintas faenas forma parte de un proceso colectivo que comienza antes de partir y continúa durante la permanencia en el territorio.
+</p>
+  <a class="boton-enlace preparacion-continuar" href="antes-de-partir.html">Comenzar a leer</a>
+  <div class="talleres-preparacion"><a href="https://wiki.ead.pucv.cl/Taller_Habitabilidad_en_Infraestructura_Urbana_S2_2026" rel="noopener noreferrer" target="_blank"><small>ARQUITECTURA · 2026</small><strong>Taller Habitabilidad en Infraestructura Urbana S2 2026</strong><span>Profesores: Argeo Ramella y Francisca Oñate</span><b>CONSULTAR TALLER EN LA WIKI</b></a><a href="https://wiki.ead.pucv.cl/Taller_Dise%C3%B1o_de_Ediciones_Digitales_2026" rel="noopener noreferrer" target="_blank"><small>DISEÑO · 2026</small><strong>Taller Diseño de Ediciones Digitales 2026</strong><span>Profesora: Michèle Wilkomirsky</span><b>CONSULTAR TALLER EN LA WIKI</b></a></div>
+  </div>
 </div>
 </div>
 </section>
-<!-- PRETRAVESÍA: reformulación editorial. Talleres y links retomados de la primera versión. -->
-<!-- PORTADA DE ACCESO: el relato completo de 12 días está en diario.html. -->
-<!-- OBRA: Se lee como una trama transversal y también dentro de cada día. -->
-<!-- PERSONAS. Solo se incluyen los nombres confirmados en la versión recibida. -->
-<!-- CIERRE: No se narran aquí hechos no documentados. -->
-<!-- ARCHIVO. Los formatos son ranuras, no fotografías o testimonios reales. -->
 </main>
 <footer class="pie">
   <div class="contenedor pie-inferior">

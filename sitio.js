@@ -192,7 +192,7 @@ window.DATOS_TRAVESIA = {
       "etiqueta": "Día 03",
       "titulo": "El primer encuentro con la extensión",
       "fecha": "14 de noviembre de 2026",
-      "subtitulo": "La jornada estuvo dedicada al reconocimiento de Chaitén y sus alrededores. Mediante recorridos libres de observación, los participantes pudieron explorar distintos sectores del territorio, aproximándose a las características del lugar que acogería las siguientes jornadas de travesía. Me parece un buen título porque no se limita a decir que fueron a recorrer Chaitén. Introduce la idea de extensión, presente en el lenguaje de la Escuela, sin alejarse de lo que efectivamente se sabe de la jornada.",
+      "subtitulo": "La jornada estuvo dedicada al reconocimiento de Chaitén y sus alrededores. Mediante recorridos libres de observación, los participantes pudieron explorar distintos sectores del territorio, aproximándose a las características del lugar que acogería las siguientes jornadas de travesía.",
       "pregunta": "¿Qué comienza a revelarse al observar el territorio?",
       "imagen": "assets/dias/D3FOTO1.webp",
       "imagenes": [
@@ -1328,42 +1328,172 @@ window.DATOS_TRAVESIA = {
 
 
 /* ===== ANTES ===== */
-/* Cuaderno: 5 dobles páginas con efecto de hoja al avanzar y retroceder. */
+/* Cuaderno: las flechas, las páginas y el teclado comparten la navegación.
+   En celular se muestran las ocho caras; en escritorio, cuatro dobles páginas. */
 (() => {
   'use strict';
-  const libro=document.getElementById('libro-marco');if(!libro)return;
-  const hojas=[...libro.querySelectorAll('.libro-hoja')];
-  const anterior=document.getElementById('libro-anterior'),siguiente=document.getElementById('libro-siguiente');
-  const contador=document.getElementById('libro-contador'),marcas=document.getElementById('avance-marcas');
-  const irAlDiario=document.getElementById('libro-ir-diario');
-  const reduce=window.matchMedia('(prefers-reduced-motion: reduce)');
-  let actual=0,animando=false;
-  hojas.forEach((_,i)=>{const m=document.createElement('i');if(i===0)m.className='activo';marcas.append(m)});
-  function actualizar(){hojas.forEach((hoja,i)=>{hoja.hidden=i!==actual;hoja.classList.toggle('activa',i===actual)});anterior.disabled=actual===0||animando;siguiente.disabled=animando;siguiente.hidden=actual===hojas.length-1;irAlDiario.hidden=actual!==hojas.length-1;contador.textContent=`${String(actual+1).padStart(2,'0')} / ${String(hojas.length).padStart(2,'0')}`;[...marcas.children].forEach((n,i)=>n.classList.toggle('activo',i===actual));}
-  function pasar(delta){
-    const nuevo=actual+delta;if(animando||nuevo<0||nuevo>=hojas.length)return;
-    const from=hojas[actual],to=hojas[nuevo];
-    const caraAnterior=(delta>0 ? from.querySelector('.pagina-derecha') : to.querySelector('.pagina-derecha'));
-    const caraPosterior=(delta>0 ? to.querySelector('.pagina-izquierda') : from.querySelector('.pagina-izquierda'));
-    const movil=window.matchMedia('(max-width:650px)').matches;
-    const trasera=movil?(delta>0 ? to.querySelector('.pagina-derecha') : from.querySelector('.pagina-derecha')):caraPosterior;
-    const overlay=document.createElement('div');overlay.className=`libro-volteo ${delta>0?'siguiente':'anterior'}`;overlay.setAttribute('aria-hidden','true');
-    for(const [className,source] of [['cara cara-front',caraAnterior],['cara cara-back',trasera]]){const face=document.createElement('div');face.className=className;face.append(source.cloneNode(true));overlay.append(face)}
-    animando=true;actual=nuevo;actualizar();
-    if(reduce.matches){animando=false;actualizar();return;}
-    libro.append(overlay);
-    overlay.addEventListener('animationend',()=>{overlay.remove();animando=false;actualizar();},{once:true});
+  const libro = document.getElementById('libro-marco');
+  if (!libro) return;
+  const hojas = Array.from(libro.querySelectorAll('.libro-hoja'));
+  const paginas = Array.from(libro.querySelectorAll('[data-pagina]'));
+  const botones = Array.from(libro.querySelectorAll('[data-paso]'));
+  const estado = document.getElementById('libro-estado');
+  const movil = window.matchMedia('(max-width: 650px)');
+  const reducido = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let actual = 0;
+  let pendiente = null;
+  let animacion = null;
+  let fondo = null;
+  let respaldo;
+  let devolverFoco = false;
+  let origenPuntero;
+
+  function ajustarAltura(pagina = paginas.find(p => !p.hidden && p.classList.contains('pagina-obra'))) {
+    libro.style.removeProperty('--alto-cuaderno');
+    if (!pagina) return;
+    const cuerpo = pagina.querySelector('.libro-cuerpo');
+    const estilo = getComputedStyle(pagina);
+    const necesario = Math.ceil(cuerpo.scrollHeight + parseFloat(estilo.paddingTop) + parseFloat(estilo.paddingBottom) + 2);
+    const base = libro.getBoundingClientRect().height;
+    if (necesario > base) libro.style.setProperty('--alto-cuaderno', `${necesario}px`);
   }
-  anterior.addEventListener('click',()=>pasar(-1));siguiente.addEventListener('click',()=>pasar(1));
-  document.addEventListener('keydown',ev=>{if(ev.altKey||ev.ctrlKey||ev.metaKey||/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName||''))return;if(ev.key==='ArrowRight'){if(actual===hojas.length-1&&!animando){irAlDiario.click();}else pasar(1);}if(ev.key==='ArrowLeft')pasar(-1);});
+
+  function actualizar() {
+    const primera = movil.matches ? actual : Math.floor(actual / 2) * 2;
+    const ultima = movil.matches ? primera : primera + 1;
+    hojas.forEach((hoja, i) => {
+      hoja.hidden = i !== Math.floor(primera / 2);
+      hoja.classList.toggle('activa', !hoja.hidden);
+    });
+    paginas.forEach((pagina, i) => { pagina.hidden = i < primera || i > ultima; });
+    botones.forEach(boton => {
+      boton.disabled = Number(boton.dataset.paso) < 0 ? primera === 0 : ultima === paginas.length - 1;
+    });
+    libro.classList.toggle('sin-anterior', primera === 0);
+    libro.classList.toggle('sin-siguiente', ultima === paginas.length - 1);
+    estado.textContent = primera === ultima
+      ? `Página ${primera + 1} de ${paginas.length}`
+      : `Páginas ${primera + 1} y ${ultima + 1} de ${paginas.length}`;
+    ajustarAltura();
+  }
+
+  function terminarAnimacion() {
+    clearTimeout(respaldo);
+    // Primero se actualiza el papel original; después se retiran las copias.
+    // Todo sucede en el mismo cuadro, para no dejar asomar otra página.
+    if (pendiente !== null) actual = pendiente;
+    pendiente = null;
+    actualizar();
+    animacion?.remove();
+    fondo?.remove();
+    animacion = null;
+    fondo = null;
+    libro.removeAttribute('aria-busy');
+    if (devolverFoco) paginas[actual].focus({ preventScroll: true });
+    devolverFoco = false;
+  }
+
+  function copiarPagina(pagina) {
+    const copia = pagina.cloneNode(true);
+    copia.hidden = false;
+    copia.removeAttribute('tabindex');
+    copia.removeAttribute('data-pagina');
+    copia.querySelectorAll('[id]').forEach(nodo => nodo.removeAttribute('id'));
+    copia.querySelectorAll('button, a, [tabindex]').forEach(nodo => nodo.setAttribute('tabindex', '-1'));
+    return copia;
+  }
+
+  function pasar(delta) {
+    const base = movil.matches ? actual : Math.floor(actual / 2) * 2;
+    const nueva = base + delta * (movil.matches ? 1 : 2);
+    if (animacion || nueva < 0 || nueva >= paginas.length) return;
+    devolverFoco = libro.contains(document.activeElement);
+    if (reducido.matches) {
+      pendiente = nueva;
+      terminarAnimacion();
+      return;
+    }
+
+    // El fondo mezcla una cara de la doble página actual y otra del destino.
+    // La mitad que se está leyendo permanece hasta que la hoja la cubra.
+    fondo = document.createElement('div');
+    fondo.className = 'libro-fondo';
+    fondo.setAttribute('aria-hidden', 'true');
+    fondo.inert = true;
+    const fijas = movil.matches ? [nueva] : delta > 0 ? [base, nueva + 1] : [nueva, base + 1];
+    fijas.forEach(i => fondo.append(copiarPagina(paginas[i])));
+
+    const frontal = paginas[movil.matches ? actual : (delta > 0 ? base + 1 : nueva + 1)];
+    const trasera = paginas[movil.matches ? nueva : (delta > 0 ? nueva : base)];
+    animacion = document.createElement('div');
+    animacion.className = `libro-volteo ${delta > 0 ? 'siguiente' : 'anterior'}`;
+    animacion.style.transform = delta > 0 ? 'rotateY(0deg)' : 'rotateY(-180deg)';
+    animacion.setAttribute('aria-hidden', 'true');
+    animacion.inert = true;
+    for (const [clase, pagina] of [['cara cara-front', frontal], ['cara cara-back', trasera]]) {
+      const cara = document.createElement('div');
+      cara.className = clase;
+      cara.append(copiarPagina(pagina));
+      animacion.append(cara);
+    }
+    pendiente = nueva;
+    libro.setAttribute('aria-busy', 'true');
+    libro.append(fondo, animacion);
+    // Las copias conservan también el desplazamiento de un texto ya leído.
+    for (const capa of [fondo, animacion]) {
+      capa.querySelectorAll('.libro-pagina').forEach(copia => {
+        const original = paginas.find(p => p.getAttribute('aria-label') === copia.getAttribute('aria-label'));
+        copia.querySelector('.libro-cuerpo').scrollTop = original.querySelector('.libro-cuerpo').scrollTop;
+      });
+    }
+    const ultimaPagina = fondo.querySelector('.pagina-obra') || animacion.querySelector('.pagina-obra');
+    if (ultimaPagina) ajustarAltura(ultimaPagina);
+    botones.forEach(boton => { boton.disabled = true; });
+    animacion.addEventListener('animationend', event => {
+      if (event.target === animacion) terminarAnimacion();
+    });
+    // Respaldo si se cambia de pestaña o el navegador omite animationend.
+    respaldo = setTimeout(terminarAnimacion, 1100);
+  }
+
+  libro.addEventListener('pointerdown', event => {
+    origenPuntero = { x: event.clientX, y: event.clientY };
+  });
+  libro.addEventListener('click', event => {
+    if (event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    const flecha = event.target.closest('[data-paso]');
+    if (flecha) {
+      if (!flecha.disabled) pasar(Number(flecha.dataset.paso));
+      return;
+    }
+    if (event.target.closest('a, button, audio, video, input, textarea, select')) return;
+    if (window.getSelection()?.toString()) return;
+    if (origenPuntero && Math.hypot(event.clientX - origenPuntero.x, event.clientY - origenPuntero.y) > 10) return;
+    const pagina = event.target.closest('[data-pagina]');
+    if (!pagina) return;
+    const rect = pagina.getBoundingClientRect();
+    const retroceder = movil.matches ? event.clientX < rect.left + rect.width / 2 : pagina.classList.contains('pagina-izquierda');
+    pasar(retroceder ? -1 : 1);
+  });
+  libro.addEventListener('keydown', event => {
+    if (event.altKey || event.ctrlKey || event.metaKey || event.target.closest('a, button, input, textarea, select')) return;
+    if (!['ArrowRight', 'ArrowLeft', 'Enter', ' '].includes(event.key)) return;
+    event.preventDefault();
+    const izquierda = event.target.closest('.pagina-izquierda');
+    pasar(event.key === 'ArrowLeft' || (!movil.matches && izquierda && ['Enter', ' '].includes(event.key)) ? -1 : 1);
+  });
+  movil.addEventListener('change', terminarAnimacion);
+  reducido.addEventListener('change', () => { if (animacion) terminarAnimacion(); });
+  window.addEventListener('resize', () => { if (!animacion) ajustarAltura(); }, { passive: true });
+  document.fonts?.ready.then(() => { if (!animacion) ajustarAltura(); });
+  document.addEventListener('visibilitychange', () => { if (document.hidden && animacion) terminarAnimacion(); });
   actualizar();
 })();
-
 
 /* ===== DIARIO ===== */
 /* Bitácora de doce jornadas.
  * Una escena por fotografía, varios comentarios por escena, y algunas notas ampliables.
- * Todo se edita en datos-bitacora.js; ningún texto de ejemplo es un testimonio real. */
+ * Todo se edita en DATOS_TRAVESIA al comienzo de este archivo; ningún texto de ejemplo es un testimonio real. */
 (() => {
   'use strict';
   const datos=window.DATOS_TRAVESIA;
@@ -1371,6 +1501,10 @@ window.DATOS_TRAVESIA = {
   const $=q=>document.querySelector(q);
   const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const menu=$('#diario-menu-dias'),relato=$('#jornada-relato');
+  // Se reutilizan estos mismos controles dentro de la última fotografía de cada día.
+  const controles = document.querySelector('.jornada-controles');
+  const diaAnterior = document.getElementById('dia-atras');
+  const diaSiguiente = document.getElementById('dia-adelante');
   const p=Number(new URLSearchParams(location.search).get('dia'));
   let activo=Number.isInteger(p)&&p>=1&&p<=datos.dias.length?p-1:0;
   let observer;
@@ -1427,8 +1561,8 @@ window.DATOS_TRAVESIA = {
     btn.setAttribute('aria-label',`Mostrar ${dia.etiqueta}`);
     btn.addEventListener('click',()=>mostrar(i,true));menu.append(btn);
   });
-  $('#dia-atras').addEventListener('click',()=>mostrar(activo-1,true));
-  $('#dia-adelante').addEventListener('click',()=>mostrar(activo+1,true));
+  diaAnterior.addEventListener('click',()=>mostrar(activo-1,true));
+  diaSiguiente.addEventListener('click',()=>mostrar(activo+1,true));
 
   function escenaInfo(item,defaultSrc){
     if(typeof item==='string')return{src:item,alt:'Imagen de la jornada; sustituir por registro real.',pie:'REGISTRO POR INCORPORAR'};
@@ -1483,6 +1617,7 @@ window.DATOS_TRAVESIA = {
   }
   function mostrar(i,desplazar){
     if(i<0||i>=datos.dias.length)return;
+    const enfocarTitulo = controles.contains(document.activeElement);
     activo=i;const dia=datos.dias[i];
     [...menu.children].forEach((btn,index)=>{
       btn.setAttribute('aria-pressed',String(i===index));
@@ -1492,7 +1627,7 @@ window.DATOS_TRAVESIA = {
     $('#jornada-titulo').textContent=dia.titulo||dia.etiqueta;
     $('#jornada-resumen').textContent=dia.subtitulo||'Relato por completar.';
     $('#fecha-dia').textContent=dia.fecha||'FECHA POR COMPLETAR';
-    $('#dia-atras').disabled=i===0;$('#dia-adelante').disabled=i===datos.dias.length-1;
+    diaAnterior.disabled=i===0;diaSiguiente.disabled=i===datos.dias.length-1;
     const fotos=imagenesDia(dia);
     const notas=Array.isArray(dia.comentarios)?dia.comentarios:[];
     const distribucion=repartirNotas(notas,fotos.length);
@@ -1500,6 +1635,12 @@ window.DATOS_TRAVESIA = {
       <div class="escena-fondo"><img src="${esc(foto.src)}" alt="${esc(foto.alt)}" loading="${j===0?'eager':'lazy'}"><div class="escena-rotulo"><span>CHAITÉN · DÍA ${esc(dia.numero)}</span><span>${esc(foto.pie)}</span></div><div class="escena-contadores"><span>BITÁCORA VISUAL</span><span>${String(j+1).padStart(2,'0')} / ${String(fotos.length).padStart(2,'0')}</span></div></div>
       <div class="contenedor escena-contenido">${contenidoEscena(distribucion[j],j,dia.numero)}</div>
     </section>`).join('');
+    relato.querySelector('.escena-diario:last-child').append(controles);
+    if (enfocarTitulo) {
+      const titulo = document.getElementById('jornada-titulo');
+      titulo.tabIndex = -1;
+      titulo.focus({ preventScroll: true });
+    }
     prepararFotos();
     observer?.disconnect();
     if('IntersectionObserver'in window&&!reducido.matches){
@@ -1597,3 +1738,6 @@ window.DATOS_TRAVESIA = {
   });
   programar();
 })();
+
+
+/* Los accesos del mapa son enlaces siempre visibles; no requieren JavaScript. */
