@@ -1217,3 +1217,61 @@ body{font-family:var(--sans);font-size:1.0625rem;line-height:1.61}
     padding-left: .85rem;
   }
 }
+
+
+/* ===== MAPA: ROTULOS CON LA MISMA ALTURA Y VIÑA A LA IZQUIERDA ===== */
+/* Ambos SVG tienen 124 unidades de alto pero anchos distintos (743 y 568).
+   La relación 568/743 iguala su altura visual sin mover Chaitén de su posición sur. */
+@media (min-width: 651px) {
+  .pagina-home .mapa-boton-vina { left: 43.1%; width: clamp(122px, 12.7vw, 172px); }
+  .pagina-home .mapa-boton-chaiten { width: clamp(93px, 9.71vw, 131.5px); }
+}
+@media (max-width: 650px) {
+  .pagina-home .mapa-boton-vina { left: 43.2%; width: 115px; }
+  .pagina-home .mapa-boton-chaiten { width: 88px; }
+}
+
+/* ===== BITÁCORA: REGISTROS SEPARADOS DE LAS FOTOGRAFÍAS ===== */
+/* La imagen ocupa el recorrido completo; solo queda un acceso discreto a sus notas. */
+.pagina-diario .escena-fondo { z-index: 1; }
+.pagina-diario .escena-abrir-registros {
+  position:absolute;right:max(17px,calc((100% - 1260px)/2));bottom:60px;z-index:5;
+  display:inline-flex;align-items:center;gap:9px;padding:11px 13px;
+  background:rgba(252,251,247,.96);color:#302a24;border:1px solid #c9b9a9;border-radius:3px;
+  box-shadow:0 5px 22px #16141044;cursor:pointer;font-size:.78rem;font-weight:600;
+  letter-spacing:.02em;line-height:1.2;transition:background .2s,border-color .2s;
+}
+.pagina-diario .escena-abrir-registros:hover,
+.pagina-diario .escena-abrir-registros:focus-visible{background:#fff;border-color:var(--carmin)}
+.pagina-diario .registros-icono{font-size:1.1rem;color:var(--carmin);line-height:1}
+.pagina-diario .registros-cantidad{background:var(--carmin);color:white;border-radius:2px;min-width:22px;padding:3px 5px;font-size:.7rem;text-align:center}
+.registros-superposicion[hidden]{display:none!important}
+.registros-superposicion{position:fixed;inset:0;z-index:500;display:flex;justify-content:flex-end}
+.registros-fondo{position:absolute;inset:0;background:#19181480;border:0;cursor:default}
+.registros-panel{position:relative;width:min(510px,100%);height:100%;background:#f5f0e7;border-left:1px solid #d4c7b6;box-shadow:-16px 0 48px #18161444;display:flex;flex-direction:column;min-height:0;animation:registros-entrada .28s ease-out}
+.registros-encabezado{display:flex;justify-content:space-between;align-items:start;gap:20px;padding:26px 28px 21px;border-bottom:1px solid #cfc3b1;flex:none}
+.registros-etiqueta{color:var(--carmin);letter-spacing:.14em;font-size:.66rem;font-weight:700;margin:0 0 8px}
+.registros-encabezado h2{font-size:clamp(1.7rem,2.3vw,2.25rem);font-weight:600;letter-spacing:-.035em}
+.registros-cerrar{width:37px;height:37px;flex:0 0 37px;border:1px solid #cabba9;background:#fffdfa;color:#342b24;font-size:1.05rem;cursor:pointer}
+.registros-cerrar:hover{border-color:var(--carmin);color:var(--carmin)}
+.registros-lista{flex:1;overflow-y:auto;overscroll-behavior:contain;padding:25px 28px 55px;display:flex;flex-direction:column;gap:24px}
+.registros-lista .voz-grupo,
+.registros-lista .voz-grupo[data-cantidad="1"]{display:flex;flex-direction:column;align-items:stretch;width:100%;max-width:none;gap:22px;pointer-events:auto}
+.registros-lista .voz-grupo .voz-burbuja,
+.registros-lista .voz-grupo .voz-burbuja:nth-child(2),
+.registros-lista .voz-grupo .voz-burbuja.voz-croquis{width:100%;max-width:100%;margin:0!important;align-self:stretch;padding:22px 23px;opacity:1;filter:none;transform:none!important;transition:none;box-shadow:0 5px 22px #231a1230;border:1px solid #dfd5c6;border-radius:3px}
+.registros-lista .voz-burbuja::after{display:none}
+.registros-lista .voz-grupo .voz-burbuja.voz-croquis{padding:11px 11px 14px}
+.registros-lista .voz-croquis-figura img{width:100%;height:auto;max-height:none;object-fit:contain}
+.registros-lista .voz-croquis-figura figcaption{font-size:.67rem;line-height:1.5}
+.registros-lista .voz-burbuja blockquote{font-size:1.05rem}
+.registros-lista .voz-editorial-texto,.registros-lista .voz-detalle p{overflow-wrap:anywhere}
+@keyframes registros-entrada{from{transform:translateX(20px);opacity:.7}to{transform:translateX(0);opacity:1}}
+@media (max-width:680px){
+  .pagina-diario .escena-abrir-registros{right:15px;bottom:48px;padding:10px 11px;font-size:.73rem;gap:7px}
+  .registros-panel{width:100%;border-left:0}
+  .registros-encabezado{padding:18px 20px 17px}
+  .registros-lista{padding:20px 18px 44px;gap:16px}
+  .registros-lista .voz-grupo .voz-burbuja{padding:19px 18px}
+}
+@media (prefers-reduced-motion:reduce){.registros-panel{animation:none}}

@@ -40,4 +40,18 @@
     <img class="pie-logo" src="assets/logo-ead.png" width="1030" height="255" alt="e[ad] Escuela de Arquitectura y Diseño, Pontificia Universidad Católica de Valparaíso" loading="lazy">
   </div>
 </footer>
+<!-- Panel de registros: se abre desde cada fotografía y no tapa la lectura cuando está cerrado. -->
+<div class="registros-superposicion" id="registros-superposicion" hidden>
+  <button type="button" class="registros-fondo" id="registros-fondo" aria-label="Cerrar registros y volver a la imagen"></button>
+  <aside class="registros-panel" role="dialog" aria-modal="true" aria-labelledby="registros-panel-titulo" tabindex="-1">
+    <div class="registros-encabezado">
+      <div>
+        <p class="registros-etiqueta" id="registros-panel-contexto">BITÁCORA / REGISTROS</p>
+        <h2 id="registros-panel-titulo">Notas y croquis</h2>
+      </div>
+      <button class="registros-cerrar" type="button" id="registros-cerrar" aria-label="Cerrar panel de registros">✕</button>
+    </div>
+    <div class="registros-lista" id="registros-lista"></div>
+  </aside>
+</div>
 </body></html>

@@ -1615,9 +1615,59 @@ window.DATOS_TRAVESIA = {
     }
     return grupos.join('');
   }
+  // Los registros ya no flotan sobre las fotografías: se leen en un panel lateral.
+  const superposicion=$('#registros-superposicion');
+  const listaRegistros=$('#registros-lista');
+  const contextoRegistros=$('#registros-panel-contexto');
+  const cerrarRegistrosBoton=$('#registros-cerrar');
+  const dialogoRegistros=superposicion.querySelector('.registros-panel');
+  let notasPorFoto=[],fotosActuales=[],diaNumeroActual='01',activadorAnterior=null;
+  let overflowAnterior='';
+  function cerrarRegistros(restaurarFoco=true){
+    if(superposicion.hidden)return;
+    superposicion.hidden=true;
+    document.body.style.overflow=overflowAnterior;
+    listaRegistros.innerHTML='';
+    if(restaurarFoco && activadorAnterior && document.contains(activadorAnterior))activadorAnterior.focus({preventScroll:true});
+    activadorAnterior=null;
+  }
+  function abrirRegistros(indice,activador){
+    const asignadas=notasPorFoto[indice]||[];
+    if(!asignadas.length)return;
+    activadorAnterior=activador;
+    const foto=fotosActuales[indice];
+    contextoRegistros.textContent=`DÍA ${diaNumeroActual} · IMAGEN ${String(indice+1).padStart(2,'0')} / ${String(fotosActuales.length).padStart(2,'0')}`;
+    listaRegistros.innerHTML=contenidoEscena(asignadas,indice,diaNumeroActual);
+    listaRegistros.querySelectorAll('[data-revelar]').forEach(el=>el.classList.add('es-visible'));
+    overflowAnterior=document.body.style.overflow;
+    document.body.style.overflow='hidden';
+    superposicion.hidden=false;
+    dialogoRegistros.scrollTop=0;
+    listaRegistros.scrollTop=0;
+    cerrarRegistrosBoton.focus();
+  }
+  relato.addEventListener('click',ev=>{
+    const activar=ev.target.closest('.escena-abrir-registros');
+    if(!activar)return;
+    const indice=Number(activar.dataset.escena);
+    if(Number.isInteger(indice))abrirRegistros(indice,activar);
+  });
+  $('#registros-fondo').addEventListener('click',()=>cerrarRegistros());
+  cerrarRegistrosBoton.addEventListener('click',()=>cerrarRegistros());
+  document.addEventListener('keydown',e=>{
+    if(superposicion.hidden)return;
+    if(e.key==='Escape'){e.preventDefault();cerrarRegistros();return;}
+    if(e.key!=='Tab')return;
+    const foco=[...dialogoRegistros.querySelectorAll('button:not([disabled]),a[href],input,select,textarea,[tabindex]:not([tabindex="-1"])')].filter(el=>el.getClientRects().length);
+    if(!foco.length)return;
+    const primero=foco[0],ultimo=foco[foco.length-1];
+    if(e.shiftKey&&document.activeElement===primero){e.preventDefault();ultimo.focus();}
+    else if(!e.shiftKey&&document.activeElement===ultimo){e.preventDefault();primero.focus();}
+  });
   function mostrar(i,desplazar){
     if(i<0||i>=datos.dias.length)return;
     const enfocarTitulo = controles.contains(document.activeElement);
+    cerrarRegistros(false);
     activo=i;const dia=datos.dias[i];
     [...menu.children].forEach((btn,index)=>{
       btn.setAttribute('aria-pressed',String(i===index));
@@ -1631,9 +1681,11 @@ window.DATOS_TRAVESIA = {
     const fotos=imagenesDia(dia);
     const notas=Array.isArray(dia.comentarios)?dia.comentarios:[];
     const distribucion=repartirNotas(notas,fotos.length);
+    notasPorFoto=distribucion;
+    fotosActuales=fotos;
+    diaNumeroActual=dia.numero;
     relato.innerHTML=fotos.map((foto,j)=>`<section class="escena-diario" aria-label="Imagen ${j+1} de la jornada ${esc(dia.numero)}">
-      <div class="escena-fondo"><img src="${esc(foto.src)}" alt="${esc(foto.alt)}" loading="${j===0?'eager':'lazy'}"><div class="escena-rotulo"><span>CHAITÉN · DÍA ${esc(dia.numero)}</span><span>${esc(foto.pie)}</span></div><div class="escena-contadores"><span>BITÁCORA VISUAL</span><span>${String(j+1).padStart(2,'0')} / ${String(fotos.length).padStart(2,'0')}</span></div></div>
-      <div class="contenedor escena-contenido">${contenidoEscena(distribucion[j],j,dia.numero)}</div>
+      <div class="escena-fondo"><img src="${esc(foto.src)}" alt="${esc(foto.alt)}" loading="${j===0?'eager':'lazy'}"><div class="escena-rotulo"><span>CHAITÉN · DÍA ${esc(dia.numero)}</span><span>${esc(foto.pie)}</span></div><div class="escena-contadores"><span>BITÁCORA VISUAL</span><span>${String(j+1).padStart(2,'0')} / ${String(fotos.length).padStart(2,'0')}</span></div>${distribucion[j].length?`<button type="button" class="escena-abrir-registros" data-escena="${j}" aria-haspopup="dialog" aria-controls="registros-superposicion" aria-label="Abrir ${distribucion[j].length} registros de la imagen ${j+1} del día ${esc(dia.numero)}"><span aria-hidden="true" class="registros-icono">▤</span><span>Ver registros</span><span class="registros-cantidad">${distribucion[j].length}</span></button>`:''}</div>
     </section>`).join('');
     relato.querySelector('.escena-diario:last-child').append(controles);
     if (enfocarTitulo) {
@@ -1659,10 +1711,11 @@ window.DATOS_TRAVESIA = {
       window.scrollTo({top:Math.max(0,to-header-barra-10),behavior:reducido.matches?'instant':'smooth'});
     }
   }
-  // Event delegation: los comentarios se reconstruyen cuando se cambia de día.
-  relato.addEventListener('click',ev=>{
+  // Los desplegables siguen funcionando dentro del panel de registros.
+  listaRegistros.addEventListener('click',ev=>{
     const btn=ev.target.closest('.voz-desplegar');if(!btn)return;
-    const detalle=document.getElementById(btn.getAttribute('aria-controls'));if(!detalle)return;
+    const detalle=listaRegistros.querySelector('#'+btn.getAttribute('aria-controls'));
+    if(!detalle)return;
     const abrir=btn.getAttribute('aria-expanded')!=='true';
     btn.setAttribute('aria-expanded',String(abrir));detalle.hidden=!abrir;
     btn.querySelector('.voz-boton-texto').textContent=abrir?'Cerrar detalle':'Leer más';
